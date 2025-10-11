@@ -10,6 +10,7 @@ import KitchenCalculator from '@/components/KitchenCalculator';
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [selectedCategory, setSelectedCategory] = useState('kitchen');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [calculatorData, setCalculatorData] = useState({
     width: '',
     height: '',
@@ -137,13 +138,43 @@ const Index = () => {
               ))}
             </nav>
 
-            <Button className="bg-primary hover:bg-primary/90 text-sm md:text-lg font-semibold px-4 py-3 md:px-8 md:py-6">
+            <div className="flex items-center gap-3">
+              <button 
+                className="md:hidden flex flex-col gap-1.5 p-2"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label="Меню"
+              >
+                <span className="w-6 h-0.5 bg-foreground transition-all"></span>
+                <span className="w-6 h-0.5 bg-foreground transition-all"></span>
+                <span className="w-6 h-0.5 bg-foreground transition-all"></span>
+              </button>
+              
+              <Button className="bg-primary hover:bg-primary/90 text-sm md:text-lg font-semibold px-4 py-3 md:px-8 md:py-6">
               <Icon name="Phone" size={18} className="mr-1 md:mr-2 md:hidden" />
               <Icon name="Phone" size={22} className="mr-2 hidden md:block" />
               <span className="hidden md:inline">Звонок</span>
             </Button>
           </div>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-200 animate-fade-in">
+            <nav className="container mx-auto px-4 py-4">
+              {['Главная', 'О нас', 'Каталог', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
+                <button
+                  key={item}
+                  onClick={() => {
+                    scrollToSection(item.toLowerCase().replace(' ', '-'));
+                    setMobileMenuOpen(false);
+                  }}
+                  className="block w-full text-left py-3 px-4 text-foreground hover:text-primary hover:bg-primary/5 transition-colors font-semibold rounded-lg"
+                >
+                  {item}
+                </button>
+              ))}
+            </nav>
+          </div>
+        )}
       </header>
 
       <section id="главная" className="pt-20 md:pt-32 pb-16 md:pb-32 px-4 bg-[#F9F8F4]">
