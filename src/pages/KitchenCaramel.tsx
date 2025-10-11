@@ -14,16 +14,16 @@ const KitchenCaramel = () => {
       alt: 'Общий вид кухни Тающая карамель'
     },
     {
-      url: 'https://cdn.poehali.dev/files/23fb84e3-dfd3-4ae4-9c11-14a8ca467e8c.png',
-      alt: 'Рабочая зона и столешница'
+      url: 'https://cdn.poehali.dev/files/52fed4ac-dd7c-47f9-9072-123e979c34a5.png',
+      alt: 'Рабочая зона и витрины с подсветкой'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/3859d0f8-bace-4664-a572-f0902d8ce2e0.png',
+      alt: 'Обеденная зона и гостиная'
     },
     {
       url: 'https://cdn.poehali.dev/files/23fb84e3-dfd3-4ae4-9c11-14a8ca467e8c.png',
-      alt: 'Витрины с подсветкой'
-    },
-    {
-      url: 'https://cdn.poehali.dev/files/23fb84e3-dfd3-4ae4-9c11-14a8ca467e8c.png',
-      alt: 'Обеденная зона'
+      alt: 'Детали интерьера'
     }
   ];
 
