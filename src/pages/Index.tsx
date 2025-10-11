@@ -335,21 +335,22 @@ const Index = () => {
             </Card>
 
             <div className="text-center max-w-3xl mx-auto">
-              <Card className="bg-gradient-to-br from-primary via-primary to-orange-600 text-white border-none shadow-[0_20px_60px_rgba(255,128,0,0.3)] rounded-3xl overflow-hidden relative">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
-                <CardContent className="py-10 px-8 relative z-10">
-                  <h3 className="text-2xl md:text-3xl font-light mb-3">
+              <Card className="bg-gradient-to-br from-primary via-primary to-orange-600 text-white border-none shadow-[0_20px_60px_rgba(255,128,0,0.3)] rounded-2xl md:rounded-3xl overflow-hidden relative">
+                <div className="absolute top-0 right-0 w-32 h-32 md:w-64 md:h-64 bg-white/5 rounded-full -translate-y-16 translate-x-16 md:-translate-y-32 md:translate-x-32"></div>
+                <CardContent className="py-6 px-4 md:py-10 md:px-8 relative z-10">
+                  <h3 className="text-xl md:text-3xl font-light mb-2 md:mb-3">
                     Пора навести порядок!
                   </h3>
-                  <p className="text-lg md:text-xl font-light mb-6 opacity-95">
+                  <p className="text-base md:text-xl font-light mb-4 md:mb-6 opacity-95">
                     Командуйте - По Местам!
                   </p>
                   <Button 
                     size="lg" 
-                    className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all px-8 py-6 text-base font-semibold"
+                    className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all px-4 md:px-8 py-3 md:py-6 text-sm md:text-base font-semibold w-full md:w-auto"
                     onClick={() => scrollToSection('калькулятор')}
                   >
-                    <Icon name="Calculator" size={22} className="mr-2" />
+                    <Icon name="Calculator" size={18} className="mr-1 md:mr-2 md:hidden" />
+                    <Icon name="Calculator" size={22} className="mr-2 hidden md:block" />
                     Рассчитать стоимость
                   </Button>
                 </CardContent>
