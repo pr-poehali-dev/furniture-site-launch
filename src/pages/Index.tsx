@@ -145,22 +145,22 @@ const Index = () => {
         </div>
       </header>
 
-      <section id="главная" className="pt-32 pb-20 px-4 bg-[#F9F8F4]">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section id="главная" className="pt-32 pb-32 px-4 bg-[#F9F8F4]">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-[#474931]">
                 Корпусная мебель<br />
                 <span className="text-primary">на заказ</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-xl text-[#7E7C56] mb-10 leading-relaxed">
                 Индивидуальный дизайн, точные размеры, качественные материалы. 
                 Создаём мебель, которая идеально впишется в ваш интерьер.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-5">
                 <Button 
                   size="lg" 
-                  className="bg-primary hover:bg-primary/90"
+                  className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all px-8 py-6 text-base"
                   onClick={() => scrollToSection('калькулятор')}
                 >
                   Рассчитать стоимость
@@ -168,6 +168,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
+                  className="border-2 border-[#7E7C56] text-[#7E7C56] hover:bg-[#7E7C56] hover:text-white transition-all px-8 py-6 text-base"
                   onClick={() => scrollToSection('каталог')}
                 >
                   Смотреть каталог
@@ -176,7 +177,7 @@ const Index = () => {
             </div>
             
             <div className="relative animate-scale-in">
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl relative">
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)] hover:shadow-[0_25px_70px_rgba(0,0,0,0.2)] transition-all duration-500 relative">
                 <img 
                   src="https://cdn.poehali.dev/files/a1f8e927-882f-4e25-b734-b7ed77bd9f48.jpg"
                   alt="Мебель"
@@ -190,7 +191,7 @@ const Index = () => {
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-[#7E7C56] text-white p-6 rounded-xl shadow-xl flex items-center gap-3">
+              <div className="absolute -bottom-6 -right-6 bg-[#7E7C56] text-white p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.25)] flex items-center gap-3">
                 <Icon name="ShieldCheck" size={32} className="text-[#C79747]" />
                 <div>
                   <div className="text-sm font-semibold">Проверенный</div>
@@ -202,30 +203,30 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="о-нас" className="py-20 px-4 bg-[#EEECE0]">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12">О нас</h2>
+      <section id="о-нас" className="py-24 px-4 bg-[#EEECE0]">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-5xl font-bold text-center mb-16 text-[#474931]">О нас</h2>
           
           <div className="space-y-8">
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-8">
-                <p className="text-xl text-center leading-relaxed text-muted-foreground mb-8">
+            <Card className="border-none shadow-[0_10px_40px_rgba(0,0,0,0.08)] rounded-3xl bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-12">
+                <p className="text-xl text-center leading-relaxed text-[#7E7C56] mb-10">
                   Зачем нужна мебель? Чтобы спрятать вещи? Нет. Ее настоящая задача — освободить энергию пространства и направить ее на вдохновение своих хозяев.
                 </p>
                 
-                <div className="text-center mb-10">
-                  <h3 className="text-3xl font-bold text-primary mb-4">
+                <div className="text-center mb-12">
+                  <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
                     «По Местам!» — это не просто название. Это наше обещание.
                   </h3>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-3 gap-12">
                   <div className="text-center">
                     <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                       <Icon name="Ruler" size={32} className="text-primary" />
                     </div>
-                    <h4 className="text-xl font-bold mb-3">Четкость</h4>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <h4 className="text-xl font-bold mb-4 text-[#474931]">Четкость</h4>
+                    <p className="text-[#7E7C56] leading-relaxed">
                       В линиях, конструкциях и организации процесса. От эскиза до сборки — все продумано до мелочей.
                     </p>
                   </div>
@@ -254,8 +255,8 @@ const Index = () => {
             </Card>
 
             <div className="text-center">
-              <Card className="bg-gradient-to-r from-primary to-primary/80 text-white border-none shadow-xl">
-                <CardContent className="py-10">
+              <Card className="bg-gradient-to-r from-primary to-primary/80 text-white border-none shadow-[0_15px_50px_rgba(0,0,0,0.15)] rounded-3xl">
+                <CardContent className="py-12">
                   <h3 className="text-3xl md:text-4xl font-bold mb-4">
                     Пора навести порядок!
                   </h3>
@@ -277,20 +278,20 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-[#F9F8F4]">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+      <section className="py-20 bg-[#F9F8F4]">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid md:grid-cols-4 gap-6 text-center">
             {[
               { icon: 'Award', title: 'Гарантия 5 лет', desc: 'На всю продукцию' },
               { icon: 'Ruler', title: 'Точные размеры', desc: 'Замер бесплатно' },
               { icon: 'Truck', title: 'Доставка', desc: 'По всему городу' },
               { icon: 'Wrench', title: 'Сборка', desc: 'Профессиональная' }
             ].map((item, idx) => (
-              <Card key={idx} className="border-none shadow-sm hover:shadow-md transition-shadow">
-                <CardContent className="pt-6">
-                  <Icon name={item.icon as any} size={40} className="mx-auto mb-4 text-primary" />
-                  <h3 className="font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+              <Card key={idx} className="border-none shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 rounded-2xl bg-white">
+                <CardContent className="pt-8 pb-6">
+                  <Icon name={item.icon as any} size={48} className="mx-auto mb-5 text-[#C79747]" />
+                  <h3 className="font-bold mb-2 text-[#474931] text-lg">{item.title}</h3>
+                  <p className="text-sm text-[#7E7C56]">{item.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -298,15 +299,15 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="каталог" className="py-20 px-4 bg-white">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4">Каталог мебели</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
+      <section id="каталог" className="py-24 px-4 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-5xl font-bold text-center mb-6 text-[#474931]">Каталог мебели</h2>
+          <p className="text-center text-[#7E7C56] mb-16 text-xl">
             Выберите категорию и ознакомьтесь с нашими работами
           </p>
 
           <Tabs defaultValue="kitchen" className="w-full">
-            <TabsList className="grid w-full grid-cols-5 mb-8 h-auto">
+            <TabsList className="grid w-full grid-cols-5 mb-12 h-auto bg-[#F9F8F4] p-2 rounded-2xl">
               {categories.map((cat) => (
                 <TabsTrigger 
                   key={cat.id} 
