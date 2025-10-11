@@ -351,14 +351,14 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="этапы-работы" className="py-20 px-4 bg-[#7E7C56]">
+      <section id="этапы-работы" className="py-12 px-4 bg-[#7E7C56]">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-6 text-white">Как мы работаем</h2>
-          <p className="text-center text-white/90 mb-16 text-xl max-w-3xl mx-auto font-medium">
+          <h2 className="text-4xl font-bold text-center mb-4 text-white">Как мы работаем</h2>
+          <p className="text-center text-white/90 mb-8 text-xl max-w-3xl mx-auto font-medium">
             От замера до полной сборки — каждый этап продуман для вашего удобства
           </p>
 
-          <div className="grid md:grid-cols-5 gap-4 mb-12">
+          <div className="grid md:grid-cols-5 gap-3 mb-8">
             {workSteps.map((step, idx) => (
               <div 
                 key={idx} 
@@ -366,22 +366,22 @@ const Index = () => {
                 style={{ animationDelay: `${idx * 100}ms` }}
               >
                 <Card className="h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-t-primary bg-white">
-                  <CardContent className="p-6 flex flex-col h-full">
-                    <div className="flex items-center justify-center w-14 h-14 bg-primary rounded-full text-white font-bold text-lg mb-4 mx-auto shadow-lg">
+                  <CardContent className="p-4 flex flex-col h-full">
+                    <div className="flex items-center justify-center w-12 h-12 bg-primary rounded-full text-white font-bold text-lg mb-3 mx-auto shadow-lg">
                       {idx + 1}
                     </div>
-                    <div className="flex items-center justify-center mb-4">
-                      <div className="bg-primary/10 p-4 rounded-full">
-                        <Icon name={step.icon as any} size={32} className="text-primary" />
+                    <div className="flex items-center justify-center mb-3">
+                      <div className="bg-primary/10 p-3 rounded-full">
+                        <Icon name={step.icon as any} size={28} className="text-primary" />
                       </div>
                     </div>
-                    <h3 className="text-lg font-bold mb-3 text-center text-black whitespace-nowrap">{step.title}</h3>
-                    <div className="text-center mb-4">
-                      <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold">
+                    <h3 className="text-lg font-bold mb-2 text-center text-black whitespace-nowrap">{step.title}</h3>
+                    <div className="text-center mb-3">
+                      <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">
                         {step.time}
                       </span>
                     </div>
-                    <p className="text-sm text-gray-700 text-center leading-relaxed flex-grow font-medium">
+                    <p className="text-sm text-gray-700 text-center leading-snug flex-grow font-medium">
                       {step.description}
                     </p>
                   </CardContent>
@@ -396,12 +396,12 @@ const Index = () => {
           </div>
 
           <Card className="max-w-6xl mx-auto shadow-xl bg-white">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-bold mb-8 text-center text-gray-900">Почему выбирают нас</h3>
-              <div className="grid md:grid-cols-3 gap-6">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-6 text-center text-gray-900">Почему выбирают нас</h3>
+              <div className="grid md:grid-cols-3 gap-4">
                 <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 text-center">
-                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <CardContent className="p-4 text-center">
+                    <div className="bg-primary/10 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-3">
                       <Icon name="Heart" size={28} className="text-primary" />
                     </div>
                     <h4 className="font-bold mb-2">Заинтересованы в вас</h4>
@@ -413,8 +413,8 @@ const Index = () => {
                   <div className="absolute top-2 right-2 bg-primary text-white text-xs px-2 py-1 rounded-full font-semibold">
                     ⚡ Скорость
                   </div>
-                  <CardContent className="p-6 text-center">
-                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <CardContent className="p-4 text-center">
+                    <div className="bg-primary/10 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-3">
                       <Icon name="Clock" size={28} className="text-primary" />
                     </div>
                     <h4 className="font-bold mb-2">Срок изготовления</h4>
@@ -423,8 +423,8 @@ const Index = () => {
                 </Card>
 
                 <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 text-center">
-                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <CardContent className="p-4 text-center">
+                    <div className="bg-primary/10 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-3">
                       <Icon name="Award" size={28} className="text-primary" />
                     </div>
                     <h4 className="font-bold mb-2">Гарантия 2 года</h4>
@@ -433,8 +433,8 @@ const Index = () => {
                 </Card>
 
                 <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 text-center">
-                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <CardContent className="p-4 text-center">
+                    <div className="bg-primary/10 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-3">
                       <Icon name="Wrench" size={28} className="text-primary" />
                     </div>
                     <h4 className="font-bold mb-2">Постгарантийное обслуживание</h4>
@@ -443,8 +443,8 @@ const Index = () => {
                 </Card>
 
                 <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 text-center">
-                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <CardContent className="p-4 text-center">
+                    <div className="bg-primary/10 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-3">
                       <Icon name="ShieldCheck" size={28} className="text-primary" />
                     </div>
                     <h4 className="font-bold mb-2">Всегда с вами</h4>
@@ -453,8 +453,8 @@ const Index = () => {
                 </Card>
 
                 <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
-                  <CardContent className="p-6 text-center">
-                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <CardContent className="p-4 text-center">
+                    <div className="bg-primary/10 rounded-full w-14 h-14 flex items-center justify-center mx-auto mb-3">
                       <Icon name="MessageCircle" size={28} className="text-primary" />
                     </div>
                     <h4 className="font-bold mb-2">Мы на связи</h4>
