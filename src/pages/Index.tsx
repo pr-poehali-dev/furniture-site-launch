@@ -150,7 +150,8 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
               <h1 className="text-5xl md:text-7xl font-light mb-8 leading-tight text-[#474931]" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
-                Корпусная мебель для тех,<br />
+                Корпусная мебель<br />
+                для тех,<br />
                 кто ценит <span className="text-primary">стиль</span><br />
                 и <span className="text-primary">качество</span>
               </h1>
