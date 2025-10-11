@@ -121,7 +121,7 @@ const Index = () => {
                 alt="По Местам!" 
                 className="h-16 w-16"
               />
-              <span className="text-3xl font-bold text-primary">ПО МЕСТАМ!</span>
+              <span className="text-2xl font-bold text-primary tracking-wide" style={{ fontFamily: 'Montserrat, sans-serif' }}>ПО МЕСТАМ!</span>
             </div>
             
             <nav className="hidden md:flex gap-6">
