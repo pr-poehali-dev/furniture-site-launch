@@ -470,7 +470,7 @@ const Index = () => {
 
       <section id="умная-организация" className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl font-bold text-center mb-4 text-[#474931]">По местам! и в шкафу порядок!</h2>
+          <h2 className="text-4xl font-bold text-center mb-4 text-[#474931]">По местам! И в шкафу порядок!</h2>
           <p className="text-center text-gray-700 mb-16 text-lg max-w-3xl mx-auto">
             При заказе корпусной мебели мы дарим вам специальные наборы для организации пространства. Теперь каждая полка и каждое отделение будут идеально упорядочены, а открывание фасада станет источником эстетического удовольствия!
           </p>
