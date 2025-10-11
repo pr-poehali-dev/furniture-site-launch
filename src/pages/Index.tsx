@@ -160,7 +160,7 @@ const Index = () => {
               <div className="flex gap-5">
                 <Button 
                   size="lg" 
-                  className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all px-8 py-7 text-lg"
+                  className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all px-10 py-8 text-2xl font-semibold"
                   onClick={() => scrollToSection('калькулятор')}
                 >
                   Рассчитать стоимость
@@ -168,7 +168,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-[#7E7C56] text-[#7E7C56] hover:bg-[#7E7C56] hover:text-white transition-all px-8 py-7 text-lg"
+                  className="border-2 border-[#7E7C56] text-[#7E7C56] hover:bg-[#7E7C56] hover:text-white transition-all px-10 py-8 text-2xl font-semibold"
                   onClick={() => scrollToSection('каталог')}
                 >
                   Смотреть каталог
