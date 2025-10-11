@@ -185,19 +185,20 @@ const Index = () => {
                   alt="Мебель"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute top-0 right-0 bg-white/95 backdrop-blur-sm p-6 rounded-bl-2xl shadow-lg">
+                <div className="absolute top-0 right-0 bg-white/95 backdrop-blur-sm p-3 md:p-6 rounded-bl-2xl shadow-lg">
                   <img 
                     src="https://cdn.poehali.dev/files/9718af21-0c22-4cb5-bf92-f1740fa73509.png" 
                     alt="По Местам!" 
-                    className="h-24 w-24"
+                    className="h-12 w-12 md:h-24 md:w-24"
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-emerald-800 text-white p-4 rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.25)] flex items-center gap-3">
-                <Icon name="ShieldCheck" size={28} className="text-white" />
+              <div className="absolute -bottom-3 -right-3 md:-bottom-4 md:-right-4 bg-emerald-800 text-white p-2 md:p-4 rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.25)] flex items-center gap-2 md:gap-3">
+                <Icon name="ShieldCheck" size={20} className="text-white md:hidden" />
+                <Icon name="ShieldCheck" size={28} className="text-white hidden md:block" />
                 <div>
-                  <div className="text-sm font-bold">Проверенный</div>
-                  <div className="text-sm font-bold">исполнитель</div>
+                  <div className="text-xs md:text-sm font-bold">Проверенный</div>
+                  <div className="text-xs md:text-sm font-bold">исполнитель</div>
                 </div>
               </div>
             </div>
