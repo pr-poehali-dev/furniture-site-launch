@@ -184,27 +184,38 @@ const KitchenOliva = () => {
         </Card>
 
         <Card className="bg-gradient-to-br from-primary/5 to-orange-50 border-primary/20">
-          <CardContent className="p-6 md:p-10 text-center">
-            <Icon name="Gift" size={48} className="mx-auto mb-4 text-primary" />
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#474931]">
-              Бонус при заказе!
-            </h3>
-            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              При заказе кухни "Олива" дарим премиум набор органайзеров для специй и сыпучих продуктов
-            </p>
-            <Button 
-              size="lg"
-              className="bg-primary hover:bg-primary/90"
-              onClick={() => {
-                navigate('/');
-                setTimeout(() => {
-                  document.getElementById('калькулятор')?.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-              }}
-            >
-              <Icon name="Rocket" size={20} className="mr-2" />
-              Заказать со скидкой
-            </Button>
+          <CardContent className="p-6 md:p-10">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+              <div className="order-2 md:order-1">
+                <Icon name="Gift" size={48} className="mb-4 text-primary md:mx-0 mx-auto" />
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#474931] md:text-left text-center">
+                  Бонус при заказе!
+                </h3>
+                <p className="text-lg text-gray-700 mb-6 md:text-left text-center">
+                  При заказе кухни "Олива" дарим премиум набор органайзеров для специй и сыпучих продуктов
+                </p>
+                <Button 
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 w-full md:w-auto"
+                  onClick={() => {
+                    navigate('/');
+                    setTimeout(() => {
+                      document.getElementById('калькулятор')?.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                  }}
+                >
+                  <Icon name="Rocket" size={20} className="mr-2" />
+                  Заказать со скидкой
+                </Button>
+              </div>
+              <div className="order-1 md:order-2">
+                <img 
+                  src="https://cdn.poehali.dev/files/b2bce252-7c0f-4c78-b272-d3e817aa6428.jpg"
+                  alt="Органайзеры для специй"
+                  className="w-full rounded-xl shadow-lg"
+                />
+              </div>
+            </div>
           </CardContent>
         </Card>
       </div>
