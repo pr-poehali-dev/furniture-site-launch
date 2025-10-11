@@ -254,21 +254,22 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <div className="text-center">
-              <Card className="bg-gradient-to-r from-primary to-primary/80 text-white border-none shadow-[0_15px_50px_rgba(0,0,0,0.15)] rounded-3xl">
-                <CardContent className="py-12">
-                  <h3 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="text-center max-w-3xl mx-auto">
+              <Card className="bg-gradient-to-br from-primary via-primary to-orange-600 text-white border-none shadow-[0_20px_60px_rgba(255,128,0,0.3)] rounded-3xl overflow-hidden relative">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
+                <CardContent className="py-10 px-8 relative z-10">
+                  <h3 className="text-3xl md:text-4xl font-light mb-3">
                     Пора навести порядок!
                   </h3>
-                  <p className="text-2xl md:text-3xl font-bold">
+                  <p className="text-xl md:text-2xl font-light mb-6 opacity-95">
                     Командуйте - По Местам!
                   </p>
                   <Button 
                     size="lg" 
-                    className="mt-6 bg-white text-primary hover:bg-gray-100"
+                    className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all px-8 py-6 text-lg font-semibold"
                     onClick={() => scrollToSection('калькулятор')}
                   >
-                    <Icon name="Calculator" size={20} className="mr-2" />
+                    <Icon name="Calculator" size={22} className="mr-2" />
                     Рассчитать стоимость
                   </Button>
                 </CardContent>
