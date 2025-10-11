@@ -121,7 +121,7 @@ const Index = () => {
                 alt="По Местам!" 
                 className="h-16 w-16"
               />
-              <span className="text-3xl font-semibold text-primary tracking-wide">ПО МЕСТАМ!</span>
+              <span className="text-2xl font-semibold text-primary tracking-wide">ПО МЕСТАМ!</span>
             </div>
             
             <nav className="hidden md:flex gap-6">
@@ -129,7 +129,7 @@ const Index = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
-                  className="text-foreground hover:text-primary transition-colors font-semibold relative group text-xl"
+                  className="text-foreground hover:text-primary transition-colors font-semibold relative group text-lg"
                 >
                   {item}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -137,7 +137,7 @@ const Index = () => {
               ))}
             </nav>
 
-            <Button className="bg-primary hover:bg-primary/90 text-xl font-semibold px-8 py-6">
+            <Button className="bg-primary hover:bg-primary/90 text-lg font-semibold px-8 py-6">
               <Icon name="Phone" size={22} className="mr-2" />
               Звонок
             </Button>
@@ -205,17 +205,17 @@ const Index = () => {
 
       <section id="о-нас" className="py-20 px-4 bg-[#EEECE0]">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-5xl font-bold text-center mb-12 text-[#474931]">О нас</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-[#474931]">О нас</h2>
           
           <div className="space-y-6">
             <Card className="border-none shadow-[0_10px_40px_rgba(0,0,0,0.08)] rounded-3xl bg-white/80 backdrop-blur-sm">
               <CardContent className="p-8">
-                <p className="text-2xl text-center leading-relaxed text-gray-900 mb-6">
+                <p className="text-xl text-center leading-relaxed text-gray-900 mb-6">
                   Зачем нужна мебель? Чтобы спрятать вещи? Нет. Ее настоящая задача — освободить энергию пространства и направить ее на вдохновение своих хозяев.
                 </p>
                 
                 <div className="text-center mb-6">
-                  <h3 className="text-3xl md:text-4xl font-semibold text-primary mb-3">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-3">
                     «По Местам!» — это не просто название. Это наше обещание.
                   </h3>
                 </div>
@@ -225,8 +225,8 @@ const Index = () => {
                     <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                       <Icon name="Ruler" size={32} className="text-primary" />
                     </div>
-                    <h4 className="text-xl font-bold mb-2 text-gray-900">Четкость</h4>
-                    <p className="text-lg text-gray-900 leading-relaxed">
+                    <h4 className="text-lg font-bold mb-2 text-gray-900">Четкость</h4>
+                    <p className="text-base text-gray-900 leading-relaxed">
                       В линиях, конструкциях и организации процесса. От эскиза до сборки — все продумано до мелочей.
                     </p>
                   </div>
@@ -235,8 +235,8 @@ const Index = () => {
                     <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                       <Icon name="Users" size={32} className="text-primary" />
                     </div>
-                    <h4 className="text-xl font-bold mb-2 text-gray-900">Слаженность</h4>
-                    <p className="text-lg text-gray-900 leading-relaxed">
+                    <h4 className="text-lg font-bold mb-2 text-gray-900">Слаженность</h4>
+                    <p className="text-base text-gray-900 leading-relaxed">
                       В работе нашей команды дизайнеров, инженеров и сборщиков. И, конечно, в том, как наши предметы взаимодействуют друг с другом в вашем интерьере.
                     </p>
                   </div>
@@ -245,8 +245,8 @@ const Index = () => {
                     <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                       <Icon name="Zap" size={32} className="text-primary" />
                     </div>
-                    <h4 className="text-xl font-bold mb-2 text-gray-900">Заряд</h4>
-                    <p className="text-lg text-gray-900 leading-relaxed">
+                    <h4 className="text-lg font-bold mb-2 text-gray-900">Заряд</h4>
+                    <p className="text-base text-gray-900 leading-relaxed">
                       Который получает ваше пространство. Мы создаем мебель, которая мотивирует, организует и дает мощный импульс для новых свершений.
                     </p>
                   </div>
@@ -258,15 +258,15 @@ const Index = () => {
               <Card className="bg-gradient-to-br from-primary via-primary to-orange-600 text-white border-none shadow-[0_20px_60px_rgba(255,128,0,0.3)] rounded-3xl overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
                 <CardContent className="py-10 px-8 relative z-10">
-                  <h3 className="text-3xl md:text-4xl font-light mb-3">
+                  <h3 className="text-2xl md:text-3xl font-light mb-3">
                     Пора навести порядок!
                   </h3>
-                  <p className="text-xl md:text-2xl font-light mb-6 opacity-95">
+                  <p className="text-lg md:text-xl font-light mb-6 opacity-95">
                     Командуйте - По Местам!
                   </p>
                   <Button 
                     size="lg" 
-                    className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all px-8 py-6 text-lg font-semibold"
+                    className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all px-8 py-6 text-base font-semibold"
                     onClick={() => scrollToSection('калькулятор')}
                   >
                     <Icon name="Calculator" size={22} className="mr-2" />
@@ -291,8 +291,8 @@ const Index = () => {
               <Card key={idx} className="border-none shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 rounded-2xl bg-white">
                 <CardContent className="pt-8 pb-6">
                   <Icon name={item.icon as any} size={56} className="mx-auto mb-6 text-[#C79747]" />
-                  <h3 className="font-bold mb-3 text-black text-2xl">{item.title}</h3>
-                  <p className="text-lg text-black font-medium">{item.desc}</p>
+                  <h3 className="font-bold mb-3 text-black text-xl">{item.title}</h3>
+                  <p className="text-base text-black font-medium">{item.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -302,8 +302,8 @@ const Index = () => {
 
       <section id="каталог" className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-5xl font-bold text-center mb-6 text-[#474931]">Каталог мебели</h2>
-          <p className="text-center text-[#7E7C56] mb-16 text-xl">
+          <h2 className="text-4xl font-bold text-center mb-6 text-[#474931]">Каталог мебели</h2>
+          <p className="text-center text-[#7E7C56] mb-16 text-lg">
             Выберите категорию и ознакомьтесь с нашими работами
           </p>
 
@@ -334,9 +334,9 @@ const Index = () => {
                         />
                       </div>
                       <CardContent className="p-6">
-                        <h3 className="font-bold text-xl mb-2">{product.name}</h3>
+                        <h3 className="font-bold text-lg mb-2">{product.name}</h3>
                         <div className="flex items-center justify-between">
-                          <span className="text-2xl font-bold text-primary">{product.price}</span>
+                          <span className="text-xl font-bold text-primary">{product.price}</span>
                           <Button size="sm" className="bg-primary hover:bg-primary/90">
                             Заказать
                           </Button>
@@ -353,8 +353,8 @@ const Index = () => {
 
       <section id="этапы-работы" className="py-20 px-4 bg-[#7E7C56]">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-6 text-white">Как мы работаем</h2>
-          <p className="text-center text-white/90 mb-16 text-2xl max-w-3xl mx-auto font-medium">
+          <h2 className="text-4xl font-bold text-center mb-6 text-white">Как мы работаем</h2>
+          <p className="text-center text-white/90 mb-16 text-xl max-w-3xl mx-auto font-medium">
             От замера до полной сборки — каждый этап продуман для вашего удобства
           </p>
 
@@ -367,7 +367,7 @@ const Index = () => {
               >
                 <Card className="h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-t-primary bg-white">
                   <CardContent className="p-6 flex flex-col h-full">
-                    <div className="flex items-center justify-center w-14 h-14 bg-primary rounded-full text-white font-bold text-xl mb-4 mx-auto shadow-lg">
+                    <div className="flex items-center justify-center w-14 h-14 bg-primary rounded-full text-white font-bold text-lg mb-4 mx-auto shadow-lg">
                       {idx + 1}
                     </div>
                     <div className="flex items-center justify-center mb-4">
@@ -375,13 +375,13 @@ const Index = () => {
                         <Icon name={step.icon as any} size={32} className="text-primary" />
                       </div>
                     </div>
-                    <h3 className="text-xl font-bold mb-3 text-center text-black">{step.title}</h3>
+                    <h3 className="text-lg font-bold mb-3 text-center text-black">{step.title}</h3>
                     <div className="text-center mb-4">
-                      <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-base font-semibold">
+                      <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                         {step.time}
                       </span>
                     </div>
-                    <p className="text-base text-gray-700 text-center leading-relaxed flex-grow font-medium">
+                    <p className="text-sm text-gray-700 text-center leading-relaxed flex-grow font-medium">
                       {step.description}
                     </p>
                   </CardContent>
@@ -397,7 +397,7 @@ const Index = () => {
 
           <Card className="max-w-6xl mx-auto shadow-xl bg-white">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-8 text-center text-gray-900">Почему выбирают нас</h3>
+              <h3 className="text-xl font-bold mb-8 text-center text-gray-900">Почему выбирают нас</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
@@ -469,7 +469,7 @@ const Index = () => {
 
       <section id="калькулятор" className="py-20 px-4 bg-[#F9F8F4]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-4">Калькулятор стоимости</h2>
+          <h2 className="text-3xl font-bold text-center mb-4">Калькулятор стоимости</h2>
           <p className="text-center text-muted-foreground mb-12">
             Ответьте на несколько вопросов, и мы рассчитаем стоимость вашей мебели
           </p>
@@ -500,7 +500,7 @@ const Index = () => {
               <CardContent className="p-8">
                 <div className="text-center py-12">
                   <Icon name="Wrench" size={48} className="mx-auto mb-4 text-primary" />
-                  <h3 className="text-2xl font-bold mb-4">Калькулятор в разработке</h3>
+                  <h3 className="text-xl font-bold mb-4">Калькулятор в разработке</h3>
                   <p className="text-muted-foreground mb-6">
                     Для расчёта стоимости этой категории мебели свяжитесь с нами напрямую
                   </p>
@@ -517,14 +517,14 @@ const Index = () => {
 
       <section id="контакты" className="py-20 px-4 bg-[#474931]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-white">Контакты</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">Контакты</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardContent className="pt-6">
                 <Icon name="Phone" size={40} className="mx-auto mb-4 text-primary" />
                 <h3 className="font-bold mb-2">Телефон</h3>
-                <p className="text-lg">+7 (495) 123-45-67</p>
+                <p className="text-base">+7 (495) 123-45-67</p>
               </CardContent>
             </Card>
             
@@ -532,7 +532,7 @@ const Index = () => {
               <CardContent className="pt-6">
                 <Icon name="Mail" size={40} className="mx-auto mb-4 text-primary" />
                 <h3 className="font-bold mb-2">Email</h3>
-                <p className="text-lg">info@pomestam.ru</p>
+                <p className="text-base">info@pomestam.ru</p>
               </CardContent>
             </Card>
             
@@ -540,19 +540,19 @@ const Index = () => {
               <CardContent className="pt-6">
                 <Icon name="MapPin" size={40} className="mx-auto mb-4 text-primary" />
                 <h3 className="font-bold mb-2">Адрес</h3>
-                <p className="text-lg">г. Москва, ул. Мебельная, 10</p>
+                <p className="text-base">г. Москва, ул. Мебельная, 10</p>
               </CardContent>
             </Card>
           </div>
 
           <Card className="mt-8">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Оставьте заявку</h3>
+              <h3 className="text-xl font-bold mb-6">Оставьте заявку</h3>
               <div className="space-y-4">
-                <Input placeholder="Ваше имя" className="text-lg p-3" />
-                <Input placeholder="Телефон" className="text-lg p-3" />
-                <Input placeholder="Email" className="text-lg p-3" />
-                <Button className="w-full bg-primary hover:bg-primary/90 text-lg py-6">
+                <Input placeholder="Ваше имя" className="text-base p-3" />
+                <Input placeholder="Телефон" className="text-base p-3" />
+                <Input placeholder="Email" className="text-base p-3" />
+                <Button className="w-full bg-primary hover:bg-primary/90 text-base py-6">
                   Отправить заявку
                 </Button>
               </div>
@@ -571,7 +571,7 @@ const Index = () => {
                   alt="По Местам!" 
                   className="h-10 w-10 brightness-0 invert"
                 />
-                <span className="text-xl font-bold">ПО МЕСТАМ!</span>
+                <span className="text-lg font-bold">ПО МЕСТАМ!</span>
               </div>
               <p className="text-white/70">
                 Корпусная мебель на заказ с 2010 года
