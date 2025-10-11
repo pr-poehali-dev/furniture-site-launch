@@ -467,14 +467,14 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="калькулятор" className="py-20 px-4 bg-[#F9F8F4]">
+      <section id="калькулятор" className="py-12 px-4 bg-[#F9F8F4]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-4">Калькулятор стоимости</h2>
-          <p className="text-center text-muted-foreground mb-12">
+          <h2 className="text-2xl font-bold text-center mb-3">Калькулятор стоимости</h2>
+          <p className="text-center text-muted-foreground mb-6 text-sm">
             Ответьте на несколько вопросов, и мы рассчитаем стоимость вашей мебели
           </p>
 
-          <div className="grid grid-cols-5 gap-2 mb-8">
+          <div className="grid grid-cols-5 gap-2 mb-6">
             {categories.map((cat) => (
               <button
                 key={cat.id}

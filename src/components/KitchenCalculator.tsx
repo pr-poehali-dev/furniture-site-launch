@@ -130,8 +130,8 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
 
   return (
     <Card className="shadow-xl">
-      <CardContent className="p-8">
-        <div className="mb-6">
+      <CardContent className="p-4">
+        <div className="mb-4">
           <div className="flex items-center justify-between mb-2">
             <span className="text-sm text-muted-foreground">Шаг {step} из 7</span>
             <span className="text-sm font-semibold text-primary">{Math.round((step / 7) * 100)}%</span>
@@ -144,23 +144,23 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
           </div>
         </div>
 
-        <div className="min-h-[400px]">
+        <div className="min-h-[300px]">
           {step === 1 && (
             <div className="animate-fade-in">
-              <h3 className="text-2xl font-bold mb-6">Какой вариант кухни вам нужен?</h3>
-              <div className="mb-6">
+              <h3 className="text-xl font-bold mb-4">Какой вариант кухни вам нужен?</h3>
+              <div className="mb-4">
                 <img 
                   src="https://cdn.poehali.dev/files/97d7c634-a131-4812-b0ee-79a12ffad119.jpg"
                   alt="Варианты планировки кухни"
                   className="w-full rounded-lg"
                 />
               </div>
-              <div className="grid grid-cols-1 gap-3">
+              <div className="grid grid-cols-1 gap-2">
                 {kitchenTypes.map((type) => (
                   <button
                     key={type.id}
                     onClick={() => setFormData({ ...formData, kitchenType: type.id })}
-                    className={`p-4 border-2 rounded-lg text-left transition-all ${
+                    className={`p-3 border-2 rounded-lg text-left transition-all text-sm ${
                       formData.kitchenType === type.id
                         ? 'border-primary bg-primary/5'
                         : 'border-gray-200 hover:border-primary/50'
@@ -175,13 +175,13 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
 
           {step === 2 && (
             <div className="animate-fade-in">
-              <h3 className="text-2xl font-bold mb-6">Укажите примерную длину кухни:</h3>
-              <div className="grid grid-cols-1 gap-3">
+              <h3 className="text-xl font-bold mb-4">Укажите примерную длину кухни:</h3>
+              <div className="grid grid-cols-1 gap-2">
                 {lengthOptions.map((option) => (
                   <button
                     key={option.id}
                     onClick={() => setFormData({ ...formData, length: option.id })}
-                    className={`p-4 border-2 rounded-lg text-left transition-all ${
+                    className={`p-3 border-2 rounded-lg text-left transition-all text-sm ${
                       formData.length === option.id
                         ? 'border-primary bg-primary/5'
                         : 'border-gray-200 hover:border-primary/50'
@@ -196,13 +196,13 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
 
           {step === 3 && (
             <div className="animate-fade-in">
-              <h3 className="text-2xl font-bold mb-6">Укажите примерную высоту кухни:</h3>
-              <div className="grid grid-cols-1 gap-3">
+              <h3 className="text-xl font-bold mb-4">Укажите примерную высоту кухни:</h3>
+              <div className="grid grid-cols-1 gap-2">
                 {heightOptions.map((option) => (
                   <button
                     key={option.id}
                     onClick={() => setFormData({ ...formData, height: option.id })}
-                    className={`p-4 border-2 rounded-lg text-left transition-all ${
+                    className={`p-3 border-2 rounded-lg text-left transition-all text-sm ${
                       formData.height === option.id
                         ? 'border-primary bg-primary/5'
                         : 'border-gray-200 hover:border-primary/50'
@@ -217,7 +217,7 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
 
           {step === 4 && (
             <div className="animate-fade-in">
-              <h3 className="text-2xl font-bold mb-6">Материал для фасадов (дверок)</h3>
+              <h3 className="text-xl font-bold mb-4">Материал для фасадов (дверок)</h3>
               <p className="text-sm text-muted-foreground mb-4">Можно выбрать несколько вариантов</p>
               <div className="space-y-3">
                 {materialOptions.map((material) => (
@@ -243,13 +243,13 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
 
           {step === 5 && (
             <div className="animate-fade-in">
-              <h3 className="text-2xl font-bold mb-6">Будут ли верхние шкафы?</h3>
-              <div className="grid grid-cols-1 gap-3">
+              <h3 className="text-xl font-bold mb-4">Будут ли верхние шкафы?</h3>
+              <div className="grid grid-cols-1 gap-2">
                 {upperCabinetsOptions.map((option) => (
                   <button
                     key={option.id}
                     onClick={() => setFormData({ ...formData, upperCabinets: option.id })}
-                    className={`p-4 border-2 rounded-lg text-left transition-all ${
+                    className={`p-3 border-2 rounded-lg text-left transition-all text-sm ${
                       formData.upperCabinets === option.id
                         ? 'border-primary bg-primary/5'
                         : 'border-gray-200 hover:border-primary/50'
@@ -264,7 +264,7 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
 
           {step === 6 && (
             <div className="animate-fade-in">
-              <h3 className="text-2xl font-bold mb-6">Какие ручки вы бы предпочли:</h3>
+              <h3 className="text-xl font-bold mb-4">Какие ручки вы бы предпочли:</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {handleTypes.map((handle) => (
                   <button
@@ -296,7 +296,7 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
 
           {step === 7 && (
             <div className="animate-fade-in">
-              <h3 className="text-2xl font-bold mb-4">Почти готово!</h3>
+              <h3 className="text-xl font-bold mb-3">Почти готово!</h3>
               <p className="text-muted-foreground mb-6">
                 Мы рассчитаем стоимость мебели по вашим указанным данным. 
                 Оставьте, пожалуйста, свой номер телефона или электронную почту, 
@@ -330,7 +330,7 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
           )}
         </div>
 
-        <div className="flex gap-3 mt-8">
+        <div className="flex gap-3 mt-6">
           {step > 1 && (
             <Button
               variant="outline"
