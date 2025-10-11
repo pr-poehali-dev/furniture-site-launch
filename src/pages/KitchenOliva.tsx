@@ -89,7 +89,7 @@ const KitchenOliva = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-4 text-[#474931]">
-              Пряная "Олива"
+              Пряная Олива
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 mb-2 leading-relaxed">
@@ -151,7 +151,7 @@ const KitchenOliva = () => {
         <Card className="mb-12">
           <CardContent className="p-6 md:p-10">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#474931]">
-              Особенности кухни "Олива"
+              Особенности кухни Пряная Олива
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6">
@@ -194,7 +194,7 @@ const KitchenOliva = () => {
                   Бонус при заказе!
                 </h3>
                 <p className="text-lg text-gray-700 mb-6 md:text-left text-center">
-                  При заказе кухни "Олива" дарим премиум набор органайзеров<br />для специй и сыпучих продуктов
+                  При заказе кухни Пряная Олива дарим премиум набор органайзеров<br />для специй и сыпучих продуктов
                 </p>
                 <Button 
                   size="lg"

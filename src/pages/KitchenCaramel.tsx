@@ -89,7 +89,7 @@ const KitchenCaramel = () => {
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-4 text-[#474931]">
-              "Тающая карамель"
+              Тающая карамель
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 mb-2 leading-relaxed">
