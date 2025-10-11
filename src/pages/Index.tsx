@@ -111,7 +111,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -145,7 +145,7 @@ const Index = () => {
         </div>
       </header>
 
-      <section id="главная" className="pt-32 pb-20 px-4">
+      <section id="главная" className="pt-32 pb-20 px-4 bg-[#E8DDD3]">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
@@ -192,7 +192,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="о-нас" className="py-20 px-4">
+      <section id="о-нас" className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-12">О нас</h2>
           
@@ -288,7 +288,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="каталог" className="py-20 px-4">
+      <section id="каталог" className="py-20 px-4 bg-[#D4A574]">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Каталог мебели</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
@@ -339,10 +339,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="этапы-работы" className="py-20 px-4">
+      <section id="этапы-работы" className="py-20 px-4 bg-[#5F6D6B]">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4">Как мы работаем</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-white">Как мы работаем</h2>
+          <p className="text-center text-white/90 mb-16 text-lg max-w-2xl mx-auto">
             От замера до полной сборки — каждый этап продуман для вашего удобства
           </p>
 
@@ -353,7 +353,7 @@ const Index = () => {
                 className="relative animate-fade-in"
                 style={{ animationDelay: `${idx * 100}ms` }}
               >
-                <Card className="h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-t-primary">
+                <Card className="h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-t-primary bg-white">
                   <CardContent className="p-6 flex flex-col h-full">
                     <div className="flex items-center justify-center w-14 h-14 bg-primary rounded-full text-white font-bold text-xl mb-4 mx-auto shadow-lg">
                       {idx + 1}
@@ -383,9 +383,9 @@ const Index = () => {
             ))}
           </div>
 
-          <Card className="max-w-6xl mx-auto shadow-xl bg-gradient-to-r from-primary/5 to-primary/10">
+          <Card className="max-w-6xl mx-auto shadow-xl bg-white">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-8 text-center">Почему выбирают нас</h3>
+              <h3 className="text-2xl font-bold mb-8 text-center text-gray-900">Почему выбирают нас</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-6 text-center">
@@ -455,7 +455,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="калькулятор" className="py-20 px-4">
+      <section id="калькулятор" className="py-20 px-4 bg-[#E8DDD3]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-4">Калькулятор стоимости</h2>
           <p className="text-center text-muted-foreground mb-12">
@@ -503,7 +503,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="контакты" className="py-20 px-4">
+      <section id="контакты" className="py-20 px-4 bg-[#E8DDD3]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-12">Контакты</h2>
           
