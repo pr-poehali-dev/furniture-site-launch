@@ -375,7 +375,7 @@ const Index = () => {
                         <Icon name={step.icon as any} size={32} className="text-primary" />
                       </div>
                     </div>
-                    <h3 className="text-lg font-bold mb-3 text-center text-black">{step.title}</h3>
+                    <h3 className="text-lg font-bold mb-3 text-center text-black whitespace-nowrap">{step.title}</h3>
                     <div className="text-center mb-4">
                       <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold">
                         {step.time}
