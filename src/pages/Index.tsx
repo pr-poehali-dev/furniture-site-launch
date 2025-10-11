@@ -176,16 +176,26 @@ const Index = () => {
             </div>
             
             <div className="relative animate-scale-in">
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1556912167-f556f1f39faa?w=800&h=800&fit=crop"
+                  src="https://cdn.poehali.dev/files/a1f8e927-882f-4e25-b734-b7ed77bd9f48.jpg"
                   alt="Мебель"
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm p-3 rounded-lg shadow-lg">
+                  <img 
+                    src="https://cdn.poehali.dev/files/9718af21-0c22-4cb5-bf92-f1740fa73509.png" 
+                    alt="По Местам!" 
+                    className="h-12 w-12"
+                  />
+                </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-xl shadow-xl">
-                <div className="text-3xl font-bold">15+</div>
-                <div className="text-sm">лет на рынке</div>
+              <div className="absolute -bottom-6 -right-6 bg-[#5F6D6B] text-white p-6 rounded-xl shadow-xl flex items-center gap-3">
+                <Icon name="ShieldCheck" size={32} className="text-green-400" />
+                <div>
+                  <div className="text-sm font-semibold">Проверенный</div>
+                  <div className="text-sm font-semibold">исполнитель</div>
+                </div>
               </div>
             </div>
           </div>
