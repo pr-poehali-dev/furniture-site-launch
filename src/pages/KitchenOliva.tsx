@@ -28,8 +28,8 @@ const KitchenOliva = () => {
   ];
 
   const features = [
-    { icon: 'Palette', title: 'Цветовая гамма', text: 'Оливковый низ + белый верх' },
-    { icon: 'Box', title: 'Материалы', text: 'ЛДСП Egger премиум-класса' },
+    { icon: 'Palette', title: 'Цветовая гамма', text: 'Оливковый+белый+древесный' },
+    { icon: 'Box', title: 'Материалы', text: 'ЛДСП Egger, МДФ в Эмали' },
     { icon: 'Hammer', title: 'Столешница', text: 'Искусственный камень' },
     { icon: 'Lightbulb', title: 'Освещение', text: 'LED-подсветка полок' },
     { icon: 'Package', title: 'Техника', text: 'Встроенная Electrolux' },
