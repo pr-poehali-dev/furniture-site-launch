@@ -437,8 +437,8 @@ const Index = () => {
                     <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                       <Icon name="Wrench" size={28} className="text-primary" />
                     </div>
-                    <h4 className="font-bold mb-2">Постгарантийное</h4>
-                    <p className="text-sm text-muted-foreground">обслуживание</p>
+                    <h4 className="font-bold mb-2">Постгарантийное обслуживание</h4>
+                    <p className="text-sm text-muted-foreground">Всегда поможем</p>
                   </CardContent>
                 </Card>
 
