@@ -121,7 +121,7 @@ const Index = () => {
                 alt="По Местам!" 
                 className="h-16 w-16"
               />
-              <span className="text-2xl font-semibold text-primary tracking-wide">ПО МЕСТАМ!</span>
+              <span className="text-3xl font-semibold text-primary tracking-wide">ПО МЕСТАМ!</span>
             </div>
             
             <nav className="hidden md:flex gap-6">
@@ -129,7 +129,7 @@ const Index = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
-                  className="text-foreground hover:text-primary transition-colors font-medium relative group"
+                  className="text-foreground hover:text-primary transition-colors font-medium relative group text-lg"
                 >
                   {item}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -154,13 +154,13 @@ const Index = () => {
                 кто ценит <span className="text-primary">стиль</span><br />
                 и <span className="text-primary">качество</span>
               </h1>
-              <p className="text-xl text-[#7E7C56] mb-10 leading-relaxed">
+              <p className="text-2xl text-[#7E7C56] mb-10 leading-relaxed">
                 Мы не просто ставим мебель. Мы расставляем всё по местам для вашего комфорта: от нижних шкафов до верхних полок, создавая безупречную эргономику.
               </p>
               <div className="flex gap-5">
                 <Button 
                   size="lg" 
-                  className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all px-8 py-6 text-base"
+                  className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all px-8 py-7 text-lg"
                   onClick={() => scrollToSection('калькулятор')}
                 >
                   Рассчитать стоимость
@@ -168,7 +168,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-[#7E7C56] text-[#7E7C56] hover:bg-[#7E7C56] hover:text-white transition-all px-8 py-6 text-base"
+                  className="border-2 border-[#7E7C56] text-[#7E7C56] hover:bg-[#7E7C56] hover:text-white transition-all px-8 py-7 text-lg"
                   onClick={() => scrollToSection('каталог')}
                 >
                   Смотреть каталог
