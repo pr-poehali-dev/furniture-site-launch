@@ -476,7 +476,70 @@ const Index = () => {
           </p>
 
           <div className="grid md:grid-cols-5 gap-6">
-            {/* Карточки будут добавлены после получения картинок */}
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/652129ad-5045-40a4-9927-f0ef9c488fe2.jpg"
+                  alt="Организация для кухни"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg">
+                  Для кухни
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/def4ece3-07fa-4572-aff9-f28b85253525.jpg"
+                  alt="Организация для шкафов"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg">
+                  Для шкафов
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/568a41fc-0181-4d86-bb7b-1a5244eecc01.jpg"
+                  alt="Организация для детских"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg">
+                  Для детских
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/c9c4b421-84c7-40c7-871b-2d9626b6bc97.jpg"
+                  alt="Организация для прихожих"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg">
+                  Для прихожих
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/4520e25d-e2c9-4d43-8c11-9d2aab7e0d35.jpg"
+                  alt="Организация для ванной"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg">
+                  Для ванной
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
