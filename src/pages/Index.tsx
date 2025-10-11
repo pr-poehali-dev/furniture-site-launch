@@ -182,12 +182,13 @@ const Index = () => {
                   alt="Мебель"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm p-3 rounded-lg shadow-lg">
+                <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-lg shadow-lg flex items-center gap-3">
                   <img 
                     src="https://cdn.poehali.dev/files/9718af21-0c22-4cb5-bf92-f1740fa73509.png" 
                     alt="По Местам!" 
-                    className="h-12 w-12"
+                    className="h-16 w-16"
                   />
+                  <span className="text-xl font-bold text-primary whitespace-nowrap">ПО МЕСТАМ!</span>
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 bg-[#5F6D6B] text-white p-6 rounded-xl shadow-xl flex items-center gap-3">
