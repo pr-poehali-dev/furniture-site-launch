@@ -92,10 +92,13 @@ const KitchenOliva = () => {
               Стильная "Олива"
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-700 mb-2 leading-relaxed">
               Элегантное сочетание оливковых нижних фасадов и белых верхних шкафов. 
               Фасады пеналов с текстурой дуба, столешница из искусственного камня, 
               премиум-фурнитура и встроенная подсветка создают атмосферу современного комфорта.
+            </p>
+            <p className="text-sm text-gray-600 mb-6 italic">
+              * Данный проект можно менять под ваши предпочтения
             </p>
 
             <div className="bg-gradient-to-br from-primary to-orange-600 text-white p-6 md:p-8 rounded-2xl mb-8 shadow-xl">
