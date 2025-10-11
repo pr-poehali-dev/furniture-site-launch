@@ -145,7 +145,7 @@ const Index = () => {
         </div>
       </header>
 
-      <section id="главная" className="pt-32 pb-20 px-4 bg-gradient-to-br from-slate-50 to-stone-100">
+      <section id="главная" className="pt-32 pb-20 px-4 bg-[#F9F8F4]">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
@@ -190,8 +190,8 @@ const Index = () => {
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-[#5F6D6B] text-white p-6 rounded-xl shadow-xl flex items-center gap-3">
-                <Icon name="ShieldCheck" size={32} className="text-green-400" />
+              <div className="absolute -bottom-6 -right-6 bg-[#7E7C56] text-white p-6 rounded-xl shadow-xl flex items-center gap-3">
+                <Icon name="ShieldCheck" size={32} className="text-[#C79747]" />
                 <div>
                   <div className="text-sm font-semibold">Проверенный</div>
                   <div className="text-sm font-semibold">исполнитель</div>
@@ -202,7 +202,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="о-нас" className="py-20 px-4 bg-white">
+      <section id="о-нас" className="py-20 px-4 bg-[#EEECE0]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-12">О нас</h2>
           
@@ -277,7 +277,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#F9F8F4]">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
@@ -298,7 +298,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="каталог" className="py-20 px-4 bg-stone-100">
+      <section id="каталог" className="py-20 px-4 bg-white">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Каталог мебели</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
@@ -349,7 +349,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="этапы-работы" className="py-20 px-4 bg-slate-800">
+      <section id="этапы-работы" className="py-20 px-4 bg-[#7E7C56]">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-white">Как мы работаем</h2>
           <p className="text-center text-white/90 mb-16 text-lg max-w-2xl mx-auto">
@@ -465,7 +465,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="калькулятор" className="py-20 px-4 bg-white">
+      <section id="калькулятор" className="py-20 px-4 bg-[#F9F8F4]">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-4">Калькулятор стоимости</h2>
           <p className="text-center text-muted-foreground mb-12">
@@ -513,9 +513,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="контакты" className="py-20 px-4 bg-slate-50">
+      <section id="контакты" className="py-20 px-4 bg-[#474931]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12">Контакты</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-white">Контакты</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center">
