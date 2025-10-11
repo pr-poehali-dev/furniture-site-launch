@@ -123,8 +123,7 @@ const KitchenOliva = () => {
                 </Button>
                 <Button 
                   size="lg"
-                  variant="outline"
-                  className="border-2 border-white text-white hover:bg-white/10 flex-1"
+                  className="bg-white text-primary hover:bg-white/90 flex-1"
                 >
                   <Icon name="Phone" size={20} className="mr-2" />
                   Позвонить
