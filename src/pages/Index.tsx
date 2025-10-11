@@ -19,7 +19,7 @@ const Index = () => {
 
   const categories = [
     { id: 'kitchen', name: 'Кухни', icon: 'ChefHat' },
-    { id: 'wardrobe', name: 'Шкафы', icon: 'Shirt' },
+    { id: 'wardrobe', name: 'Шкафы и Гардеробные', icon: 'Shirt' },
     { id: 'kids', name: 'Детские', icon: 'Baby' },
     { id: 'hallway', name: 'Прихожие', icon: 'DoorOpen' },
     { id: 'bathroom', name: 'Мебель для ванной', icon: 'Bath' }
