@@ -169,7 +169,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-[#7E7C56] text-[#7E7C56] hover:bg-[#7E7C56] hover:text-white transition-all px-6 py-4 text-lg font-semibold"
+                  className="border-2 border-[#A5A383] text-[#A5A383] hover:bg-[#A5A383] hover:text-white transition-all px-6 py-4 text-lg font-semibold"
                   onClick={() => scrollToSection('каталог')}
                 >
                   Смотреть каталог
@@ -304,7 +304,7 @@ const Index = () => {
       <section id="каталог" className="py-24 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-4xl font-bold text-center mb-6 text-[#474931]">Каталог мебели</h2>
-          <p className="text-center text-[#7E7C56] mb-16 text-lg">
+          <p className="text-center text-[#A5A383] mb-16 text-lg">
             Выберите категорию и ознакомьтесь с нашими работами
           </p>
 
@@ -352,7 +352,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="этапы-работы" className="py-12 px-4 bg-[#7E7C56]">
+      <section id="этапы-работы" className="py-12 px-4 bg-[#A5A383]">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-white">Как мы работаем</h2>
           <p className="text-center text-white/90 mb-8 text-xl max-w-3xl mx-auto font-medium">
