@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
+import KitchenCalculator from '@/components/KitchenCalculator';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -335,86 +336,49 @@ const Index = () => {
       </section>
 
       <section id="калькулятор" className="py-20 px-4">
-        <div className="container mx-auto max-w-2xl">
+        <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-4">Калькулятор стоимости</h2>
           <p className="text-center text-muted-foreground mb-12">
-            Укажите параметры мебели для предварительного расчёта
+            Ответьте на несколько вопросов, и мы рассчитаем стоимость вашей мебели
           </p>
 
-          <Card className="shadow-xl">
-            <CardContent className="p-8">
-              <div className="space-y-6">
-                <div>
-                  <Label htmlFor="category" className="text-base mb-3 block">Категория мебели</Label>
-                  <select
-                    id="category"
-                    className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-primary"
-                    value={calculatorData.category}
-                    onChange={(e) => setCalculatorData({...calculatorData, category: e.target.value})}
-                  >
-                    {categories.map((cat) => (
-                      <option key={cat.id} value={cat.id}>{cat.name}</option>
-                    ))}
-                  </select>
-                </div>
+          <Tabs defaultValue="kitchen" className="w-full">
+            <TabsList className="grid w-full grid-cols-5 mb-8">
+              {categories.map((cat) => (
+                <TabsTrigger 
+                  key={cat.id} 
+                  value={cat.id}
+                  className="data-[state=active]:bg-primary data-[state=active]:text-white"
+                >
+                  {cat.name}
+                </TabsTrigger>
+              ))}
+            </TabsList>
 
-                <div className="grid grid-cols-3 gap-4">
-                  <div>
-                    <Label htmlFor="width" className="text-base mb-2 block">Ширина (см)</Label>
-                    <Input
-                      id="width"
-                      type="number"
-                      placeholder="200"
-                      value={calculatorData.width}
-                      onChange={(e) => setCalculatorData({...calculatorData, width: e.target.value})}
-                      className="text-lg p-3"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="height" className="text-base mb-2 block">Высота (см)</Label>
-                    <Input
-                      id="height"
-                      type="number"
-                      placeholder="220"
-                      value={calculatorData.height}
-                      onChange={(e) => setCalculatorData({...calculatorData, height: e.target.value})}
-                      className="text-lg p-3"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="depth" className="text-base mb-2 block">Глубина (см)</Label>
-                    <Input
-                      id="depth"
-                      type="number"
-                      placeholder="60"
-                      value={calculatorData.depth}
-                      onChange={(e) => setCalculatorData({...calculatorData, depth: e.target.value})}
-                      className="text-lg p-3"
-                    />
-                  </div>
-                </div>
+            <TabsContent value="kitchen">
+              <KitchenCalculator onComplete={(data) => console.log('Данные кухни:', data)} />
+            </TabsContent>
 
-                {calculatorData.width && calculatorData.height && calculatorData.depth && (
-                  <div className="bg-primary/10 p-6 rounded-lg animate-scale-in">
-                    <div className="flex items-center justify-between">
-                      <span className="text-lg font-semibold">Примерная стоимость:</span>
-                      <span className="text-3xl font-bold text-primary">
-                        {calculatePrice().toLocaleString('ru-RU')} ₽
-                      </span>
+            {['wardrobe', 'kids', 'hallway', 'bathroom'].map((cat) => (
+              <TabsContent key={cat} value={cat}>
+                <Card className="shadow-xl">
+                  <CardContent className="p-8">
+                    <div className="text-center py-12">
+                      <Icon name="Wrench" size={48} className="mx-auto mb-4 text-primary" />
+                      <h3 className="text-2xl font-bold mb-4">Калькулятор в разработке</h3>
+                      <p className="text-muted-foreground mb-6">
+                        Для расчёта стоимости этой категории мебели свяжитесь с нами напрямую
+                      </p>
+                      <Button className="bg-primary hover:bg-primary/90">
+                        <Icon name="Phone" size={18} className="mr-2" />
+                        Позвонить специалисту
+                      </Button>
                     </div>
-                    <p className="text-sm text-muted-foreground mt-2">
-                      * Итоговая цена зависит от материалов и комплектации
-                    </p>
-                  </div>
-                )}
-
-                <Button className="w-full bg-primary hover:bg-primary/90 text-lg py-6">
-                  <Icon name="MessageCircle" size={20} className="mr-2" />
-                  Получить точный расчёт
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+            ))}
+          </Tabs>
         </div>
       </section>
 
