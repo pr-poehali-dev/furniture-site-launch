@@ -149,13 +149,13 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
-              <h1 className="text-6xl md:text-8xl font-light mb-8 leading-tight text-black">
+              <h1 className="text-5xl md:text-7xl font-light mb-8 leading-tight text-[#474931]">
                 Корпусная мебель для тех,<br />
                 кто ценит <span className="text-primary">стиль</span><br />
                 и <span className="text-primary">качество</span>
               </h1>
-              <p className="text-3xl text-black mb-10 leading-relaxed font-medium">
-                Мы не просто ставим мебель. Мы расставляем всё по местам для вашего комфорта: от нижних шкафов до верхних полок, создавая безупречную эргономику.
+              <p className="text-2xl text-[#7E7C56] mb-10 leading-relaxed">
+                Мы не просто ставим мебель. Мы расставляем всё по местам для вашего комфорта: от нижних шкафов до верхних полок, создавая безупречную эргonomику.
               </p>
               <div className="flex gap-5">
                 <Button 
