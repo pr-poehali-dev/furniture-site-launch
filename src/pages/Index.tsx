@@ -596,15 +596,15 @@ const Index = () => {
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`p-2 md:p-4 rounded-lg border-2 transition-all ${
+                className={`p-2 md:p-4 rounded-lg border-2 transition-all flex flex-col items-center ${
                   selectedCategory === cat.id
                     ? 'bg-primary text-white border-primary'
                     : 'bg-white border-gray-200 hover:border-primary/50'
                 }`}
               >
-                <Icon name={cat.icon as any} size={16} className="mx-auto mb-1 md:hidden" />
-                <Icon name={cat.icon as any} size={20} className="mx-auto mb-2 hidden md:block" />
-                <span className="text-[10px] md:text-sm">{cat.name}</span>
+                <Icon name={cat.icon as any} size={16} className="mb-1 md:hidden flex-shrink-0" />
+                <Icon name={cat.icon as any} size={20} className="mb-2 hidden md:block flex-shrink-0" />
+                <span className="text-[10px] md:text-sm leading-tight text-center">{cat.name}</span>
               </button>
             ))}
           </div>
