@@ -185,8 +185,8 @@ const KitchenOliva = () => {
 
         <Card className="bg-gradient-to-br from-primary/5 to-orange-50 border-primary/20">
           <CardContent className="p-6 md:p-10">
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-              <div className="order-2 md:order-1">
+            <div className="flex flex-col md:flex-row gap-6 items-center">
+              <div className="flex-1">
                 <Icon name="Gift" size={48} className="mb-4 text-primary md:mx-0 mx-auto" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#474931] md:text-left text-center">
                   Бонус при заказе!
@@ -208,7 +208,7 @@ const KitchenOliva = () => {
                   Заказать со скидкой
                 </Button>
               </div>
-              <div className="order-1 md:order-2">
+              <div className="w-full md:w-80 flex-shrink-0">
                 <img 
                   src="https://cdn.poehali.dev/files/b2bce252-7c0f-4c78-b272-d3e817aa6428.jpg"
                   alt="Органайзеры для специй"
