@@ -115,13 +115,13 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <img 
                 src="https://cdn.poehali.dev/files/9718af21-0c22-4cb5-bf92-f1740fa73509.png" 
                 alt="По Местам!" 
-                className="h-12 w-12"
+                className="h-16 w-16"
               />
-              <span className="text-2xl font-bold text-primary">ПО МЕСТАМ!</span>
+              <span className="text-3xl font-bold text-primary">ПО МЕСТАМ!</span>
             </div>
             
             <nav className="hidden md:flex gap-6">
