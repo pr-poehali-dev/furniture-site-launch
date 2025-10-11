@@ -157,7 +157,7 @@ const Index = () => {
               <p className="text-2xl text-black mb-10 leading-relaxed font-bold" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
                 Мы не просто ставим мебель. Мы расставляем всё по местам для вашего комфорта: от нижних шкафов до верхних полок, создавая безупречную эргономику.
               </p>
-              <div className="flex gap-5">
+              <div className="flex flex-col md:flex-row gap-5">
                 <Button 
                   size="lg" 
                   className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all px-10 py-8 text-2xl font-semibold"
@@ -191,11 +191,11 @@ const Index = () => {
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-emerald-800 text-white p-8 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.25)] flex items-center gap-4">
-                <Icon name="ShieldCheck" size={40} className="text-white" />
+              <div className="absolute -bottom-4 -right-4 bg-emerald-800 text-white p-4 rounded-xl shadow-[0_15px_40px_rgba(0,0,0,0.25)] flex items-center gap-3">
+                <Icon name="ShieldCheck" size={28} className="text-white" />
                 <div>
-                  <div className="text-xl font-bold">Проверенный</div>
-                  <div className="text-xl font-bold">исполнитель</div>
+                  <div className="text-sm font-bold">Проверенный</div>
+                  <div className="text-sm font-bold">исполнитель</div>
                 </div>
               </div>
             </div>
