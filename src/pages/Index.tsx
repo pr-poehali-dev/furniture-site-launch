@@ -129,7 +129,7 @@ const Index = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
-                  className="text-foreground hover:text-primary transition-colors font-medium relative group text-lg"
+                  className="text-foreground hover:text-primary transition-colors font-semibold relative group text-xl"
                 >
                   {item}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -137,8 +137,8 @@ const Index = () => {
               ))}
             </nav>
 
-            <Button className="bg-primary hover:bg-primary/90">
-              <Icon name="Phone" size={18} className="mr-2" />
+            <Button className="bg-primary hover:bg-primary/90 text-xl font-semibold px-8 py-6">
+              <Icon name="Phone" size={22} className="mr-2" />
               Звонок
             </Button>
           </div>
