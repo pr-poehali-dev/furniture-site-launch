@@ -190,8 +190,8 @@ const Index = () => {
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-[#7E7C56] text-white p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.25)] flex items-center gap-3">
-                <Icon name="ShieldCheck" size={32} className="text-[#C79747]" />
+              <div className="absolute -bottom-6 -right-6 bg-emerald-600 text-white p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.25)] flex items-center gap-3">
+                <Icon name="ShieldCheck" size={32} className="text-white" />
                 <div>
                   <div className="text-sm font-semibold">Проверенный</div>
                   <div className="text-sm font-semibold">исполнитель</div>
