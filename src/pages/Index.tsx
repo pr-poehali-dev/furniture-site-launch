@@ -157,10 +157,10 @@ const Index = () => {
               <p className="text-2xl text-black mb-10 leading-relaxed font-bold" style={{ fontFamily: '"Cormorant Garamond", serif' }}>
                 Мы не просто ставим мебель. Мы расставляем всё по местам для вашего комфорта: от нижних шкафов до верхних полок, создавая безупречную эргономику.
               </p>
-              <div className="flex flex-col md:flex-row gap-5">
+              <div className="flex flex-col md:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all px-10 py-8 text-2xl font-semibold w-full md:w-auto whitespace-nowrap"
+                  className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all px-6 py-4 text-lg font-semibold"
                   onClick={() => scrollToSection('калькулятор')}
                 >
                   Рассчитать стоимость
@@ -168,7 +168,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-[#7E7C56] text-[#7E7C56] hover:bg-[#7E7C56] hover:text-white transition-all px-10 py-8 text-2xl font-semibold w-full md:w-auto whitespace-nowrap"
+                  className="border-2 border-[#7E7C56] text-[#7E7C56] hover:bg-[#7E7C56] hover:text-white transition-all px-6 py-4 text-lg font-semibold"
                   onClick={() => scrollToSection('каталог')}
                 >
                   Смотреть каталог
