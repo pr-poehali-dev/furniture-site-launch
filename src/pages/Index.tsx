@@ -66,6 +66,13 @@ const Index = () => {
         description: 'Уютное сочетание белых классических фасадов с медовыми деревянными шкафами. Столешница из массива дуба, бежевый фартук кабанчик.',
         link: '/kitchen/honey'
       },
+      { 
+        name: 'Нежный Миндаль', 
+        price: 'от 175 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/585c182c-5548-42a2-af38-a57163d02fe2.png',
+        description: 'Минималистичная кухня в миндальных тонах. Закругленные белые фасады без ручек, деревянные ниши, мраморная столешница и остров.',
+        link: '/kitchen/almond'
+      },
       { name: 'Кухня Модерн', price: '89 000 ₽', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop' },
       { name: 'Кухня Классика', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop' }
     ],
