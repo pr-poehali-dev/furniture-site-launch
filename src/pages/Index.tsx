@@ -39,11 +39,18 @@ const Index = () => {
         link: '/kitchen/oliva'
       },
       { 
-        name: 'Кухня "Воздушный зефир"', 
+        name: '"Воздушный зефир"', 
         price: 'от 135 000 ₽', 
         image: 'https://cdn.poehali.dev/files/d65e0e32-8c5f-4bb3-8a64-c4c5800f99a8.png',
         description: 'Идеальный минимализм. Белоснежные матовые фасады без ручек, светлая столешница, встроенная техника премиум-класса.',
         link: '/kitchen/snow'
+      },
+      { 
+        name: '"Тающая карамель"', 
+        price: 'от 155 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/23fb84e3-dfd3-4ae4-9c11-14a8ca467e8c.png',
+        description: 'Элегантное сочетание бежевых и карамельных тонов. Современный дизайн с трековым освещением и витринами с подсветкой.',
+        link: '/kitchen/caramel'
       },
       { name: 'Кухня "Модерн"', price: '89 000 ₽', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop' },
       { name: 'Кухня "Классика"', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop' }
