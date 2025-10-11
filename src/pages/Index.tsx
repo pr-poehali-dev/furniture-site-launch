@@ -264,75 +264,78 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="этапы-работы" className="py-20 px-4 bg-muted">
+      <section id="этапы-работы" className="py-20 px-4 bg-gradient-to-b from-white to-muted">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Как мы работаем</h2>
           <p className="text-center text-muted-foreground mb-16 text-lg max-w-2xl mx-auto">
             От замера до полной сборки — каждый этап продуман для вашего удобства
           </p>
 
-          <div className="max-w-5xl mx-auto relative">
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-primary/20 -translate-x-1/2" />
-            
+          <div className="grid md:grid-cols-5 gap-4 mb-12">
             {workSteps.map((step, idx) => (
               <div 
                 key={idx} 
-                className={`relative mb-12 md:mb-20 last:mb-0 animate-fade-in`}
+                className="relative animate-fade-in"
                 style={{ animationDelay: `${idx * 100}ms` }}
               >
-                <div className={`md:flex items-center gap-8 ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                  <div className={`md:w-1/2 ${idx % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                    <Card className="shadow-lg hover:shadow-xl transition-shadow">
-                      <CardContent className="p-6">
-                        <div className="flex items-start gap-4 mb-4">
-                          <div className="bg-primary/10 p-3 rounded-lg">
-                            <Icon name={step.icon as any} size={28} className="text-primary" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-2xl font-bold mb-2">{step.title}</h3>
-                            <div className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">
-                              {step.time}
-                            </div>
-                          </div>
-                        </div>
-                        <p className="text-muted-foreground leading-relaxed">
-                          {step.description}
-                        </p>
-                      </CardContent>
-                    </Card>
+                <Card className="h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-t-primary">
+                  <CardContent className="p-6 flex flex-col h-full">
+                    <div className="flex items-center justify-center w-14 h-14 bg-primary rounded-full text-white font-bold text-xl mb-4 mx-auto shadow-lg">
+                      {idx + 1}
+                    </div>
+                    <div className="flex items-center justify-center mb-4">
+                      <div className="bg-primary/10 p-4 rounded-full">
+                        <Icon name={step.icon as any} size={32} className="text-primary" />
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-bold mb-3 text-center">{step.title}</h3>
+                    <div className="text-center mb-4">
+                      <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">
+                        {step.time}
+                      </span>
+                    </div>
+                    <p className="text-sm text-muted-foreground text-center leading-relaxed flex-grow">
+                      {step.description}
+                    </p>
+                  </CardContent>
+                </Card>
+                {idx < workSteps.length - 1 && (
+                  <div className="hidden md:block absolute top-1/4 -right-2 w-4 h-4 z-10">
+                    <Icon name="ChevronRight" size={16} className="text-primary" />
                   </div>
-
-                  <div className="hidden md:flex w-16 h-16 bg-primary rounded-full items-center justify-center text-white font-bold text-xl shadow-lg z-10 flex-shrink-0">
-                    {idx + 1}
-                  </div>
-
-                  <div className="md:w-1/2" />
-                </div>
+                )}
               </div>
             ))}
           </div>
 
-          <div className="mt-16 text-center">
-            <Card className="max-w-3xl mx-auto shadow-lg">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Общий срок изготовления</h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div>
-                    <div className="text-4xl font-bold text-primary mb-2">2-5</div>
-                    <div className="text-muted-foreground">недель</div>
+          <Card className="max-w-5xl mx-auto shadow-xl bg-gradient-to-r from-primary/5 to-primary/10">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold mb-8 text-center">Почему выбирают нас</h3>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
+                    <div className="text-4xl font-bold text-primary">2-5</div>
                   </div>
-                  <div>
-                    <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                    <div className="text-muted-foreground">проектов</div>
-                  </div>
-                  <div>
-                    <div className="text-4xl font-bold text-primary mb-2">1 мм</div>
-                    <div className="text-muted-foreground">точность</div>
-                  </div>
+                  <div className="font-semibold mb-1">недель</div>
+                  <div className="text-sm text-muted-foreground">Общий срок изготовления</div>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+                <div className="text-center">
+                  <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
+                    <div className="text-4xl font-bold text-primary">500+</div>
+                  </div>
+                  <div className="font-semibold mb-1">проектов</div>
+                  <div className="text-sm text-muted-foreground">Реализовано за 15 лет</div>
+                </div>
+                <div className="text-center">
+                  <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
+                    <div className="text-4xl font-bold text-primary">1 мм</div>
+                  </div>
+                  <div className="font-semibold mb-1">точность</div>
+                  <div className="text-sm text-muted-foreground">Распил на современном оборудовании</div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
