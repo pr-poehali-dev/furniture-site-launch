@@ -32,7 +32,7 @@ const Index = () => {
   const products = {
     kitchen: [
       { 
-        name: 'Стильная "Олива"', 
+        name: 'Пряная "Олива"', 
         price: 'от 145 000 ₽', 
         image: 'https://cdn.poehali.dev/files/d0c03c80-2de5-404c-9969-52bc86e9a6c2.jpg',
         description: 'Элегантное сочетание оливковых нижних фасадов и белых верхних шкафов. Пеналы из ЛДСП Egger, мраморный фартук, премиум-фурнитура.',
