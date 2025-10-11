@@ -121,7 +121,7 @@ const Index = () => {
                 alt="По Местам!" 
                 className="h-16 w-16"
               />
-              <span className="text-2xl font-bold text-primary tracking-wide" style={{ fontFamily: 'Montserrat, sans-serif' }}>ПО МЕСТАМ!</span>
+              <span className="text-2xl font-semibold text-primary tracking-wide">ПО МЕСТАМ!</span>
             </div>
             
             <nav className="hidden md:flex gap-6">
@@ -149,9 +149,10 @@ const Index = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
-              <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-[#474931]">
-                Корпусная мебель<br />
-                <span className="text-primary">на заказ</span>
+              <h1 className="text-5xl md:text-7xl font-light mb-8 leading-tight text-[#474931]">
+                Корпусная мебель для тех,<br />
+                кто ценит <span className="text-primary">стиль</span><br />
+                и <span className="text-primary">качество</span>
               </h1>
               <p className="text-xl text-[#7E7C56] mb-10 leading-relaxed">
                 Мы не просто ставим мебель. Мы расставляем всё по местам для вашего комфорта: от нижних шкафов до верхних полок, создавая безупречную эргономику.
