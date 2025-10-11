@@ -125,7 +125,7 @@ const Index = () => {
             </div>
             
             <nav className="hidden md:flex gap-6">
-              {['Главная', 'Каталог', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
+              {['Главная', 'Каталог', 'Этапы работы', 'О нас', 'Калькулятор', 'Контакты'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
@@ -339,6 +339,81 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="о-нас" className="py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-4xl font-bold text-center mb-12">О нас</h2>
+          
+          <div className="space-y-8">
+            <Card className="border-none shadow-lg">
+              <CardContent className="p-8">
+                <p className="text-xl text-center leading-relaxed text-muted-foreground mb-8">
+                  Зачем нужна мебель? Чтобы спрятать вещи? Нет. Ее настоящая задача — освободить энергию пространства и направить ее на вдохновение своих хозяев.
+                </p>
+                
+                <div className="text-center mb-10">
+                  <h3 className="text-3xl font-bold text-primary mb-4">
+                    «По Местам!» — это не просто название. Это наше обещание.
+                  </h3>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Ruler" size={32} className="text-primary" />
+                    </div>
+                    <h4 className="text-xl font-bold mb-3">Четкость</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      В линиях, конструкциях и организации процесса. От эскиза до сборки — все продумано до мелочей.
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Users" size={32} className="text-primary" />
+                    </div>
+                    <h4 className="text-xl font-bold mb-3">Слаженность</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      В работе нашей команды дизайнеров, инженеров и сборщиков. И, конечно, в том, как наши предметы взаимодействуют друг с другом в вашем интерьере.
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Zap" size={32} className="text-primary" />
+                    </div>
+                    <h4 className="text-xl font-bold mb-3">Заряд</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Который получает ваше пространство. Мы создаем мебель, которая мотивирует, организует и дает мощный импульс для новых свершений.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="text-center">
+              <Card className="bg-gradient-to-r from-primary to-primary/80 text-white border-none shadow-xl">
+                <CardContent className="py-10">
+                  <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                    Пора навести порядок!
+                  </h3>
+                  <p className="text-2xl md:text-3xl font-bold">
+                    Командуйте - По Местам!
+                  </p>
+                  <Button 
+                    size="lg" 
+                    className="mt-6 bg-white text-primary hover:bg-gray-100"
+                    onClick={() => scrollToSection('калькулятор')}
+                  >
+                    <Icon name="Calculator" size={20} className="mr-2" />
+                    Рассчитать стоимость
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="калькулятор" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-4">Калькулятор стоимости</h2>
@@ -453,7 +528,7 @@ const Index = () => {
             <div>
               <h4 className="font-bold mb-4">Навигация</h4>
               <div className="space-y-2">
-                {['Главная', 'Каталог', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
+                {['Главная', 'Каталог', 'Этапы работы', 'О нас', 'Калькулятор', 'Контакты'].map((item) => (
                   <button
                     key={item}
                     onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
