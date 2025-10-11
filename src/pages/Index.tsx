@@ -73,6 +73,13 @@ const Index = () => {
         description: 'Минималистичная кухня в миндальных тонах. Закругленные белые фасады без ручек, деревянные ниши, мраморная столешница и остров.',
         link: '/kitchen/almond'
       },
+      { 
+        name: 'Дымчатый Виски', 
+        price: 'от 185 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/95704a6a-0455-4d72-b076-32b865557e49.png',
+        description: 'Брутальная кухня в темных тонах. Дымчатые серые фасады, черный мрамор с золотыми прожилками, витрина с подсветкой.',
+        link: '/kitchen/whiskey'
+      },
       { name: 'Кухня Модерн', price: '89 000 ₽', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop' },
       { name: 'Кухня Классика', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop' }
     ],
