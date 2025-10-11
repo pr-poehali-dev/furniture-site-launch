@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -8,6 +9,7 @@ import Icon from '@/components/ui/icon';
 import KitchenCalculator from '@/components/KitchenCalculator';
 
 const Index = () => {
+  const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('home');
   const [selectedCategory, setSelectedCategory] = useState('kitchen');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -447,7 +449,15 @@ const Index = () => {
               <TabsContent key={cat.id} value={cat.id} className="animate-fade-in">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                   {products[cat.id as keyof typeof products].map((product, idx) => (
-                    <Card key={idx} className="overflow-hidden hover:shadow-xl transition-shadow group">
+                    <Card 
+                      key={idx} 
+                      className="overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer"
+                      onClick={() => {
+                        if (product.name === 'Стильная "Олива"') {
+                          navigate('/kitchen/oliva');
+                        }
+                      }}
+                    >
                       <div className="aspect-[3/2] overflow-hidden">
                         <img 
                           src={product.image} 
@@ -462,8 +472,17 @@ const Index = () => {
                         )}
                         <div className="flex items-center justify-between">
                           <span className="text-lg md:text-xl font-bold text-primary">{product.price}</span>
-                          <Button size="sm" className="bg-primary hover:bg-primary/90 text-xs md:text-sm">
-                            Заказать
+                          <Button 
+                            size="sm" 
+                            className="bg-primary hover:bg-primary/90 text-xs md:text-sm"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (product.name === 'Стильная "Олива"') {
+                                navigate('/kitchen/oliva');
+                              }
+                            }}
+                          >
+                            {product.name === 'Стильная "Олива"' ? 'Подробнее' : 'Заказать'}
                           </Button>
                         </div>
                       </CardContent>
