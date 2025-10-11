@@ -191,11 +191,11 @@ const Index = () => {
                   />
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-emerald-800 text-white p-6 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.25)] flex items-center gap-3">
-                <Icon name="ShieldCheck" size={32} className="text-white" />
+              <div className="absolute -bottom-6 -right-6 bg-emerald-800 text-white p-8 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.25)] flex items-center gap-4">
+                <Icon name="ShieldCheck" size={40} className="text-white" />
                 <div>
-                  <div className="text-sm font-semibold">Проверенный</div>
-                  <div className="text-sm font-semibold">исполнитель</div>
+                  <div className="text-xl font-bold">Проверенный</div>
+                  <div className="text-xl font-bold">исполнитель</div>
                 </div>
               </div>
             </div>
@@ -290,9 +290,9 @@ const Index = () => {
             ].map((item, idx) => (
               <Card key={idx} className="border-none shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 rounded-2xl bg-white">
                 <CardContent className="pt-8 pb-6">
-                  <Icon name={item.icon as any} size={48} className="mx-auto mb-5 text-[#C79747]" />
-                  <h3 className="font-bold mb-2 text-[#474931] text-xl">{item.title}</h3>
-                  <p className="text-base text-[#7E7C56]">{item.desc}</p>
+                  <Icon name={item.icon as any} size={56} className="mx-auto mb-6 text-[#C79747]" />
+                  <h3 className="font-bold mb-3 text-black text-2xl">{item.title}</h3>
+                  <p className="text-lg text-black font-medium">{item.desc}</p>
                 </CardContent>
               </Card>
             ))}
