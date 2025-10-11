@@ -117,10 +117,11 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <img 
-                src="https://cdn.poehali.dev/files/696ca0f0-1699-49f9-85f0-5d19a3e4c54d.png" 
+                src="https://cdn.poehali.dev/files/9718af21-0c22-4cb5-bf92-f1740fa73509.png" 
                 alt="По Местам!" 
-                className="h-16 w-auto"
+                className="h-16 w-16"
               />
+              <span className="text-2xl font-semibold text-primary tracking-wide">ПО МЕСТАМ!</span>
             </div>
             
             <nav className="hidden md:flex gap-6">
