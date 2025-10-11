@@ -35,7 +35,7 @@ const Index = () => {
         name: 'Стильная "Олива"', 
         price: 'от 145 000 ₽', 
         image: 'https://cdn.poehali.dev/files/d0c03c80-2de5-404c-9969-52bc86e9a6c2.jpg',
-        description: 'Элегантное сочетание оливковых нижних фасадов и белых верхних шкафов. Натуральное дерево, мраморный фартук, премиум-фурнитура.'
+        description: 'Элегантное сочетание оливковых нижних фасадов и белых верхних шкафов. Пеналы из ЛДСП Egger, мраморный фартук, премиум-фурнитура.'
       },
       { name: 'Кухня "Модерн"', price: '89 000 ₽', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop' },
       { name: 'Кухня "Классика"', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop' },
