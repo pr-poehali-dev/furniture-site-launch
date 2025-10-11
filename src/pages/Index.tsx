@@ -209,13 +209,13 @@ const Index = () => {
           
           <div className="space-y-6">
             <Card className="border-none shadow-[0_10px_40px_rgba(0,0,0,0.08)] rounded-3xl bg-white/80 backdrop-blur-sm">
-              <CardContent className="p-10">
-                <p className="text-3xl text-center leading-relaxed text-gray-900 mb-8">
+              <CardContent className="p-8">
+                <p className="text-2xl text-center leading-relaxed text-gray-900 mb-6">
                   Зачем нужна мебель? Чтобы спрятать вещи? Нет. Ее настоящая задача — освободить энергию пространства и направить ее на вдохновение своих хозяев.
                 </p>
                 
-                <div className="text-center mb-10">
-                  <h3 className="text-4xl md:text-5xl font-semibold text-primary mb-4">
+                <div className="text-center mb-6">
+                  <h3 className="text-3xl md:text-4xl font-semibold text-primary mb-3">
                     «По Местам!» — это не просто название. Это наше обещание.
                   </h3>
                 </div>
@@ -225,8 +225,8 @@ const Index = () => {
                     <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                       <Icon name="Ruler" size={32} className="text-primary" />
                     </div>
-                    <h4 className="text-2xl font-bold mb-3 text-gray-900">Четкость</h4>
-                    <p className="text-xl text-gray-900 leading-relaxed">
+                    <h4 className="text-xl font-bold mb-2 text-gray-900">Четкость</h4>
+                    <p className="text-lg text-gray-900 leading-relaxed">
                       В линиях, конструкциях и организации процесса. От эскиза до сборки — все продумано до мелочей.
                     </p>
                   </div>
@@ -235,8 +235,8 @@ const Index = () => {
                     <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                       <Icon name="Users" size={32} className="text-primary" />
                     </div>
-                    <h4 className="text-2xl font-bold mb-3 text-gray-900">Слаженность</h4>
-                    <p className="text-xl text-gray-900 leading-relaxed">
+                    <h4 className="text-xl font-bold mb-2 text-gray-900">Слаженность</h4>
+                    <p className="text-lg text-gray-900 leading-relaxed">
                       В работе нашей команды дизайнеров, инженеров и сборщиков. И, конечно, в том, как наши предметы взаимодействуют друг с другом в вашем интерьере.
                     </p>
                   </div>
@@ -245,8 +245,8 @@ const Index = () => {
                     <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                       <Icon name="Zap" size={32} className="text-primary" />
                     </div>
-                    <h4 className="text-2xl font-bold mb-3 text-gray-900">Заряд</h4>
-                    <p className="text-xl text-gray-900 leading-relaxed">
+                    <h4 className="text-xl font-bold mb-2 text-gray-900">Заряд</h4>
+                    <p className="text-lg text-gray-900 leading-relaxed">
                       Который получает ваше пространство. Мы создаем мебель, которая мотивирует, организует и дает мощный импульс для новых свершений.
                     </p>
                   </div>
