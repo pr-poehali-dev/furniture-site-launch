@@ -154,8 +154,8 @@ const Index = () => {
                 кто ценит <span className="text-primary">стиль</span><br />
                 и <span className="text-primary">качество</span>
               </h1>
-              <p className="text-2xl text-[#7E7C56] mb-10 leading-relaxed">
-                Мы не просто ставим мебель. Мы расставляем всё по местам для вашего комфорта: от нижних шкафов до верхних полок, создавая безупречную эргonomику.
+              <p className="text-2xl text-black mb-10 leading-relaxed font-bold">
+                Мы не просто ставим мебель. Мы расставляем всё по местам для вашего комфорта: от нижних шкафов до верхних полок, создавая безупречную эргономику.
               </p>
               <div className="flex gap-5">
                 <Button 
