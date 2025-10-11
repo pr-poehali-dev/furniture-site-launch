@@ -283,10 +283,10 @@ const Index = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-4 gap-6 text-center">
             {[
-              { icon: 'Award', title: 'Гарантия 2 года', desc: 'Первоклассные специалисты' },
-              { icon: 'Ruler', title: 'Точные размеры', desc: 'Замер бесплатно' },
-              { icon: 'Truck', title: 'Доставка', desc: 'Бережная доставка' },
-              { icon: 'Wrench', title: 'Сборка', desc: 'Профессиональная сборка' }
+              { icon: 'Award', title: 'Гарантия 2 года', desc: 'На всю продукцию' },
+              { icon: 'Users', title: 'Первоклассные специалисты', desc: 'Опытная команда' },
+              { icon: 'Truck', title: 'Бережная доставка', desc: 'По всему городу' },
+              { icon: 'Wrench', title: 'Профессиональная сборка', desc: 'Качественный монтаж' }
             ].map((item, idx) => (
               <Card key={idx} className="border-none shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 rounded-2xl bg-white">
                 <CardContent className="pt-8 pb-6">
