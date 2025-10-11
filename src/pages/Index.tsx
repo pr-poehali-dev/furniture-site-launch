@@ -233,7 +233,7 @@ const Index = () => {
                   alt="Организация для шкафов"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg">
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
                   Для шкафов
                 </div>
               </div>
@@ -246,7 +246,7 @@ const Index = () => {
                   alt="Организация для детских"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg">
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
                   Для детских
                 </div>
               </div>
@@ -259,7 +259,7 @@ const Index = () => {
                   alt="Организация для прихожих"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg">
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
                   Для прихожих
                 </div>
               </div>
@@ -272,7 +272,7 @@ const Index = () => {
                   alt="Организация для ванной"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg">
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
                   Для ванной
                 </div>
               </div>
