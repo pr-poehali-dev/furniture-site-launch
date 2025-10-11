@@ -320,7 +320,7 @@ const KitchenCalculator = ({ onComplete }: KitchenCalculatorProps) => {
                   <div className="flex items-start gap-2">
                     <Icon name="Info" size={20} className="text-primary mt-0.5" />
                     <p className="text-sm text-muted-foreground">
-                      Наш специалист свяжется с вами в течение 30 минут и отправит 
+                      Наш специалист свяжется с вами в течение дня и отправит 
                       подробный расчёт стоимости вашей кухни
                     </p>
                   </div>
