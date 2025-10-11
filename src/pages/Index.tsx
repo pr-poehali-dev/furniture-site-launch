@@ -154,6 +154,7 @@ const Index = () => {
               <Icon name="Phone" size={22} className="mr-2 hidden md:block" />
               <span className="hidden md:inline">Звонок</span>
             </Button>
+            </div>
           </div>
         </div>
 
