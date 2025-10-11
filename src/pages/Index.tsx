@@ -52,6 +52,13 @@ const Index = () => {
         description: 'Элегантное сочетание бежевых и карамельных тонов. Современный дизайн с трековым освещением и витринами с подсветкой.',
         link: '/kitchen/caramel'
       },
+      { 
+        name: 'Игристое Шампанское', 
+        price: 'от 165 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/115b8b2f-e7a6-40fa-80ba-5faec267adf3.png',
+        description: 'Изысканное сочетание шампань и серых оттенков. Барная стойка с рифленой текстурой, мраморный остров и дизайнерские светильники.',
+        link: '/kitchen/champagne'
+      },
       { name: 'Кухня Модерн', price: '89 000 ₽', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop' },
       { name: 'Кухня Классика', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop' }
     ],
