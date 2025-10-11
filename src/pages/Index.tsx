@@ -11,6 +11,7 @@ const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [selectedCategory, setSelectedCategory] = useState('kitchen');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [budgetPriority, setBudgetPriority] = useState<string>('');
   const [calculatorData, setCalculatorData] = useState({
     width: '',
     height: '',
@@ -615,18 +616,47 @@ const Index = () => {
           {selectedCategory !== 'kitchen' && (
             <Card className="shadow-xl">
               <CardContent className="p-4 md:p-8">
-                <div className="text-center py-8 md:py-12">
-                  <Icon name="Wrench" size={36} className="mx-auto mb-3 text-primary md:hidden" />
-                  <Icon name="Wrench" size={48} className="mx-auto mb-4 text-primary hidden md:block" />
-                  <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">Калькулятор в разработке</h3>
-                  <p className="text-muted-foreground mb-4 md:mb-6 text-sm md:text-base">
-                    Для расчёта стоимости этой категории мебели свяжитесь с нами напрямую
-                  </p>
-                  <Button className="bg-primary hover:bg-primary/90">
-                    <Icon name="Phone" size={18} className="mr-2" />
-                    Позвонить специалисту
-                  </Button>
-                </div>
+                {!budgetPriority ? (
+                  <div className="space-y-4">
+                    <h3 className="text-lg md:text-xl font-bold mb-4 text-center">Мы можем делать мебель от эконом до премиум сегмента. Какой приоритет у Вас?</h3>
+                    <div className="space-y-3">
+                      {[
+                        { id: 'premium', label: 'Как можно премиальнее (Максимально дорогая фурнитура и материалы)' },
+                        { id: 'cheap', label: 'Как можно дешевле (Максимально дешевый материал, даже там, где экономия вредит надежности и удобству)' },
+                        { id: 'optimal', label: 'ЦЕНА-КАЧЕСТВО' },
+                        { id: 'unrealistic', label: 'Чтоб было красиво, удобно, надежно, дешево и как можно быстрее :)' },
+                        { id: 'consultation', label: 'Затрудняюсь ответить, нужна консультация' }
+                      ].map((option) => (
+                        <button
+                          key={option.id}
+                          onClick={() => setBudgetPriority(option.id)}
+                          className="w-full text-left p-4 border-2 border-gray-200 rounded-lg hover:border-primary hover:bg-primary/5 transition-all"
+                        >
+                          <p className="text-sm md:text-base font-medium">{option.label}</p>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="text-center py-8 md:py-12">
+                    <Icon name="Wrench" size={36} className="mx-auto mb-3 text-primary md:hidden" />
+                    <Icon name="Wrench" size={48} className="mx-auto mb-4 text-primary hidden md:block" />
+                    <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">Калькулятор в разработке</h3>
+                    <p className="text-muted-foreground mb-4 md:mb-6 text-sm md:text-base">
+                      Для расчёта стоимости этой категории мебели свяжитесь с нами напрямую
+                    </p>
+                    <div className="flex gap-3 justify-center">
+                      <Button className="bg-primary hover:bg-primary/90" onClick={() => setBudgetPriority('')}>
+                        <Icon name="ArrowLeft" size={18} className="mr-2" />
+                        Назад
+                      </Button>
+                      <Button className="bg-primary hover:bg-primary/90">
+                        <Icon name="Phone" size={18} className="mr-2" />
+                        Позвонить специалисту
+                      </Button>
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           )}
