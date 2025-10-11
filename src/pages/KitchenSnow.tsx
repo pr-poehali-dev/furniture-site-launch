@@ -85,7 +85,7 @@ const KitchenSnow = () => {
 
           <div>
             <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Премиум-серия
+              Оптимал-серия
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold mb-4 text-[#474931]">
