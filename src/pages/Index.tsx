@@ -383,31 +383,72 @@ const Index = () => {
             ))}
           </div>
 
-          <Card className="max-w-5xl mx-auto shadow-xl bg-gradient-to-r from-primary/5 to-primary/10">
+          <Card className="max-w-6xl mx-auto shadow-xl bg-gradient-to-r from-primary/5 to-primary/10">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-8 text-center">Почему выбирают нас</h3>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
-                    <div className="text-4xl font-bold text-primary">2-5</div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6 text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Heart" size={28} className="text-primary" />
+                    </div>
+                    <h4 className="font-bold mb-2">Заинтересованы в вас</h4>
+                    <p className="text-sm text-muted-foreground">также, как в самих себе</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow relative overflow-hidden">
+                  <div className="absolute top-2 right-2 bg-primary text-white text-xs px-2 py-1 rounded-full font-semibold">
+                    ⚡ Скорость
                   </div>
-                  <div className="font-semibold mb-1">недель</div>
-                  <div className="text-sm text-muted-foreground">Общий срок изготовления</div>
-                </div>
-                <div className="text-center">
-                  <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
-                    <div className="text-4xl font-bold text-primary">500+</div>
-                  </div>
-                  <div className="font-semibold mb-1">проектов</div>
-                  <div className="text-sm text-muted-foreground">Реализовано за 15 лет</div>
-                </div>
-                <div className="text-center">
-                  <div className="bg-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 shadow-md">
-                    <div className="text-4xl font-bold text-primary">1 мм</div>
-                  </div>
-                  <div className="font-semibold mb-1">точность</div>
-                  <div className="text-sm text-muted-foreground">Распил на современном оборудовании</div>
-                </div>
+                  <CardContent className="p-6 text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Clock" size={28} className="text-primary" />
+                    </div>
+                    <h4 className="font-bold mb-2">Срок изготовления</h4>
+                    <p className="text-sm text-muted-foreground">от 1 до 4 недель</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6 text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Award" size={28} className="text-primary" />
+                    </div>
+                    <h4 className="font-bold mb-2">Гарантия 2 года</h4>
+                    <p className="text-sm text-muted-foreground">Мы уверенны в своем качестве</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6 text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Wrench" size={28} className="text-primary" />
+                    </div>
+                    <h4 className="font-bold mb-2">Постгарантийное</h4>
+                    <p className="text-sm text-muted-foreground">обслуживание</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6 text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="ShieldCheck" size={28} className="text-primary" />
+                    </div>
+                    <h4 className="font-bold mb-2">Всегда с вами</h4>
+                    <p className="text-sm text-muted-foreground">Никогда не оставим вас с проблемой одних</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border-none shadow-md hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6 text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="MessageCircle" size={28} className="text-primary" />
+                    </div>
+                    <h4 className="font-bold mb-2">Мы на связи</h4>
+                    <p className="text-sm text-muted-foreground">24/7</p>
+                  </CardContent>
+                </Card>
               </div>
             </CardContent>
           </Card>
