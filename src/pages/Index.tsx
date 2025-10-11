@@ -145,7 +145,7 @@ const Index = () => {
         </div>
       </header>
 
-      <section id="главная" className="pt-32 pb-20 px-4 bg-[#E8DDD3]">
+      <section id="главная" className="pt-32 pb-20 px-4 bg-gradient-to-br from-slate-50 to-stone-100">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
@@ -277,7 +277,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-muted">
+      <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
@@ -298,7 +298,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="каталог" className="py-20 px-4 bg-[#D4A574]">
+      <section id="каталог" className="py-20 px-4 bg-stone-100">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Каталог мебели</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
@@ -349,7 +349,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="этапы-работы" className="py-20 px-4 bg-[#5F6D6B]">
+      <section id="этапы-работы" className="py-20 px-4 bg-slate-800">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-white">Как мы работаем</h2>
           <p className="text-center text-white/90 mb-16 text-lg max-w-2xl mx-auto">
@@ -465,7 +465,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="калькулятор" className="py-20 px-4 bg-[#E8DDD3]">
+      <section id="калькулятор" className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-4">Калькулятор стоимости</h2>
           <p className="text-center text-muted-foreground mb-12">
@@ -513,7 +513,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="контакты" className="py-20 px-4 bg-[#E8DDD3]">
+      <section id="контакты" className="py-20 px-4 bg-slate-50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-12">Контакты</h2>
           
