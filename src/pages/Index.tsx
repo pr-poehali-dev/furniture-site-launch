@@ -35,11 +35,18 @@ const Index = () => {
         name: 'Стильная "Олива"', 
         price: 'от 145 000 ₽', 
         image: 'https://cdn.poehali.dev/files/d0c03c80-2de5-404c-9969-52bc86e9a6c2.jpg',
-        description: 'Элегантное сочетание оливковых нижних фасадов и белых верхних шкафов. Пеналы из ЛДСП Egger, мраморный фартук, премиум-фурнитура.'
+        description: 'Элегантное сочетание оливковых нижних фасадов и белых верхних шкафов. Пеналы из ЛДСП Egger, мраморный фартук, премиум-фурнитура.',
+        link: '/kitchen/oliva'
+      },
+      { 
+        name: 'Кухня "Чистый Снег"', 
+        price: 'от 135 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/d65e0e32-8c5f-4bb3-8a64-c4c5800f99a8.png',
+        description: 'Идеальный минимализм. Белоснежные матовые фасады без ручек, светлая столешница, встроенная техника премиум-класса.',
+        link: '/kitchen/snow'
       },
       { name: 'Кухня "Модерн"', price: '89 000 ₽', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop' },
-      { name: 'Кухня "Классика"', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop' },
-      { name: 'Кухня "Лофт"', price: '95 000 ₽', image: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&h=400&fit=crop' }
+      { name: 'Кухня "Классика"', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop' }
     ],
     wardrobe: [
       { name: 'Шкаф-купе 3-дверный', price: '65 000 ₽', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=400&fit=crop' },
@@ -453,8 +460,8 @@ const Index = () => {
                       key={idx} 
                       className="overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer"
                       onClick={() => {
-                        if (product.name === 'Стильная "Олива"') {
-                          navigate('/kitchen/oliva');
+                        if ((product as any).link) {
+                          navigate((product as any).link);
                         }
                       }}
                     >
@@ -477,12 +484,12 @@ const Index = () => {
                             className="bg-primary hover:bg-primary/90 text-xs md:text-sm"
                             onClick={(e) => {
                               e.stopPropagation();
-                              if (product.name === 'Стильная "Олива"') {
-                                navigate('/kitchen/oliva');
+                              if ((product as any).link) {
+                                navigate((product as any).link);
                               }
                             }}
                           >
-                            {product.name === 'Стильная "Олива"' ? 'Подробнее' : 'Заказать'}
+                            {(product as any).link ? 'Подробнее' : 'Заказать'}
                           </Button>
                         </div>
                       </CardContent>
