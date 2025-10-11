@@ -9,6 +9,7 @@ import KitchenCalculator from '@/components/KitchenCalculator';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [selectedCategory, setSelectedCategory] = useState('kitchen');
   const [calculatorData, setCalculatorData] = useState({
     width: '',
     height: '',
@@ -342,43 +343,44 @@ const Index = () => {
             Ответьте на несколько вопросов, и мы рассчитаем стоимость вашей мебели
           </p>
 
-          <Tabs defaultValue="kitchen" className="w-full">
-            <TabsList className="grid w-full grid-cols-5 mb-8">
-              {categories.map((cat) => (
-                <TabsTrigger 
-                  key={cat.id} 
-                  value={cat.id}
-                  className="data-[state=active]:bg-primary data-[state=active]:text-white"
-                >
-                  {cat.name}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-
-            <TabsContent value="kitchen">
-              <KitchenCalculator onComplete={(data) => console.log('Данные кухни:', data)} />
-            </TabsContent>
-
-            {['wardrobe', 'kids', 'hallway', 'bathroom'].map((cat) => (
-              <TabsContent key={cat} value={cat}>
-                <Card className="shadow-xl">
-                  <CardContent className="p-8">
-                    <div className="text-center py-12">
-                      <Icon name="Wrench" size={48} className="mx-auto mb-4 text-primary" />
-                      <h3 className="text-2xl font-bold mb-4">Калькулятор в разработке</h3>
-                      <p className="text-muted-foreground mb-6">
-                        Для расчёта стоимости этой категории мебели свяжитесь с нами напрямую
-                      </p>
-                      <Button className="bg-primary hover:bg-primary/90">
-                        <Icon name="Phone" size={18} className="mr-2" />
-                        Позвонить специалисту
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </TabsContent>
+          <div className="grid grid-cols-5 gap-2 mb-8">
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.id)}
+                className={`p-4 rounded-lg border-2 transition-all ${
+                  selectedCategory === cat.id
+                    ? 'bg-primary text-white border-primary'
+                    : 'bg-white border-gray-200 hover:border-primary/50'
+                }`}
+              >
+                <Icon name={cat.icon as any} size={20} className="mx-auto mb-2" />
+                <span className="text-xs md:text-sm">{cat.name}</span>
+              </button>
             ))}
-          </Tabs>
+          </div>
+
+          {selectedCategory === 'kitchen' && (
+            <KitchenCalculator onComplete={(data) => console.log('Данные кухни:', data)} />
+          )}
+
+          {selectedCategory !== 'kitchen' && (
+            <Card className="shadow-xl">
+              <CardContent className="p-8">
+                <div className="text-center py-12">
+                  <Icon name="Wrench" size={48} className="mx-auto mb-4 text-primary" />
+                  <h3 className="text-2xl font-bold mb-4">Калькулятор в разработке</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Для расчёта стоимости этой категории мебели свяжитесь с нами напрямую
+                  </p>
+                  <Button className="bg-primary hover:bg-primary/90">
+                    <Icon name="Phone" size={18} className="mr-2" />
+                    Позвонить специалисту
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          )}
         </div>
       </section>
 
