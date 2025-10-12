@@ -37,6 +37,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/f401c10f-8d7b-472d-871a-e5e936fcb206.png',
         description: 'Белоснежный остров и огромный обеденный стол — настоящий центр притяжения. Чёрные акценты добавляют характера.',
         link: '/kitchen/island'
+      },
+      { 
+        name: 'Мятная Свежесть', 
+        price: 'от 165 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/67e172e3-a2a1-485b-bc41-54b1ae520fcc.jpg',
+        description: 'Нежный фисташковый и белоснежный — тренд 2025! Деревянная столешница, витрина с подсветкой. Природная гармония.',
+        link: '/kitchen/mint'
       }
     ],
     wardrobe: [
