@@ -79,6 +79,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/89c84c38-a757-4178-84d6-7d8db7b94630.png',
         description: 'Серо-бежевая элегантность с золотыми люстрами. Выдвижные системы премиум, LED в каждом шкафу. Умная классика!',
         link: '/kitchen/modern-classic'
+      },
+      { 
+        name: 'Белое Золото', 
+        price: 'от 195 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/9c1a865b-f31e-4cae-b67b-8bd3d0a0321e.png',
+        description: 'Скандинавский минимализм с золотыми акцентами. Продуманные системы хранения, сушилки для посуды. Всё на своих местах!',
+        link: '/kitchen/white-gold'
       }
     ],
     wardrobe: [
