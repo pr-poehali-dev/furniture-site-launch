@@ -30,59 +30,7 @@ const Index = () => {
   ];
 
   const products = {
-    kitchen: [
-      { 
-        name: 'Пряная Олива', 
-        price: 'от 145 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/d0c03c80-2de5-404c-9969-52bc86e9a6c2.jpg',
-        description: 'Элегантное сочетание оливковых нижних фасадов и белых верхних шкафов. Пеналы из ЛДСП Egger, мраморный фартук, премиум-фурнитура.',
-        link: '/kitchen/oliva'
-      },
-      { 
-        name: 'Воздушный зефир', 
-        price: 'от 135 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/d65e0e32-8c5f-4bb3-8a64-c4c5800f99a8.png',
-        description: 'Идеальный минимализм. Белоснежные матовые фасады без ручек, светлая столешница, встроенная техника премиум-класса.',
-        link: '/kitchen/snow'
-      },
-      { 
-        name: 'Тающая карамель', 
-        price: 'от 155 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/23fb84e3-dfd3-4ae4-9c11-14a8ca467e8c.png',
-        description: 'Элегантное сочетание бежевых и карамельных тонов. Современный дизайн с трековым освещением и витринами с подсветкой.',
-        link: '/kitchen/caramel'
-      },
-      { 
-        name: 'Игристое Шампанское', 
-        price: 'от 165 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/115b8b2f-e7a6-40fa-80ba-5faec267adf3.png',
-        description: 'Изысканное сочетание шампань и серых оттенков. Барная стойка с рифленой текстурой, мраморный остров и дизайнерские светильники.',
-        link: '/kitchen/champagne'
-      },
-      { 
-        name: 'Цветочный Мёд', 
-        price: 'от 140 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/3959698a-c0ab-43ec-9556-924fb87d66de.png',
-        description: 'Уютное сочетание белых классических фасадов с медовыми деревянными шкафами. Столешница из массива дуба, бежевый фартук кабанчик.',
-        link: '/kitchen/honey'
-      },
-      { 
-        name: 'Нежный Миндаль', 
-        price: 'от 175 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/585c182c-5548-42a2-af38-a57163d02fe2.png',
-        description: 'Минималистичная кухня в миндальных тонах. Закругленные белые фасады без ручек, деревянные ниши, мраморная столешница и остров.',
-        link: '/kitchen/almond'
-      },
-      { 
-        name: 'Дымчатый Виски', 
-        price: 'от 185 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/95704a6a-0455-4d72-b076-32b865557e49.png',
-        description: 'Брутальная кухня в темных тонах. Дымчатые серые фасады, черный мрамор с золотыми прожилками, витрина с подсветкой.',
-        link: '/kitchen/whiskey'
-      },
-      { name: 'Кухня Модерн', price: '89 000 ₽', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop' },
-      { name: 'Кухня Классика', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=400&fit=crop' }
-    ],
+    kitchen: [],
     wardrobe: [
       { name: 'Шкаф-купе 3-дверный', price: '65 000 ₽', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=400&fit=crop' },
       { name: 'Шкаф распашной', price: '48 000 ₽', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
