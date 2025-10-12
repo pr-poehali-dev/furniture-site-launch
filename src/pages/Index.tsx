@@ -65,6 +65,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/390dba13-37d5-4e59-93b2-c62cd34877f7.png',
         description: 'Монохромная элегантность! Графит и белоснежные рифлёные панели, арочное освещение, стеклянная витрина. Сдержанная роскошь.',
         link: '/kitchen/graphite'
+      },
+      { 
+        name: 'Морской песок', 
+        price: 'от 235 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/b64016d7-c1f1-4ca6-93dd-d28449e01dac.png',
+        description: 'Акварельный фартук с серо-голубыми разводами и золотом. Витрина-музей для красивой посуды. Завтрак на «пять звёзд»!',
+        link: '/kitchen/sand'
       }
     ],
     wardrobe: [
