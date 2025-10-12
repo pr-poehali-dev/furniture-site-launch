@@ -51,6 +51,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/d266f22f-c602-4f96-bcc6-5c985f2aec3c.png',
         description: 'Премиум-класс! Глубокий сапфировый синий, золотой фартук, винотека для коллекции. Домашний винный бутик.',
         link: '/kitchen/sapphire'
+      },
+      { 
+        name: 'Графитовый Шик', 
+        price: 'от 245 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/390dba13-37d5-4e59-93b2-c62cd34877f7.png',
+        description: 'Монохромная элегантность! Графит и белоснежные рифлёные панели, арочное освещение, стеклянная витрина. Сдержанная роскошь.',
+        link: '/kitchen/graphite'
       }
     ],
     wardrobe: [
