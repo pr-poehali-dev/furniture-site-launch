@@ -86,6 +86,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/b64016d7-c1f1-4ca6-93dd-d28449e01dac.png',
         description: 'Акварельный фартук с серо-голубыми разводами и золотом. Витрина-музей для красивой посуды. Завтрак на «пять звёзд»!',
         link: '/kitchen/sand'
+      },
+      { 
+        name: 'Мраморная Волна', 
+        price: 'от 215 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/d676c13c-97fa-4498-a670-42f8d4dee382.png',
+        description: 'Белоснежные матовые фасады с мраморным фартуком. Push-to-open, встроенная сушилка, LED-подсветка. Компактная элегантность!',
+        link: '/kitchen/marble-wave'
       }
     ],
     wardrobe: [
