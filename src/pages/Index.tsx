@@ -67,6 +67,13 @@ const Index = () => {
         link: '/kitchen/graphite'
       },
       { 
+        name: 'Графитовый Остров', 
+        price: 'от 320 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/d0bf1be3-5f3e-4fcf-9639-311d5d93cb75.png',
+        description: 'Минимализм премиум с островом и винной стойкой. Техника Bosch, глянцевый черный фартук. Трековое LED!',
+        link: '/kitchen/graphite-island'
+      },
+      { 
         name: 'Городские Джунгли', 
         price: 'от 275 000 ₽', 
         image: 'https://cdn.poehali.dev/files/b60b6ebc-9285-400a-9ca5-16237ea0fe85.png',
