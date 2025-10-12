@@ -34,17 +34,32 @@ export default function KitchenClassicBeige() {
                 alt="Кухня Классический Беж - рабочая зона" 
                 className="w-full rounded-lg shadow-lg"
               />
-            </div>
-            
-            <div className="space-y-4">
               <img 
                 src="https://cdn.poehali.dev/files/fe8b2d5d-147b-4345-abb3-594a9aefe967.png" 
                 alt="Кухня Классический Беж - выдвижные ящики" 
                 className="w-full rounded-lg shadow-lg"
               />
               <img 
+                src="https://cdn.poehali.dev/files/6f025c1b-3007-48de-b224-ddfa884374a9.png" 
+                alt="Кухня Классический Беж - угловая часть" 
+                className="w-full rounded-lg shadow-lg"
+              />
+            </div>
+            
+            <div className="space-y-4">
+              <img 
                 src="https://cdn.poehali.dev/files/8273de32-ef90-444a-9e74-61720e649fb6.png" 
                 alt="Кухня Классический Беж - системы хранения" 
+                className="w-full rounded-lg shadow-lg"
+              />
+              <img 
+                src="https://cdn.poehali.dev/files/576b1608-8c7b-4fa1-ab0e-b6a166e44409.png" 
+                alt="Кухня Классический Беж - угловые ящики" 
+                className="w-full rounded-lg shadow-lg"
+              />
+              <img 
+                src="https://cdn.poehali.dev/files/4b8f5461-e0f2-431e-9ece-c79235f10433.png" 
+                alt="Кухня Классический Беж - встроенная техника" 
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
