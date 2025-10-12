@@ -67,11 +67,11 @@ const Index = () => {
         link: '/kitchen/graphite'
       },
       { 
-        name: 'Графитовый Остров', 
-        price: 'от 320 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/d0bf1be3-5f3e-4fcf-9639-311d5d93cb75.png',
-        description: 'Минимализм премиум с островом и винной стойкой. Техника Bosch, глянцевый черный фартук. Трековое LED!',
-        link: '/kitchen/graphite-island'
+        name: 'Современная Классика', 
+        price: 'от 255 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/89c84c38-a757-4178-84d6-7d8db7b94630.png',
+        description: 'Серо-бежевая элегантность с золотыми люстрами. Выдвижные системы премиум, LED в каждом шкафу. Умная классика!',
+        link: '/kitchen/modern-classic'
       },
       { 
         name: 'Городские Джунгли', 
@@ -81,11 +81,11 @@ const Index = () => {
         link: '/kitchen/urban-jungle'
       },
       { 
-        name: 'Современная Классика', 
-        price: 'от 255 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/89c84c38-a757-4178-84d6-7d8db7b94630.png',
-        description: 'Серо-бежевая элегантность с золотыми люстрами. Выдвижные системы премиум, LED в каждом шкафу. Умная классика!',
-        link: '/kitchen/modern-classic'
+        name: 'Графитовый Остров', 
+        price: 'от 320 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/d0bf1be3-5f3e-4fcf-9639-311d5d93cb75.png',
+        description: 'Минимализм премиум с островом и винной стойкой. Техника Bosch, глянцевый черный фартук. Трековое LED!',
+        link: '/kitchen/graphite-island'
       },
       { 
         name: 'Морской песок', 
