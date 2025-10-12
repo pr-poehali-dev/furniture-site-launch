@@ -72,6 +72,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/b64016d7-c1f1-4ca6-93dd-d28449e01dac.png',
         description: 'Акварельный фартук с серо-голубыми разводами и золотом. Витрина-музей для красивой посуды. Завтрак на «пять звёзд»!',
         link: '/kitchen/sand'
+      },
+      { 
+        name: 'Современная Классика', 
+        price: 'от 255 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/89c84c38-a757-4178-84d6-7d8db7b94630.png',
+        description: 'Серо-бежевая элегантность с золотыми люстрами. Выдвижные системы премиум, LED в каждом шкафу. Умная классика!',
+        link: '/kitchen/modern-classic'
       }
     ],
     wardrobe: [
