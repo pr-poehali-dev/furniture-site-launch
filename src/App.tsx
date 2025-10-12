@@ -18,7 +18,6 @@ import KitchenSapphire from "./pages/KitchenSapphire";
 import KitchenGraphite from "./pages/KitchenGraphite";
 import KitchenSand from "./pages/KitchenSand";
 import KitchenModernClassic from "./pages/KitchenModernClassic";
-import KitchenWhiteGold from "./pages/KitchenWhiteGold";
 import KitchenUrbanJungle from "./pages/KitchenUrbanJungle";
 import NotFound from "./pages/NotFound";
 
@@ -45,7 +44,6 @@ const App = () => (
           <Route path="/kitchen/graphite" element={<KitchenGraphite />} />
           <Route path="/kitchen/sand" element={<KitchenSand />} />
           <Route path="/kitchen/modern-classic" element={<KitchenModernClassic />} />
-          <Route path="/kitchen/white-gold" element={<KitchenWhiteGold />} />
           <Route path="/kitchen/urban-jungle" element={<KitchenUrbanJungle />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
