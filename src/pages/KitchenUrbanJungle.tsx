@@ -1,159 +1,199 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import { useNavigate } from 'react-router-dom';
 
-export default function KitchenUrbanJungle() {
+const KitchenUrbanJungle = () => {
+  const navigate = useNavigate();
+  const [selectedImage, setSelectedImage] = useState(0);
+
+  const images = [
+    {
+      url: 'https://cdn.poehali.dev/files/b60b6ebc-9285-400a-9ca5-16237ea0fe85.png',
+      alt: 'Общий вид кухни Урбан Джангл'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/0a3bbeff-84ae-4932-97d0-b0a6cf092371.png',
+      alt: 'Изумрудные фасады и барная стойка'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/1bbeb171-e28c-4b0c-bbba-6afc88591cab.png',
+      alt: 'Встроенная техника и витрина'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/9714cc0c-cffa-489a-be2c-53fc8e15e31a.png',
+      alt: 'Зона острова с живыми растениями'
+    }
+  ];
+
+  const features = [
+    { icon: 'Palette', title: 'Цветовая гамма', text: 'Изумруд+графит+дерево' },
+    { icon: 'Box', title: 'Материалы', text: 'МДФ матовая эмаль премиум' },
+    { icon: 'Hammer', title: 'Столешница', text: 'Темный камень с мрамором' },
+    { icon: 'Lightbulb', title: 'Освещение', text: 'Трековые светильники+LED' },
+    { icon: 'Package', title: 'Техника', text: 'Встроенная премиум-класса' },
+    { icon: 'Ruler', title: 'Размеры', text: 'Угловая + остров 5,2 м' }
+  ];
+
   return (
-    <div className="min-h-screen bg-background">
-      <header className="border-b">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 text-2xl font-bold text-primary hover:opacity-80 transition-opacity">
-            <Icon name="ChefHat" size={32} />
-            <span>КухниПро</span>
-          </Link>
-          <Link to="/" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+    <div className="min-h-screen bg-[#F9F8F4]">
+      <div className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <Button 
+            variant="ghost" 
+            onClick={() => navigate('/')}
+            className="gap-2"
+          >
             <Icon name="ArrowLeft" size={20} />
             Назад к каталогу
-          </Link>
+          </Button>
         </div>
-      </header>
+      </div>
 
-      <main className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Городские Джунгли</h1>
-          <p className="text-xl text-muted-foreground mb-8">Изумрудные фасады с графитовым гарнитуром. Для тех, кто ценит природу и стиль!</p>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="space-y-4">
-              <img 
-                src="https://cdn.poehali.dev/files/b60b6ebc-9285-400a-9ca5-16237ea0fe85.png" 
-                alt="Кухня Городские Джунгли - вид 1" 
-                className="w-full rounded-lg shadow-lg"
-              />
-              <img 
-                src="https://cdn.poehali.dev/files/0a3bbeff-84ae-4932-97d0-b0a6cf092371.png" 
-                alt="Кухня Городские Джунгли - вид 2" 
-                className="w-full rounded-lg shadow-lg"
-              />
-            </div>
-            
-            <div className="space-y-4">
-              <img 
-                src="https://cdn.poehali.dev/files/1bbeb171-e28c-4b0c-bbba-6afc88591cab.png" 
-                alt="Кухня Городские Джунгли - вид 3" 
-                className="w-full rounded-lg shadow-lg"
-              />
-              <img 
-                src="https://cdn.poehali.dev/files/9714cc0c-cffa-489a-be2c-53fc8e15e31a.png" 
-                alt="Кухня Городские Джунгли - вид 4" 
-                className="w-full rounded-lg shadow-lg"
-              />
-            </div>
+          <div className="mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 text-[#2C3E2C]">Урбан Джангл</h1>
+            <p className="text-lg text-gray-600">Изумрудная элегантность с островом. Живые растения и мраморная столешница!</p>
           </div>
 
-          <div className="bg-card rounded-lg p-8 shadow-lg mb-8">
-            <div className="flex items-center justify-between mb-6">
-              <div>
-                <h2 className="text-3xl font-bold">от 275 000 ₽</h2>
-                <p className="text-muted-foreground">Цена под ключ с установкой</p>
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            <div>
+              <div className="mb-4 rounded-lg overflow-hidden shadow-lg bg-white">
+                <img 
+                  src={images[selectedImage].url}
+                  alt={images[selectedImage].alt}
+                  className="w-full h-[400px] object-cover"
+                />
               </div>
-              <button className="bg-primary text-primary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity">
-                Заказать расчёт
-              </button>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-card rounded-lg p-6 shadow">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-lg">
-                  <Icon name="Palette" size={24} className="text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Дизайн</h3>
-                  <p className="text-muted-foreground">Изумрудные матовые фасады с глубокими чёрными панелями. Столешница из тёмного камня с эффектом мрамора. Трековое освещение и встроенная LED-подсветка создают атмосферу.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-card rounded-lg p-6 shadow">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-lg">
-                  <Icon name="Lightbulb" size={24} className="text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Особенности</h3>
-                  <p className="text-muted-foreground">Витрина со стеклянными полками для посуды. Деревянная зона острова с барной стойкой. Много зелени — живые растения в деревянных кашпо. Система push-to-open.</p>
-                </div>
+              <div className="grid grid-cols-4 gap-2">
+                {images.map((img, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setSelectedImage(idx)}
+                    className={`rounded-lg overflow-hidden border-2 transition-all ${
+                      selectedImage === idx ? 'border-[#2C5F2D] scale-95' : 'border-transparent hover:border-gray-300'
+                    }`}
+                  >
+                    <img 
+                      src={img.url}
+                      alt={img.alt}
+                      className="w-full h-20 object-cover"
+                    />
+                  </button>
+                ))}
               </div>
             </div>
 
-            <div className="bg-card rounded-lg p-6 shadow">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-lg">
-                  <Icon name="Package" size={24} className="text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Комплектация</h3>
-                  <p className="text-muted-foreground">Встроенная техника премиум-класса, духовой шкаф с микроволновкой, наклонная вытяжка, варочная панель 4 конфорки. Современный холодильник с дисплеем.</p>
-                </div>
-              </div>
-            </div>
+            <div>
+              <Card className="mb-6">
+                <CardContent className="p-6">
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-4xl font-bold text-[#2C5F2D]">275 000 ₽</span>
+                    <span className="text-gray-500">от</span>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-6">Цена под ключ с установкой</p>
+                  <div className="space-y-3">
+                    <Button className="w-full bg-[#2C5F2D] hover:bg-[#234a24] text-white">
+                      Заказать расчёт
+                    </Button>
+                    <Button variant="outline" className="w-full">
+                      Задать вопрос
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
 
-            <div className="bg-card rounded-lg p-6 shadow">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-lg">
-                  <Icon name="Ruler" size={24} className="text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Размеры</h3>
-                  <p className="text-muted-foreground">Угловая планировка с островом. Общая длина гарнитура 5,2 метра. Остров 2,4×1,2 метра с рабочей зоной и зоной отдыха. Высота шкафов до потолка — максимум хранения.</p>
-                </div>
+              <div className="grid grid-cols-2 gap-4">
+                {features.map((feature, idx) => (
+                  <Card key={idx}>
+                    <CardContent className="p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="bg-[#E8F5E9] p-2 rounded-lg">
+                          <Icon name={feature.icon as any} size={20} className="text-[#2C5F2D]" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-sm mb-1">{feature.title}</h3>
+                          <p className="text-xs text-gray-600">{feature.text}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </div>
           </div>
 
-          <div className="bg-primary/5 rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <Icon name="Sparkles" size={28} />
-              Почему эта кухня особенная?
-            </h2>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span>Сочетание природы и урбанистики — изумруд, графит, дерево и живые растения</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span>Многоуровневое освещение: трековые светильники, LED-подсветка, акцентный свет</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span>Остров с зоной готовки и барной стойкой — центр притяжения</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span>Витрина-галерея для красивой посуды — функционально и эстетично</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                <span>Мраморный пол и тёмная столешница — практично и элегантно</span>
-              </li>
-            </ul>
-          </div>
+          <Card className="mb-8">
+            <CardContent className="p-8">
+              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <Icon name="Sparkles" size={28} className="text-[#2C5F2D]" />
+                Особенности кухни
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="font-semibold mb-2 flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-[#2C5F2D]" />
+                    Дизайн и стиль
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Изумрудные матовые фасады в сочетании с глубокими черными панелями создают роскошный контраст. Деревянная зона острова с барной стойкой и живые растения в деревянных кашпо добавляют свежести и природной энергии.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2 flex items-center gap-2">
+                    <Icon name="Package" size={18} className="text-[#2C5F2D]" />
+                    Комплектация
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Встроенная премиум-техника: духовой шкаф, микроволновая печь, вытяжка и варочная панель. Витрина со стеклянными полками для красивой посуды. Push-to-open система открывания без ручек.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2 flex items-center gap-2">
+                    <Icon name="Lightbulb" size={18} className="text-[#2C5F2D]" />
+                    Освещение
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Современная система трековых светильников на потолке и встроенная LED-подсветка в витрине и под верхними шкафами. Многоуровневое освещение создаёт уютную атмосферу в любое время суток.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2 flex items-center gap-2">
+                    <Icon name="Ruler" size={18} className="text-[#2C5F2D]" />
+                    Планировка
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Угловая кухня с островом общей длиной 5,2 метра. Остров размером 2,4×1,2 м служит рабочей зоной и барной стойкой. Шкафы до потолка обеспечивают максимум места для хранения.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gradient-to-br from-[#E8F5E9] to-white border-[#2C5F2D]/20">
+            <CardContent className="p-8">
+              <div className="flex items-start gap-4">
+                <div className="bg-[#2C5F2D] p-3 rounded-full">
+                  <Icon name="Gift" size={24} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Бонус при заказе в этом месяце!</h3>
+                  <p className="text-gray-700 mb-4">
+                    Получите набор живых растений для вашей кухни в подарок + деревянные кашпо премиум-класса. Создайте атмосферу урбан-джунглей у себя дома!
+                  </p>
+                  <Button className="bg-[#2C5F2D] hover:bg-[#234a24]">
+                    Узнать подробнее
+                  </Button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
-      </main>
-
-      <footer className="bg-card border-t mt-16">
-        <div className="container mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-2 text-xl font-bold">
-              <Icon name="ChefHat" size={28} />
-              <span>КухниПро</span>
-            </div>
-            <p className="text-sm text-muted-foreground">© 2024 КухниПро. Кухни вашей мечты</p>
-          </div>
-        </div>
-      </footer>
+      </div>
     </div>
   );
-}
+};
+
+export default KitchenUrbanJungle;
