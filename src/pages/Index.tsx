@@ -88,6 +88,13 @@ const Index = () => {
         link: '/kitchen/graphite-island'
       },
       { 
+        name: 'Завораживающий Обсидиан', 
+        price: 'от 340 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/2c599069-0fcb-44b5-a269-0b943724bff1.png',
+        description: 'Черный мрамор с белыми прожилками на столешнице и фартуке. Дубовые фасады, рифленые панели, винный шкаф с подсветкой. Архитектурное освещение в потолке!',
+        link: '/kitchen/obsidian'
+      },
+      { 
         name: 'Морской песок', 
         price: 'от 235 000 ₽', 
         image: 'https://cdn.poehali.dev/files/b64016d7-c1f1-4ca6-93dd-d28449e01dac.png',
