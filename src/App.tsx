@@ -12,6 +12,7 @@ import KitchenChampagne from "./pages/KitchenChampagne";
 import KitchenHoney from "./pages/KitchenHoney";
 import KitchenAlmond from "./pages/KitchenAlmond";
 import KitchenWhiskey from "./pages/KitchenWhiskey";
+import KitchenIsland from "./pages/KitchenIsland";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/kitchen/honey" element={<KitchenHoney />} />
           <Route path="/kitchen/almond" element={<KitchenAlmond />} />
           <Route path="/kitchen/whiskey" element={<KitchenWhiskey />} />
+          <Route path="/kitchen/island" element={<KitchenIsland />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

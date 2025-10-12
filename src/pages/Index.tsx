@@ -30,7 +30,15 @@ const Index = () => {
   ];
 
   const products = {
-    kitchen: [],
+    kitchen: [
+      { 
+        name: 'Белоснежный Остров', 
+        price: 'от 195 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/f401c10f-8d7b-472d-871a-e5e936fcb206.png',
+        description: 'Белоснежный остров и огромный обеденный стол — настоящий центр притяжения. Чёрные акценты добавляют характера.',
+        link: '/kitchen/island'
+      }
+    ],
     wardrobe: [
       { name: 'Шкаф-купе 3-дверный', price: '65 000 ₽', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=400&fit=crop' },
       { name: 'Шкаф распашной', price: '48 000 ₽', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
