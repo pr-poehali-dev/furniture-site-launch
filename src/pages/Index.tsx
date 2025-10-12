@@ -44,6 +44,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/67e172e3-a2a1-485b-bc41-54b1ae520fcc.jpg',
         description: 'Нежный фисташковый и белоснежный — тренд 2025! Деревянная столешница, витрина с подсветкой. Природная гармония.',
         link: '/kitchen/mint'
+      },
+      { 
+        name: 'Синий Сапфир', 
+        price: 'от 215 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/d266f22f-c602-4f96-bcc6-5c985f2aec3c.png',
+        description: 'Премиум-класс! Глубокий сапфировый синий, золотой фартук, винотека для коллекции. Домашний винный бутик.',
+        link: '/kitchen/sapphire'
       }
     ],
     wardrobe: [
