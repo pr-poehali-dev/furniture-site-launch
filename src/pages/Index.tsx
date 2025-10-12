@@ -14,6 +14,13 @@ const Index = () => {
   const [selectedCategory, setSelectedCategory] = useState('kitchen');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [budgetPriority, setBudgetPriority] = useState<string>('');
+  const [currentPage, setCurrentPage] = useState<{[key: string]: number}>({
+    kitchen: 0,
+    wardrobe: 0,
+    kids: 0,
+    hallway: 0,
+    bathroom: 0
+  });
   const [calculatorData, setCalculatorData] = useState({
     width: '',
     height: '',
@@ -464,52 +471,112 @@ const Index = () => {
               ))}
             </TabsList>
 
-            {categories.map((cat) => (
-              <TabsContent key={cat.id} value={cat.id} className="animate-fade-in">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                  {products[cat.id as keyof typeof products].map((product, idx) => (
-                    <Card 
-                      key={idx} 
-                      className="overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer"
-                      onClick={() => {
-                        if ((product as any).link) {
-                          navigate((product as any).link);
-                        }
-                      }}
-                    >
-                      <div className="aspect-[3/2] overflow-hidden">
-                        <img 
-                          src={product.image} 
-                          alt={product.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
-                      </div>
-                      <CardContent className="p-4 md:p-6">
-                        <h3 className="font-bold text-base md:text-lg mb-2">{product.name}</h3>
-                        {(product as any).description && (
-                          <p className="text-xs md:text-sm text-muted-foreground mb-3">{(product as any).description}</p>
-                        )}
-                        <div className="flex items-center justify-between">
-                          <span className="text-lg md:text-xl font-bold text-primary">{product.price}</span>
-                          <Button 
-                            size="sm" 
-                            className="bg-primary hover:bg-primary/90 text-xs md:text-sm"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              if ((product as any).link) {
-                                navigate((product as any).link);
-                              }
-                            }}
-                          >
-                            {(product as any).link ? 'Подробнее' : 'Заказать'}
-                          </Button>
+            {categories.map((cat) => {
+              const categoryProducts = products[cat.id as keyof typeof products];
+              const itemsPerPage = 3;
+              const totalPages = Math.ceil(categoryProducts.length / itemsPerPage);
+              const currentCategoryPage = currentPage[cat.id] || 0;
+              const startIdx = currentCategoryPage * itemsPerPage;
+              const visibleProducts = categoryProducts.slice(startIdx, startIdx + itemsPerPage);
+
+              return (
+                <TabsContent key={cat.id} value={cat.id} className="animate-fade-in">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
+                    {visibleProducts.map((product, idx) => (
+                      <Card 
+                        key={startIdx + idx} 
+                        className="overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer"
+                        onClick={() => {
+                          if ((product as any).link) {
+                            navigate((product as any).link);
+                          }
+                        }}
+                      >
+                        <div className="aspect-[3/2] overflow-hidden">
+                          <img 
+                            src={product.image} 
+                            alt={product.name}
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          />
                         </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </TabsContent>
-            ))}
+                        <CardContent className="p-4 md:p-6">
+                          <h3 className="font-bold text-base md:text-lg mb-2">{product.name}</h3>
+                          {(product as any).description && (
+                            <p className="text-xs md:text-sm text-muted-foreground mb-3">{(product as any).description}</p>
+                          )}
+                          <div className="flex items-center justify-between">
+                            <span className="text-lg md:text-xl font-bold text-primary">{product.price}</span>
+                            <Button 
+                              size="sm" 
+                              className="bg-primary hover:bg-primary/90 text-xs md:text-sm"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                if ((product as any).link) {
+                                  navigate((product as any).link);
+                                }
+                              }}
+                            >
+                              {(product as any).link ? 'Подробнее' : 'Заказать'}
+                            </Button>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+
+                  {totalPages > 1 && (
+                    <div className="flex items-center justify-center gap-2 mt-6">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setCurrentPage(prev => ({
+                          ...prev,
+                          [cat.id]: Math.max(0, currentCategoryPage - 1)
+                        }))}
+                        disabled={currentCategoryPage === 0}
+                        className="gap-1"
+                      >
+                        <Icon name="ChevronLeft" size={16} />
+                        Назад
+                      </Button>
+                      
+                      <div className="flex gap-2">
+                        {Array.from({ length: totalPages }, (_, i) => (
+                          <button
+                            key={i}
+                            onClick={() => setCurrentPage(prev => ({
+                              ...prev,
+                              [cat.id]: i
+                            }))}
+                            className={`w-8 h-8 rounded-full transition-all ${
+                              currentCategoryPage === i
+                                ? 'bg-primary text-white'
+                                : 'bg-gray-200 hover:bg-gray-300 text-gray-700'
+                            }`}
+                          >
+                            {i + 1}
+                          </button>
+                        ))}
+                      </div>
+
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setCurrentPage(prev => ({
+                          ...prev,
+                          [cat.id]: Math.min(totalPages - 1, currentCategoryPage + 1)
+                        }))}
+                        disabled={currentCategoryPage === totalPages - 1}
+                        className="gap-1"
+                      >
+                        Вперёд
+                        <Icon name="ChevronRight" size={16} />
+                      </Button>
+                    </div>
+                  )}
+                </TabsContent>
+              );
+            })}
           </Tabs>
         </div>
       </section>
