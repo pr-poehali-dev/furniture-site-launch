@@ -67,11 +67,11 @@ const Index = () => {
         link: '/kitchen/graphite'
       },
       { 
-        name: 'Морской песок', 
-        price: 'от 235 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/b64016d7-c1f1-4ca6-93dd-d28449e01dac.png',
-        description: 'Акварельный фартук с серо-голубыми разводами и золотом. Витрина-музей для красивой посуды. Завтрак на «пять звёзд»!',
-        link: '/kitchen/sand'
+        name: 'Городские Джунгли', 
+        price: 'от 275 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/b60b6ebc-9285-400a-9ca5-16237ea0fe85.png',
+        description: 'Изумрудные фасады с чёрным гарнитуром. Трековое освещение, витрина для посуды, остров с барной стойкой. Природа встречается с урбанизмом!',
+        link: '/kitchen/urban-jungle'
       },
       { 
         name: 'Современная Классика', 
@@ -81,11 +81,11 @@ const Index = () => {
         link: '/kitchen/modern-classic'
       },
       { 
-        name: 'Городские Джунгли', 
-        price: 'от 275 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/b60b6ebc-9285-400a-9ca5-16237ea0fe85.png',
-        description: 'Изумрудные фасады с чёрным гарнитуром. Трековое освещение, витрина для посуды, остров с барной стойкой. Природа встречается с урбанизмом!',
-        link: '/kitchen/urban-jungle'
+        name: 'Морской песок', 
+        price: 'от 235 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/b64016d7-c1f1-4ca6-93dd-d28449e01dac.png',
+        description: 'Акварельный фартук с серо-голубыми разводами и золотом. Витрина-музей для красивой посуды. Завтрак на «пять звёзд»!',
+        link: '/kitchen/sand'
       }
     ],
     wardrobe: [
