@@ -93,6 +93,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/d676c13c-97fa-4498-a670-42f8d4dee382.png',
         description: 'Белоснежные матовые фасады с мраморным фартуком. Push-to-open, встроенная сушилка, LED-подсветка. Компактная элегантность!',
         link: '/kitchen/marble-wave'
+      },
+      { 
+        name: 'Классический Беж', 
+        price: 'от 245 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/82f0c0a0-4582-4381-9377-6e71b78a5ff5.png',
+        description: 'Элегантные рамочные фасады и изысканный геометрический фартук. Шкафы до потолка, встроенная Samsung. Классика премиум!',
+        link: '/kitchen/classic-beige'
       }
     ],
     wardrobe: [
