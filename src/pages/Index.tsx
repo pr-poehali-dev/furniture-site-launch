@@ -74,6 +74,13 @@ const Index = () => {
         link: '/kitchen/urban-jungle'
       },
       { 
+        name: 'Завораживающий Обсидиан', 
+        price: 'от 340 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/2c599069-0fcb-44b5-a269-0b943724bff1.png',
+        description: 'Черный мрамор с белыми прожилками на столешнице и фартуке. Дубовые фасады, рифленые панели, винный шкаф с подсветкой. Архитектурное освещение в потолке!',
+        link: '/kitchen/obsidian'
+      },
+      { 
         name: 'Современная Классика', 
         price: 'от 255 000 ₽', 
         image: 'https://cdn.poehali.dev/files/89c84c38-a757-4178-84d6-7d8db7b94630.png',
@@ -86,13 +93,6 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/d0bf1be3-5f3e-4fcf-9639-311d5d93cb75.png',
         description: 'Минимализм премиум с островом и винной стойкой. Техника Bosch, глянцевый черный фартук. Трековое LED!',
         link: '/kitchen/graphite-island'
-      },
-      { 
-        name: 'Завораживающий Обсидиан', 
-        price: 'от 340 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/2c599069-0fcb-44b5-a269-0b943724bff1.png',
-        description: 'Черный мрамор с белыми прожилками на столешнице и фартуке. Дубовые фасады, рифленые панели, винный шкаф с подсветкой. Архитектурное освещение в потолке!',
-        link: '/kitchen/obsidian'
       },
       { 
         name: 'Морской песок', 
