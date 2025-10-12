@@ -67,18 +67,18 @@ const Index = () => {
         link: '/kitchen/graphite'
       },
       { 
-        name: 'Современная Классика', 
-        price: 'от 255 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/89c84c38-a757-4178-84d6-7d8db7b94630.png',
-        description: 'Серо-бежевая элегантность с золотыми люстрами. Выдвижные системы премиум, LED в каждом шкафу. Умная классика!',
-        link: '/kitchen/modern-classic'
-      },
-      { 
         name: 'Городские Джунгли', 
         price: 'от 275 000 ₽', 
         image: 'https://cdn.poehali.dev/files/b60b6ebc-9285-400a-9ca5-16237ea0fe85.png',
         description: 'Изумрудные фасады с чёрным гарнитуром. Трековое освещение, витрина для посуды, остров с барной стойкой. Природа встречается с урбанизмом!',
         link: '/kitchen/urban-jungle'
+      },
+      { 
+        name: 'Современная Классика', 
+        price: 'от 255 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/89c84c38-a757-4178-84d6-7d8db7b94630.png',
+        description: 'Серо-бежевая элегантность с золотыми люстрами. Выдвижные системы премиум, LED в каждом шкафу. Умная классика!',
+        link: '/kitchen/modern-classic'
       },
       { 
         name: 'Графитовый Остров', 
