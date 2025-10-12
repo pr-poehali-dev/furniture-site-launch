@@ -86,6 +86,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/9c1a865b-f31e-4cae-b67b-8bd3d0a0321e.png',
         description: 'Скандинавский минимализм с золотыми акцентами. Продуманные системы хранения, сушилки для посуды. Всё на своих местах!',
         link: '/kitchen/white-gold'
+      },
+      { 
+        name: 'Городские Джунгли', 
+        price: 'от 275 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/b60b6ebc-9285-400a-9ca5-16237ea0fe85.png',
+        description: 'Изумрудные фасады с чёрным гарнитуром. Трековое освещение, витрина для посуды, остров с барной стойкой. Природа встречается с урбанизмом!',
+        link: '/kitchen/urban-jungle'
       }
     ],
     wardrobe: [
