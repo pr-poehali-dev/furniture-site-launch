@@ -489,34 +489,52 @@ const Index = () => {
                     </Button>
                   </div>
                   
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6">
-                    <div className="flex items-start gap-3 mb-4">
-                      <div className="bg-white/20 rounded-full p-2 flex-shrink-0">
-                        <Icon name="Gift" size={28} className="text-white" />
+                  <div className="space-y-4">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-5">
+                      <div className="flex items-start gap-3 mb-3">
+                        <div className="bg-white/20 rounded-full p-2 flex-shrink-0">
+                          <Icon name="Gift" size={24} className="text-white md:hidden" />
+                          <Icon name="Gift" size={28} className="text-white hidden md:block" />
+                        </div>
+                        <div className="text-left">
+                          <h3 className="text-base md:text-xl font-bold text-white mb-1">Премиум набор органайзеров</h3>
+                          <p className="text-white/90 text-xs md:text-sm">
+                            Баночки-органайзеры для специй и бакалеи — идеальный порядок на вашей кухне!
+                          </p>
+                        </div>
                       </div>
-                      <div className="text-left">
-                        <h3 className="text-lg md:text-2xl font-bold text-white mb-2">Премиум набор органайзеров</h3>
-                        <p className="text-white/90 text-sm md:text-base">
-                          Баночки-органайзеры для специй и бакалеи — идеальный порядок на вашей кухне!
-                        </p>
+                      <div className="grid grid-cols-2 gap-2 text-white/90 text-xs md:text-sm">
+                        <div className="flex items-center gap-1.5">
+                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                          <span>Разделители для ящиков</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                          <span>Корзины для хранения</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                          <span>Контейнеры премиум</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                          <span>Органайзеры для специй</span>
+                        </div>
                       </div>
                     </div>
-                    <div className="grid grid-cols-2 gap-3 text-white/90 text-sm md:text-base">
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
-                        <span>Разделители для ящиков</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
-                        <span>Корзины для хранения</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
-                        <span>Контейнеры премиум</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
-                        <span>Органайзеры для специй</span>
+                    
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-5">
+                      <div className="flex items-center gap-3">
+                        <div className="bg-white/20 rounded-full p-2 flex-shrink-0">
+                          <Icon name="Truck" size={24} className="text-white md:hidden" />
+                          <Icon name="Truck" size={28} className="text-white hidden md:block" />
+                        </div>
+                        <div className="text-left">
+                          <h3 className="text-base md:text-xl font-bold text-white mb-1">+ Бесплатная доставка</h3>
+                          <p className="text-white/90 text-xs md:text-sm">
+                            По Казани и пригороду
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
