@@ -489,54 +489,22 @@ const Index = () => {
                     </Button>
                   </div>
                   
-                  <div className="space-y-4">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-5">
-                      <div className="flex items-start gap-3 mb-3">
-                        <div className="bg-white/20 rounded-full p-2 flex-shrink-0">
-                          <Icon name="Gift" size={24} className="text-white md:hidden" />
-                          <Icon name="Gift" size={28} className="text-white hidden md:block" />
-                        </div>
-                        <div className="text-left flex-1">
-                          <h3 className="text-base md:text-xl font-bold text-white">Премиум набор органайзеров</h3>
-                        </div>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="bg-white/20 rounded-full p-3 flex-shrink-0">
+                        <Icon name="Truck" size={28} className="text-white md:hidden" />
+                        <Icon name="Truck" size={36} className="text-white hidden md:block" />
                       </div>
-                      <div className="grid grid-cols-2 gap-2 text-white/90 text-xs md:text-sm mb-3">
-                        <div className="flex items-center gap-1.5">
-                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
-                          <span>Разделители для ящиков</span>
-                        </div>
-                        <div className="flex items-center gap-1.5">
-                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
-                          <span>Корзины для хранения</span>
-                        </div>
-                        <div className="flex items-center gap-1.5">
-                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
-                          <span>Контейнеры премиум</span>
-                        </div>
-                        <div className="flex items-center gap-1.5">
-                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
-                          <span>Органайзеры для специй</span>
-                        </div>
-                      </div>
-                      <p className="text-white/90 text-xs md:text-sm leading-relaxed">
-                        А также дарим органайзеры для ваших шкафов, гардеробных, детских и даже ванных!
-                      </p>
-                    </div>
-                    
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-5">
-                      <div className="flex items-center gap-3">
-                        <div className="bg-white/20 rounded-full p-2 flex-shrink-0">
-                          <Icon name="Truck" size={24} className="text-white md:hidden" />
-                          <Icon name="Truck" size={28} className="text-white hidden md:block" />
-                        </div>
-                        <div className="text-left">
-                          <h3 className="text-base md:text-xl font-bold text-white mb-1">+ Бесплатная доставка</h3>
-                          <p className="text-white/90 text-xs md:text-sm">
-                            По Казани и пригороду
-                          </p>
-                        </div>
+                      <div className="text-left">
+                        <h3 className="text-xl md:text-3xl font-bold text-white mb-2">+ Бесплатная бережная доставка</h3>
+                        <p className="text-white/90 text-sm md:text-lg">
+                          По Казани и пригороду
+                        </p>
                       </div>
                     </div>
+                    <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                      Доставим вашу мебель аккуратно и в срок — вам не придётся ни о чём беспокоиться
+                    </p>
                   </div>
                 </div>
               </CardContent>
