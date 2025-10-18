@@ -580,54 +580,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 rounded-2xl bg-gradient-to-br from-primary/5 to-orange-50">
-              <CardContent className="p-6 md:p-8">
-                <div className="bg-primary rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
-                  <Icon name="Ruler" size={32} className="text-white md:hidden" />
-                  <Icon name="Ruler" size={40} className="text-white hidden md:block" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-3 text-center text-[#474931]">Бесплатный замер</h3>
-                <p className="text-sm md:text-base text-center text-gray-700 mb-2">Выезд дизайнера на объект</p>
-                <p className="text-xs md:text-sm text-center text-gray-600 leading-relaxed">
-                  Наш специалист приедет, снимет точные замеры и предложит лучшие решения для вашего пространства
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 rounded-2xl bg-gradient-to-br from-primary/5 to-orange-50">
-              <CardContent className="p-6 md:p-8">
-                <div className="bg-primary rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
-                  <Icon name="Truck" size={32} className="text-white md:hidden" />
-                  <Icon name="Truck" size={40} className="text-white hidden md:block" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-3 text-center text-[#474931]">Бесплатная доставка</h3>
-                <p className="text-sm md:text-base text-center text-gray-700 mb-2">По Казани и пригороду</p>
-                <p className="text-xs md:text-sm text-center text-gray-600 leading-relaxed">
-                  Доставим вашу мебель бережно и в срок — вам не придётся ни о чём беспокоиться
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 rounded-2xl bg-gradient-to-br from-primary/5 to-orange-50">
-              <CardContent className="p-6 md:p-8">
-                <div className="bg-primary rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
-                  <Icon name="Wrench" size={32} className="text-white md:hidden" />
-                  <Icon name="Wrench" size={40} className="text-white hidden md:block" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-3 text-center text-[#474931]">Профи сборка</h3>
-                <p className="text-sm md:text-base text-center text-gray-700 mb-2">Качественный монтаж</p>
-                <p className="text-xs md:text-sm text-center text-gray-600 leading-relaxed">
-                  Опытные мастера соберут мебель быстро и аккуратно — всё будет работать идеально
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       <section id="о-нас" className="py-12 md:py-20 px-4 bg-[#EEECE0]">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-[#474931]">О нас</h2>
