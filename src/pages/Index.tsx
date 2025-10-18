@@ -17,6 +17,7 @@ const Index = () => {
   const [currentPage, setCurrentPage] = useState<{[key: string]: number}>({
     kitchen: 0,
     wardrobe: 0,
+    closet: 0,
     kids: 0,
     hallway: 0,
     bathroom: 0
@@ -30,7 +31,8 @@ const Index = () => {
 
   const categories = [
     { id: 'kitchen', name: 'Кухни', icon: 'ChefHat' },
-    { id: 'wardrobe', name: 'Шкафы и Гардеробные', icon: 'Shirt' },
+    { id: 'wardrobe', name: 'Шкафы', icon: 'Box' },
+    { id: 'closet', name: 'Гардеробные', icon: 'Shirt' },
     { id: 'kids', name: 'Детские', icon: 'Baby' },
     { id: 'hallway', name: 'Прихожие', icon: 'DoorOpen' },
     { id: 'bathroom', name: 'Мебель для ванной', icon: 'Bath' }
@@ -120,6 +122,11 @@ const Index = () => {
       { name: 'Шкаф-купе 3-дверный', price: '65 000 ₽', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=400&fit=crop' },
       { name: 'Шкаф распашной', price: '48 000 ₽', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
       { name: 'Угловой шкаф', price: '72 000 ₽', image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600&h=400&fit=crop' }
+    ],
+    closet: [
+      { name: 'Гардеробная "Премиум"', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
+      { name: 'Гардеробная "Модерн"', price: '98 000 ₽', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=400&fit=crop' },
+      { name: 'Гардеробная угловая', price: '145 000 ₽', image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600&h=400&fit=crop' }
     ],
     kids: [
       { name: 'Детская "Радуга"', price: '78 000 ₽', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop' },
@@ -406,7 +413,7 @@ const Index = () => {
           </p>
 
           <Tabs defaultValue="kitchen" className="w-full">
-            <TabsList className="grid w-full grid-cols-5 mb-8 md:mb-12 h-auto bg-[#F9F8F4] p-1 md:p-2 rounded-2xl">
+            <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 mb-8 md:mb-12 h-auto bg-[#F9F8F4] p-1 md:p-2 rounded-2xl">
               {categories.map((cat) => (
                 <TabsTrigger 
                   key={cat.id} 
