@@ -210,7 +210,7 @@ const Index = () => {
             </div>
             
             <nav className="hidden md:flex gap-6">
-              {['Главная', 'О нас', 'Каталог', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
+              {['Главная', 'Каталог', 'О нас', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
@@ -245,7 +245,7 @@ const Index = () => {
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 animate-fade-in">
             <nav className="container mx-auto px-4 py-4">
-              {['Главная', 'О нас', 'Каталог', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
+              {['Главная', 'Каталог', 'О нас', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
                 <button
                   key={item}
                   onClick={() => {
