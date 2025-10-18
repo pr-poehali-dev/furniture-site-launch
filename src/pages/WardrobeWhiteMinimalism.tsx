@@ -9,9 +9,9 @@ const WardrobeWhiteMinimalism = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
+    'https://cdn.poehali.dev/files/c9289528-b1c7-48d9-b32a-900e2027f9df.jpg',
     'https://cdn.poehali.dev/files/a461350a-36eb-4ec1-866d-e1c7d58d6299.jpg',
     'https://cdn.poehali.dev/files/e87af731-d93b-459a-ad22-b32df0a219da.jpg',
-    'https://cdn.poehali.dev/files/c9289528-b1c7-48d9-b32a-900e2027f9df.jpg',
     'https://cdn.poehali.dev/files/35d32e4a-20eb-408c-a80e-fe34b9bd866e.jpg',
     'https://cdn.poehali.dev/files/3a057536-817b-471c-a479-408aac636172.jpg',
     'https://cdn.poehali.dev/files/f587d941-b738-499b-ad35-72759fe50a75.jpg',
