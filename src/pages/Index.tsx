@@ -41,88 +41,18 @@ const Index = () => {
   const products = {
     kitchen: [
       { 
-        name: 'Белоснежный Остров', 
-        price: 'от 195 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/f401c10f-8d7b-472d-871a-e5e936fcb206.png',
-        description: 'Белоснежный остров и огромный обеденный стол — настоящий центр притяжения. Чёрные акценты добавляют характера.',
-        link: '/kitchen/island'
+        name: 'Воздушный зефир', 
+        price: 'от 135 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/d65e0e32-8c5f-4bb3-8a64-c4c5800f99a8.png',
+        description: 'Идеальное воплощение минимализма. Белоснежные матовые фасады без ручек, светлая столешница из искусственного камня.',
+        link: '/kitchen/snow'
       },
       { 
-        name: 'Мятная Свежесть', 
-        price: 'от 165 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/67e172e3-a2a1-485b-bc41-54b1ae520fcc.jpg',
-        description: 'Нежный фисташковый и белоснежный — тренд 2025! Деревянная столешница, витрина с подсветкой. Природная гармония.',
-        link: '/kitchen/mint'
-      },
-      { 
-        name: 'Синий Сапфир', 
-        price: 'от 215 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/d266f22f-c602-4f96-bcc6-5c985f2aec3c.png',
-        description: 'Премиум-класс! Глубокий сапфировый синий, золотой фартук, винотека для коллекции. Домашний винный бутик.',
-        link: '/kitchen/sapphire'
-      },
-      { 
-        name: 'Графитовый Шик', 
-        price: 'от 245 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/390dba13-37d5-4e59-93b2-c62cd34877f7.png',
-        description: 'Монохромная элегантность! Графит и белоснежные рифлёные панели, арочное освещение, стеклянная витрина. Сдержанная роскошь.',
-        link: '/kitchen/graphite'
-      },
-      { 
-        name: 'Городские Джунгли', 
-        price: 'от 275 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/b60b6ebc-9285-400a-9ca5-16237ea0fe85.png',
-        description: 'Изумрудные фасады с чёрным гарнитуром. Трековое освещение, витрина для посуды, остров с барной стойкой. Природа встречается с урбанизмом!',
-        link: '/kitchen/urban-jungle'
-      },
-      { 
-        name: 'Завораживающий Обсидиан', 
-        price: 'от 340 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/2c599069-0fcb-44b5-a269-0b943724bff1.png',
-        description: 'Черный мрамор с белыми прожилками на столешнице и фартуке. Дубовые фасады, рифленые панели, винный шкаф с подсветкой. Архитектурное освещение в потолке!',
-        link: '/kitchen/obsidian'
-      },
-      { 
-        name: 'Современная Классика', 
-        price: 'от 255 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/89c84c38-a757-4178-84d6-7d8db7b94630.png',
-        description: 'Серо-бежевая элегантность с золотыми люстрами. Выдвижные системы премиум, LED в каждом шкафу. Умная классика!',
-        link: '/kitchen/modern-classic'
-      },
-      { 
-        name: 'Графитовый Остров', 
-        price: 'от 320 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/d0bf1be3-5f3e-4fcf-9639-311d5d93cb75.png',
-        description: 'Минимализм премиум с островом и винной стойкой. Техника Bosch, глянцевый черный фартук. Трековое LED!',
-        link: '/kitchen/graphite-island'
-      },
-      { 
-        name: 'Морской песок', 
-        price: 'от 235 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/b64016d7-c1f1-4ca6-93dd-d28449e01dac.png',
-        description: 'Акварельный фартук с серо-голубыми разводами и золотом. Витрина-музей для красивой посуды. Завтрак на «пять звёзд»!',
-        link: '/kitchen/sand'
-      },
-      { 
-        name: 'Мраморная Волна', 
-        price: 'от 215 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/d676c13c-97fa-4498-a670-42f8d4dee382.png',
-        description: 'Белоснежные матовые фасады с мраморным фартуком. Push-to-open, встроенная сушилка, LED-подсветка. Компактная элегантность!',
-        link: '/kitchen/marble-wave'
-      },
-      { 
-        name: 'Классический Беж', 
-        price: 'от 245 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/82f0c0a0-4582-4381-9377-6e71b78a5ff5.png',
-        description: 'Элегантные рамочные фасады и изысканный геометрический фартук. Шкафы до потолка, встроенная Samsung. Классика премиум!',
-        link: '/kitchen/classic-beige'
-      },
-      { 
-        name: 'Графитовый Минимализм', 
-        price: 'от 285 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/7d42ad80-ab7c-47f4-a6c5-7c03bc353e00.png',
-        description: 'Строгая угловая кухня со встроенным пеналом-витриной. Чёрный мрамор, световые линии, бетонные текстуры. Современная архитектура в интерьере!',
-        link: '/kitchen/graphite-minimalism'
+        name: 'Нежный Миндаль', 
+        price: 'от 175 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/585c182c-5548-42a2-af38-a57163d02fe2.png',
+        description: 'Изысканная минималистичная кухня в миндальных тонах с мраморной столешницей и островом.',
+        link: '/kitchen/almond'
       }
     ],
     wardrobe: [
