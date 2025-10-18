@@ -23,6 +23,7 @@ import KitchenMarbleWave from "./pages/KitchenMarbleWave";
 import KitchenClassicBeige from "./pages/KitchenClassicBeige";
 import KitchenGraphiteIsland from "./pages/KitchenGraphiteIsland";
 import ObsidianKitchen from "./pages/ObsidianKitchen";
+import KitchenGraphiteMinimalism from "./pages/KitchenGraphiteMinimalism";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -53,6 +54,7 @@ const App = () => (
           <Route path="/kitchen/classic-beige" element={<KitchenClassicBeige />} />
           <Route path="/kitchen/graphite-island" element={<KitchenGraphiteIsland />} />
           <Route path="/kitchen/obsidian" element={<ObsidianKitchen />} />
+          <Route path="/kitchen/graphite-minimalism" element={<KitchenGraphiteMinimalism />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
