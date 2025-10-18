@@ -31,7 +31,7 @@ const BathroomBlackMinimalism = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-muted">
               <img
                 src={images[currentImageIndex]}
                 alt="Черная мебель для ванной"
