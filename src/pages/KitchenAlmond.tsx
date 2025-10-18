@@ -130,7 +130,7 @@ const KitchenAlmond = () => {
             </div>
           </div>
 
-        <Card className="mb-12">
+          <Card className="mb-12">
           <CardContent className="p-6 md:p-10">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#474931]">
               Особенности кухни Нежный Миндаль
@@ -167,41 +167,25 @@ const KitchenAlmond = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-primary/5 to-orange-50 border-primary/20">
-          <CardContent className="p-6 md:p-10">
-            <div className="flex flex-col md:flex-row gap-6 items-center">
-              <div className="flex-1">
-                <Icon name="Gift" size={48} className="mb-4 text-primary md:mx-0 mx-auto" />
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#474931] md:text-left text-center">
-                  Бонус при заказе!
-                </h3>
-                <p className="text-lg text-gray-700 mb-6 md:text-left text-center">
-                  При заказе кухни Нежный Миндаль дарим набор керамической посуды<br />в минималистичном стиле
-                </p>
-                <Button 
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 w-full md:w-auto"
-                  onClick={() => {
-                    navigate('/');
-                    setTimeout(() => {
-                      document.getElementById('калькулятор')?.scrollIntoView({ behavior: 'smooth' });
-                    }, 100);
-                  }}
-                >
-                  <Icon name="Rocket" size={20} className="mr-2" />
-                  Заказать со скидкой
-                </Button>
+          <Card className="bg-gradient-to-br from-[#E8F5E9] to-white border-[#2C5F2D]/20">
+            <CardContent className="p-8">
+              <div className="flex items-start gap-4">
+                <div className="bg-[#2C5F2D] p-3 rounded-full">
+                  <Icon name="Gift" size={24} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Бонус при заказе в этом месяце!</h3>
+                  <p className="text-gray-700 mb-4">
+                    При заказе кухни "Нежный Миндаль" дарим набор керамической посуды в минималистичном стиле. Всё для идеального порядка!
+                  </p>
+                  <Button className="bg-[#2C5F2D] hover:bg-[#234a24]">
+                    Узнать подробнее
+                  </Button>
+                </div>
               </div>
-              <div className="w-full md:w-80 flex-shrink-0">
-                <img 
-                  src="https://cdn.poehali.dev/files/b2bce252-7c0f-4c78-b272-d3e817aa6428.jpg"
-                  alt="Керамическая посуда"
-                  className="w-full rounded-xl shadow-lg"
-                />
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </div>
   );
