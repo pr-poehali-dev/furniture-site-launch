@@ -467,51 +467,51 @@ const Index = () => {
             <Card className="bg-gradient-to-r from-primary via-orange-500 to-primary border-none shadow-2xl rounded-3xl overflow-hidden relative">
               <div className="absolute top-0 right-0 w-40 h-40 md:w-80 md:h-80 bg-white/10 rounded-full -translate-y-20 translate-x-20 md:-translate-y-40 md:translate-x-40"></div>
               <div className="absolute bottom-0 left-0 w-32 h-32 md:w-64 md:h-64 bg-white/10 rounded-full translate-y-16 -translate-x-16 md:translate-y-32 md:-translate-x-32"></div>
-              <CardContent className="py-8 px-6 md:py-12 md:px-12 relative z-10">
+              <CardContent className="py-6 px-4 md:py-8 md:px-8 relative z-10">
                 <div className="text-center">
-                  <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4 md:mb-6">
-                    <span className="text-white font-bold text-sm md:text-base uppercase tracking-wide">🎁 Специальное предложение</span>
+                  <div className="inline-block bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full mb-3 md:mb-4">
+                    <span className="text-white font-bold text-xs md:text-sm uppercase tracking-wide">🎁 Специальное предложение</span>
                   </div>
-                  <h2 className="text-3xl md:text-6xl font-bold text-white mb-6 md:mb-8 leading-tight">
+                  <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 leading-tight">
                     Закажи мебель —<br />получи порядок в подарок!
                   </h2>
-                  <div className="max-w-2xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 mb-6 md:mb-8">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="bg-white/20 rounded-full p-3 flex-shrink-0">
-                        <Icon name="Gift" size={32} className="text-white" />
+                  <div className="max-w-xl mx-auto bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 mb-4 md:mb-6">
+                    <div className="flex items-start gap-3 mb-3">
+                      <div className="bg-white/20 rounded-full p-2 flex-shrink-0">
+                        <Icon name="Gift" size={24} className="text-white" />
                       </div>
                       <div className="text-left">
-                        <h3 className="text-xl md:text-3xl font-bold text-white mb-2">Премиум набор органайзеров</h3>
-                        <p className="text-white/90 text-base md:text-lg">
-                          Баночки-органайзеры для специй и бакалеи — всё для идеального порядка на кухне!
+                        <h3 className="text-base md:text-xl font-bold text-white mb-1">Премиум набор органайзеров</h3>
+                        <p className="text-white/90 text-sm md:text-base">
+                          Баночки-органайзеры для специй и бакалеи!
                         </p>
                       </div>
                     </div>
-                    <div className="grid grid-cols-2 gap-3 md:gap-4 text-white/90 text-sm md:text-base">
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
-                        <span>Разделители для ящиков</span>
+                    <div className="grid grid-cols-2 gap-2 text-white/90 text-xs md:text-sm">
+                      <div className="flex items-center gap-1.5">
+                        <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                        <span>Разделители</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
-                        <span>Корзины для хранения</span>
+                      <div className="flex items-center gap-1.5">
+                        <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                        <span>Корзины</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
-                        <span>Контейнеры премиум</span>
+                      <div className="flex items-center gap-1.5">
+                        <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                        <span>Контейнеры</span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
-                        <span>Органайзеры для специй</span>
+                      <div className="flex items-center gap-1.5">
+                        <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                        <span>Для специй</span>
                       </div>
                     </div>
                   </div>
                   <Button 
                     size="lg" 
-                    className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-3xl transition-all px-8 md:px-12 py-6 md:py-8 text-lg md:text-2xl font-bold rounded-2xl hover:scale-105"
+                    className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-3xl transition-all px-6 md:px-10 py-4 md:py-6 text-base md:text-xl font-bold rounded-xl hover:scale-105"
                     onClick={() => scrollToSection('калькулятор')}
                   >
-                    <Icon name="Gift" size={28} className="mr-3" />
+                    <Icon name="Gift" size={24} className="mr-2" />
                     Получить подарок
                   </Button>
                 </div>
