@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, Phone, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const WardrobeWhiteMinimalism = () => {
@@ -26,105 +24,148 @@ const WardrobeWhiteMinimalism = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-      <div className="container mx-auto px-4 py-8">
-        <Button
-          variant="ghost"
+    <div className="min-h-screen bg-background">
+      <div className="container mx-auto px-4 py-8 max-w-6xl">
+        <button
           onClick={() => navigate('/')}
-          className="mb-6 hover:bg-white/60 transition-all"
+          className="flex items-center gap-2 text-muted-foreground hover:text-foreground mb-8 transition-colors"
         >
-          <Icon name="ArrowLeft" className="mr-2 h-4 w-4" />
-          Назад к каталогу
-        </Button>
+          <Icon name="ArrowLeft" size={20} />
+          Вернуться к каталогу
+        </button>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden">
-            <img
-              src={images[currentImageIndex]}
-              alt="Белый Минимализм"
-              className="w-full h-[600px] object-cover"
-            />
-            <button
-              onClick={prevImage}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all"
-            >
-              <ChevronLeft className="h-6 w-6 text-gray-800" />
-            </button>
-            <button
-              onClick={nextImage}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all"
-            >
-              <ChevronRight className="h-6 w-6 text-gray-800" />
-            </button>
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImageIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentImageIndex ? 'bg-white w-8' : 'bg-white/60'
-                  }`}
-                />
-              ))}
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="space-y-6">
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-muted">
+              <img
+                src={images[currentImageIndex]}
+                alt="Белый Минимализм"
+                className="w-full h-full object-cover"
+              />
+              {images.length > 1 && (
+                <>
+                  <button
+                    onClick={prevImage}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full transition-colors"
+                  >
+                    <Icon name="ChevronLeft" size={24} />
+                  </button>
+                  <button
+                    onClick={nextImage}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background p-2 rounded-full transition-colors"
+                  >
+                    <Icon name="ChevronRight" size={24} />
+                  </button>
+                </>
+              )}
             </div>
+
+            {images.length > 1 && (
+              <div className="flex gap-2 overflow-x-auto">
+                {images.map((img, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setCurrentImageIndex(idx)}
+                    className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-colors ${
+                      currentImageIndex === idx
+                        ? 'border-primary'
+                        : 'border-transparent'
+                    }`}
+                  >
+                    <img
+                      src={img}
+                      alt={`Вид ${idx + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="space-y-6">
             <div>
-              <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+              <h1 className="text-4xl font-bold mb-4">
                 Белый Минимализм
               </h1>
-              <p className="text-3xl font-semibold text-primary mb-6">от 155 000 ₽</p>
-            </div>
-
-            <div className="prose prose-lg">
-              <p className="text-gray-700 leading-relaxed">
-                Встроенный шкаф до потолка в светлых тонах. Система хранения продумана до мелочей — 
-                выдвижные ящики, штанги для одежды и открытые полки создают идеальный порядок.
+              <p className="text-3xl font-semibold text-primary mb-6">
+                от 155 000 ₽
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-md space-y-4">
-              <h3 className="font-semibold text-xl mb-4 text-gray-900">Особенности:</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="text-gray-700">Фасады белый матовый ЛДСП</span>
+            <div className="prose prose-lg max-w-none">
+              <h2 className="text-2xl font-semibold mb-4">О проекте</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Встроенный шкаф до потолка в светлых тонах — пример грамотной организации 
+                пространства для хранения. Продуманная система с различными типами секций 
+                позволяет удобно разместить всю одежду, обувь и аксессуары.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 mt-6">Материалы и фурнитура</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <span>Фасады белый матовый ЛДСП — универсальное решение для любого интерьера</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="text-gray-700">Скрытые ручки для минималистичного вида</span>
+                <li className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <span>Скрытые ручки создают минималистичный внешний вид без лишних деталей</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="text-gray-700">Доводчики Blum</span>
+                <li className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <span>Доводчики Blum обеспечивают плавное и бесшумное закрывание дверей</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="text-gray-700">Выдвижные ящики с организаторами</span>
+                <li className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <span>Выдвижные ящики с внутренними организаторами для мелочей</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="text-gray-700">Штанги для одежды на разных уровнях</span>
+                <li className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <span>Штанги для одежды на разных уровнях — короткая и длинная одежда</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="text-gray-700">Открытые полки для обуви и аксессуаров</span>
+                <li className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <span>Открытые полки для обуви и аксессуаров с удобным доступом</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary text-xl">✓</span>
-                  <span className="text-gray-700">Верхние антресоли для сезонного хранения</span>
+                <li className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <span>Верхние антресоли для сезонного хранения вещей</span>
                 </li>
               </ul>
+
+              <h3 className="text-xl font-semibold mb-3 mt-6">Система хранения</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Шкаф спроектирован с учетом эргономики и удобства использования. Комбинация 
+                различных секций позволяет организовать хранение любых вещей: от верхней одежды 
+                до обуви и аксессуаров.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Светлые фасады визуально расширяют пространство и отражают свет, делая комнату 
+                светлее. Встроенная конструкция до потолка использует высоту помещения на 100%, 
+                создавая дополнительное место для хранения сезонных вещей.
+              </p>
             </div>
 
-            <a
-              href="tel:+79123456789"
-              className="block w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white py-4 px-6 rounded-xl font-semibold text-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
-            >
-              <Icon name="Phone" className="h-5 w-5" />
-              Заказать расчёт
-            </a>
+            <div className="pt-6 border-t">
+              <button
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setTimeout(() => {
+                    const form = document.getElementById('contact-form');
+                    if (form) {
+                      form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                  }, 300);
+                }}
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg text-lg font-semibold transition-colors flex items-center justify-center gap-2"
+              >
+                Заказать расчет
+                <Icon name="ArrowRight" size={20} />
+              </button>
+              <p className="text-sm text-muted-foreground text-center mt-3">
+                Приедем на замер, создадим 3D-проект и рассчитаем точную стоимость
+              </p>
+            </div>
           </div>
         </div>
       </div>
