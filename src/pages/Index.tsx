@@ -217,7 +217,7 @@ const Index = () => {
             </div>
             
             <nav className="hidden md:flex gap-6">
-              {['Главная', 'Каталог', 'О нас', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
+              {['Главная', 'Каталог', 'Акция', 'О нас', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
@@ -252,7 +252,7 @@ const Index = () => {
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 animate-fade-in">
             <nav className="container mx-auto px-4 py-4">
-              {['Главная', 'Каталог', 'О нас', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
+              {['Главная', 'Каталог', 'Акция', 'О нас', 'Этапы работы', 'Калькулятор', 'Контакты'].map((item) => (
                 <button
                   key={item}
                   onClick={() => {
@@ -329,7 +329,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="умная-организация" className="py-12 md:py-20 px-4 bg-white">
+      <section id="акция" className="py-12 md:py-20 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-3 md:mb-4 text-[#474931]">По местам! И в шкафу порядок!</h2>
           <p className="text-center text-gray-700 mb-8 md:mb-16 text-sm md:text-lg max-w-3xl mx-auto">
