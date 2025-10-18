@@ -467,106 +467,53 @@ const Index = () => {
             <Card className="bg-gradient-to-r from-primary via-orange-500 to-primary border-none shadow-2xl rounded-3xl overflow-hidden relative">
               <div className="absolute top-0 right-0 w-40 h-40 md:w-80 md:h-80 bg-white/10 rounded-full -translate-y-20 translate-x-20 md:-translate-y-40 md:translate-x-40"></div>
               <div className="absolute bottom-0 left-0 w-32 h-32 md:w-64 md:h-64 bg-white/10 rounded-full translate-y-16 -translate-x-16 md:translate-y-32 md:-translate-x-32"></div>
-              <CardContent className="py-6 px-4 md:py-10 md:px-10 relative z-10">
-                <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-                  <div className="text-center md:text-left">
-                    <div className="inline-block bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full mb-2 md:mb-3">
-                      <span className="text-white font-bold text-xs md:text-sm uppercase tracking-wide">🎁 Специальное предложение</span>
-                    </div>
-                    <h2 className="text-xl md:text-4xl font-bold text-white mb-3 md:mb-4 leading-tight">
-                      Закажи кухню —<br />получи порядок в подарок!
-                    </h2>
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 mb-4 md:mb-5">
-                      <div className="flex items-start gap-2 md:gap-3 mb-3">
-                        <div className="bg-white/20 rounded-full p-1.5 md:p-2 flex-shrink-0">
-                          <Icon name="Gift" size={20} className="text-white md:hidden" />
-                          <Icon name="Gift" size={24} className="text-white hidden md:block" />
-                        </div>
-                        <div className="text-left">
-                          <h3 className="text-base md:text-xl font-bold text-white mb-1">Премиум набор органайзеров</h3>
-                          <p className="text-white/90 text-xs md:text-sm">
-                            Баночки для специй и бакалеи — порядок на кухне!
-                          </p>
-                        </div>
-                      </div>
-                      <div className="grid grid-cols-2 gap-2 text-white/90 text-xs md:text-sm">
-                        <div className="flex items-center gap-1.5">
-                          <Icon name="Check" size={14} className="text-white flex-shrink-0" />
-                          <span>Разделители</span>
-                        </div>
-                        <div className="flex items-center gap-1.5">
-                          <Icon name="Check" size={14} className="text-white flex-shrink-0" />
-                          <span>Корзины</span>
-                        </div>
-                        <div className="flex items-center gap-1.5">
-                          <Icon name="Check" size={14} className="text-white flex-shrink-0" />
-                          <span>Контейнеры</span>
-                        </div>
-                        <div className="flex items-center gap-1.5">
-                          <Icon name="Check" size={14} className="text-white flex-shrink-0" />
-                          <span>Для специй</span>
-                        </div>
-                      </div>
-                    </div>
-                    <Button 
-                      size="lg" 
-                      className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-3xl transition-all px-5 md:px-8 py-3 md:py-5 text-sm md:text-lg font-bold rounded-xl hover:scale-105 w-full md:w-auto"
-                      onClick={() => scrollToSection('калькулятор')}
-                    >
-                      <Icon name="Gift" size={20} className="mr-2" />
-                      Получить подарок
-                    </Button>
+              <CardContent className="py-8 px-6 md:py-12 md:px-12 relative z-10">
+                <div className="text-center">
+                  <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4 md:mb-6">
+                    <span className="text-white font-bold text-sm md:text-base uppercase tracking-wide">🎁 Специальное предложение</span>
                   </div>
-                  
-                  <div className="flex flex-col gap-3 md:gap-3">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/20">
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="bg-white rounded-full p-2 flex-shrink-0">
-                          <Icon name="Ruler" size={20} className="text-primary md:hidden" />
-                          <Icon name="Ruler" size={24} className="text-primary hidden md:block" />
-                        </div>
-                        <div className="text-left flex-1">
-                          <h3 className="text-base md:text-lg font-bold text-white">Бесплатный замер</h3>
-                          <p className="text-white/80 text-xs md:text-sm">Выезд дизайнера на объект</p>
-                        </div>
+                  <h2 className="text-3xl md:text-6xl font-bold text-white mb-6 md:mb-8 leading-tight">
+                    Закажи мебель —<br />получи порядок в подарок!
+                  </h2>
+                  <div className="max-w-2xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 mb-6 md:mb-8">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="bg-white/20 rounded-full p-3 flex-shrink-0">
+                        <Icon name="Gift" size={32} className="text-white" />
                       </div>
-                      <p className="text-white/70 text-xs md:text-sm leading-relaxed">
-                        Наш специалист приедет, снимет точные замеры и предложит лучшие решения для вашего пространства
-                      </p>
+                      <div className="text-left">
+                        <h3 className="text-xl md:text-3xl font-bold text-white mb-2">Премиум набор органайзеров</h3>
+                        <p className="text-white/90 text-base md:text-lg">
+                          Баночки-органайзеры для специй и бакалеи — всё для идеального порядка на кухне!
+                        </p>
+                      </div>
                     </div>
-
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/20">
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="bg-white rounded-full p-2 flex-shrink-0">
-                          <Icon name="Truck" size={20} className="text-primary md:hidden" />
-                          <Icon name="Truck" size={24} className="text-primary hidden md:block" />
-                        </div>
-                        <div className="text-left flex-1">
-                          <h3 className="text-base md:text-lg font-bold text-white">Бесплатная доставка</h3>
-                          <p className="text-white/80 text-xs md:text-sm">По Казани и пригороду</p>
-                        </div>
+                    <div className="grid grid-cols-2 gap-3 md:gap-4 text-white/90 text-sm md:text-base">
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
+                        <span>Разделители для ящиков</span>
                       </div>
-                      <p className="text-white/70 text-xs md:text-sm leading-relaxed">
-                        Доставим вашу мебель бережно и в срок — вам не придётся ни о чём беспокоиться
-                      </p>
-                    </div>
-
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/20">
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="bg-white rounded-full p-2 flex-shrink-0">
-                          <Icon name="Wrench" size={20} className="text-primary md:hidden" />
-                          <Icon name="Wrench" size={24} className="text-primary hidden md:block" />
-                        </div>
-                        <div className="text-left flex-1">
-                          <h3 className="text-base md:text-lg font-bold text-white">Профи сборка</h3>
-                          <p className="text-white/80 text-xs md:text-sm">Качественный монтаж</p>
-                        </div>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
+                        <span>Корзины для хранения</span>
                       </div>
-                      <p className="text-white/70 text-xs md:text-sm leading-relaxed">
-                        Опытные мастера соберут мебель быстро и аккуратно — всё будет работать идеально
-                      </p>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
+                        <span>Контейнеры премиум</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Icon name="Check" size={18} className="text-white flex-shrink-0" />
+                        <span>Органайзеры для специй</span>
+                      </div>
                     </div>
                   </div>
+                  <Button 
+                    size="lg" 
+                    className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-3xl transition-all px-8 md:px-12 py-6 md:py-8 text-lg md:text-2xl font-bold rounded-2xl hover:scale-105"
+                    onClick={() => scrollToSection('калькулятор')}
+                  >
+                    <Icon name="Gift" size={28} className="mr-3" />
+                    Получить подарок
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -646,24 +593,50 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-[#F9F8F4]">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
-            {[
-              { icon: 'Award', title: 'Гарантия 2 года', desc: 'На всю продукцию' },
-              { icon: 'Users', title: 'Первоклассные специалисты', desc: 'Опытная команда' },
-              { icon: 'Truck', title: 'Бережная доставка', desc: 'По Казани и за город' },
-              { icon: 'Wrench', title: 'Профессиональная сборка', desc: 'Качественный монтаж' }
-            ].map((item, idx) => (
-              <Card key={idx} className="border-none shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 rounded-2xl bg-white">
-                <CardContent className="pt-4 pb-4 md:pt-8 md:pb-6">
-                  <Icon name={item.icon as any} size={40} className="mx-auto mb-3 text-[#C79747] md:hidden" />
-                  <Icon name={item.icon as any} size={56} className="mx-auto mb-6 text-[#C79747] hidden md:block" />
-                  <h3 className="font-bold mb-1 md:mb-3 text-black text-sm md:text-xl">{item.title}</h3>
-                  <p className="text-xs md:text-base text-black font-medium">{item.desc}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 rounded-2xl bg-gradient-to-br from-primary/5 to-orange-50">
+              <CardContent className="p-6 md:p-8">
+                <div className="bg-primary rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
+                  <Icon name="Ruler" size={32} className="text-white md:hidden" />
+                  <Icon name="Ruler" size={40} className="text-white hidden md:block" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold mb-3 text-center text-[#474931]">Бесплатный замер</h3>
+                <p className="text-sm md:text-base text-center text-gray-700 mb-2">Выезд дизайнера на объект</p>
+                <p className="text-xs md:text-sm text-center text-gray-600 leading-relaxed">
+                  Наш специалист приедет, снимет точные замеры и предложит лучшие решения для вашего пространства
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 rounded-2xl bg-gradient-to-br from-primary/5 to-orange-50">
+              <CardContent className="p-6 md:p-8">
+                <div className="bg-primary rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
+                  <Icon name="Truck" size={32} className="text-white md:hidden" />
+                  <Icon name="Truck" size={40} className="text-white hidden md:block" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold mb-3 text-center text-[#474931]">Бесплатная доставка</h3>
+                <p className="text-sm md:text-base text-center text-gray-700 mb-2">По Казани и пригороду</p>
+                <p className="text-xs md:text-sm text-center text-gray-600 leading-relaxed">
+                  Доставим вашу мебель бережно и в срок — вам не придётся ни о чём беспокоиться
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 rounded-2xl bg-gradient-to-br from-primary/5 to-orange-50">
+              <CardContent className="p-6 md:p-8">
+                <div className="bg-primary rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
+                  <Icon name="Wrench" size={32} className="text-white md:hidden" />
+                  <Icon name="Wrench" size={40} className="text-white hidden md:block" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold mb-3 text-center text-[#474931]">Профи сборка</h3>
+                <p className="text-sm md:text-base text-center text-gray-700 mb-2">Качественный монтаж</p>
+                <p className="text-xs md:text-sm text-center text-gray-600 leading-relaxed">
+                  Опытные мастера соберут мебель быстро и аккуратно — всё будет работать идеально
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
