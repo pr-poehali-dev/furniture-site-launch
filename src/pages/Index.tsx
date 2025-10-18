@@ -511,12 +511,7 @@ const Index = () => {
             </Card>
           </div>
 
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-3 md:mb-4 text-[#474931]">По местам! И в шкафу порядок!</h2>
-          <p className="text-center text-gray-700 mb-8 md:mb-16 text-sm md:text-lg max-w-3xl mx-auto">
-            Теперь каждая полка и каждое отделение будут идеально упорядочены, а открывание фасада станет источником эстетического удовольствия!
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6 mt-8 md:mt-12">
             <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
               <div className="relative aspect-square">
                 <img 
