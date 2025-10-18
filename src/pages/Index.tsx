@@ -116,6 +116,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/82f0c0a0-4582-4381-9377-6e71b78a5ff5.png',
         description: 'Элегантные рамочные фасады и изысканный геометрический фартук. Шкафы до потолка, встроенная Samsung. Классика премиум!',
         link: '/kitchen/classic-beige'
+      },
+      { 
+        name: 'Графитовый Минимализм', 
+        price: 'от 285 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/7d42ad80-ab7c-47f4-a6c5-7c03bc353e00.png',
+        description: 'Строгая угловая кухня со встроенным пеналом-витриной. Чёрный мрамор, световые линии, бетонные текстуры. Современная архитектура в интерьере!',
+        link: '/kitchen/graphite-minimalism'
       }
     ],
     wardrobe: [
