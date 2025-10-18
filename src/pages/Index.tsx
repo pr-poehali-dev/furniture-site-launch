@@ -329,128 +329,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="акция" className="py-12 md:py-20 px-4 bg-white">
-        <div className="container mx-auto max-w-7xl">
-          <div className="mb-8 md:mb-16">
-            <Card className="bg-gradient-to-r from-primary via-orange-500 to-primary border-none shadow-2xl rounded-3xl overflow-hidden relative">
-              <div className="absolute top-0 right-0 w-40 h-40 md:w-80 md:h-80 bg-white/10 rounded-full -translate-y-20 translate-x-20 md:-translate-y-40 md:translate-x-40"></div>
-              <div className="absolute bottom-0 left-0 w-32 h-32 md:w-64 md:h-64 bg-white/10 rounded-full translate-y-16 -translate-x-16 md:translate-y-32 md:-translate-x-32"></div>
-              <CardContent className="py-8 px-6 md:py-16 md:px-12 relative z-10">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12">
-                  <div className="flex-1 text-center md:text-left">
-                    <div className="inline-block bg-white/20 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full mb-3 md:mb-4">
-                      <span className="text-white font-bold text-xs md:text-sm uppercase tracking-wide">🎁 Специальное предложение</span>
-                    </div>
-                    <h2 className="text-2xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-tight">
-                      Закажи мебель —<br />получи порядок в подарок!
-                    </h2>
-                    <p className="text-base md:text-xl text-white/95 mb-4 md:mb-6 leading-relaxed">
-                      При заказе любой корпусной мебели мы дарим специальные наборы для организации пространства на <span className="font-bold text-white">5 000 ₽!</span>
-                    </p>
-                    <ul className="text-white/90 text-sm md:text-base space-y-2 mb-4 md:mb-6 text-left md:text-left inline-block">
-                      <li className="flex items-center gap-2">
-                        <Icon name="Check" size={20} className="text-white flex-shrink-0" />
-                        <span>Разделители для полок и ящиков</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Icon name="Check" size={20} className="text-white flex-shrink-0" />
-                        <span>Корзины и контейнеры для хранения</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Icon name="Check" size={20} className="text-white flex-shrink-0" />
-                        <span>Вешалки и органайзеры премиум-класса</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="flex-shrink-0">
-                    <Button 
-                      size="lg" 
-                      className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-3xl transition-all px-6 md:px-10 py-4 md:py-7 text-base md:text-xl font-bold rounded-2xl hover:scale-105"
-                      onClick={() => scrollToSection('калькулятор')}
-                    >
-                      <Icon name="Gift" size={24} className="mr-2" />
-                      Получить подарок
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-3 md:mb-4 text-[#474931]">По местам! И в шкафу порядок!</h2>
-          <p className="text-center text-gray-700 mb-8 md:mb-16 text-sm md:text-lg max-w-3xl mx-auto">
-            Теперь каждая полка и каждое отделение будут идеально упорядочены, а открывание фасада станет источником эстетического удовольствия!
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6">
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="relative aspect-square">
-                <img 
-                  src="https://cdn.poehali.dev/files/652129ad-5045-40a4-9927-f0ef9c488fe2.jpg"
-                  alt="Организация для кухни"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
-                  Для кухни
-                </div>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="relative aspect-square">
-                <img 
-                  src="https://cdn.poehali.dev/files/def4ece3-07fa-4572-aff9-f28b85253525.jpg"
-                  alt="Организация для шкафов"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
-                  Для шкафов
-                </div>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="relative aspect-square">
-                <img 
-                  src="https://cdn.poehali.dev/files/568a41fc-0181-4d86-bb7b-1a5244eecc01.jpg"
-                  alt="Организация для детских"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
-                  Для детских
-                </div>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="relative aspect-square">
-                <img 
-                  src="https://cdn.poehali.dev/files/c9c4b421-84c7-40c7-871b-2d9626b6bc97.jpg"
-                  alt="Организация для прихожих"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
-                  Для прихожих
-                </div>
-              </div>
-            </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-              <div className="relative aspect-square">
-                <img 
-                  src="https://cdn.poehali.dev/files/4520e25d-e2c9-4d43-8c11-9d2aab7e0d35.jpg"
-                  alt="Организация для ванной"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
-                  Для ванной
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       <section id="каталог" className="py-12 md:py-24 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 md:mb-6 text-[#474931]">Каталог мебели</h2>
@@ -580,6 +458,128 @@ const Index = () => {
               );
             })}
           </Tabs>
+        </div>
+      </section>
+
+      <section id="акция" className="py-12 md:py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-7xl">
+          <div className="mb-8 md:mb-16">
+            <Card className="bg-gradient-to-r from-primary via-orange-500 to-primary border-none shadow-2xl rounded-3xl overflow-hidden relative">
+              <div className="absolute top-0 right-0 w-40 h-40 md:w-80 md:h-80 bg-white/10 rounded-full -translate-y-20 translate-x-20 md:-translate-y-40 md:translate-x-40"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 md:w-64 md:h-64 bg-white/10 rounded-full translate-y-16 -translate-x-16 md:translate-y-32 md:-translate-x-32"></div>
+              <CardContent className="py-8 px-6 md:py-16 md:px-12 relative z-10">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12">
+                  <div className="flex-1 text-center md:text-left">
+                    <div className="inline-block bg-white/20 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full mb-3 md:mb-4">
+                      <span className="text-white font-bold text-xs md:text-sm uppercase tracking-wide">🎁 Специальное предложение</span>
+                    </div>
+                    <h2 className="text-2xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-tight">
+                      Закажи мебель —<br />получи порядок в подарок!
+                    </h2>
+                    <p className="text-base md:text-xl text-white/95 mb-4 md:mb-6 leading-relaxed">
+                      При заказе любой корпусной мебели мы дарим специальные наборы для организации пространства на <span className="font-bold text-white">5 000 ₽!</span>
+                    </p>
+                    <ul className="text-white/90 text-sm md:text-base space-y-2 mb-4 md:mb-6 text-left md:text-left inline-block">
+                      <li className="flex items-center gap-2">
+                        <Icon name="Check" size={20} className="text-white flex-shrink-0" />
+                        <span>Разделители для полок и ящиков</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Icon name="Check" size={20} className="text-white flex-shrink-0" />
+                        <span>Корзины и контейнеры для хранения</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Icon name="Check" size={20} className="text-white flex-shrink-0" />
+                        <span>Вешалки и органайзеры премиум-класса</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <Button 
+                      size="lg" 
+                      className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-3xl transition-all px-6 md:px-10 py-4 md:py-7 text-base md:text-xl font-bold rounded-2xl hover:scale-105"
+                      onClick={() => scrollToSection('калькулятор')}
+                    >
+                      <Icon name="Gift" size={24} className="mr-2" />
+                      Получить подарок
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-3 md:mb-4 text-[#474931]">По местам! И в шкафу порядок!</h2>
+          <p className="text-center text-gray-700 mb-8 md:mb-16 text-sm md:text-lg max-w-3xl mx-auto">
+            Теперь каждая полка и каждое отделение будут идеально упорядочены, а открывание фасада станет источником эстетического удовольствия!
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6">
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/652129ad-5045-40a4-9927-f0ef9c488fe2.jpg"
+                  alt="Организация для кухни"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
+                  Для кухни
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/def4ece3-07fa-4572-aff9-f28b85253525.jpg"
+                  alt="Организация для шкафов"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
+                  Для шкафов
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/568a41fc-0181-4d86-bb7b-1a5244eecc01.jpg"
+                  alt="Организация для детских"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
+                  Для детских
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/c9c4b421-84c7-40c7-871b-2d9626b6bc97.jpg"
+                  alt="Организация для прихожих"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
+                  Для прихожих
+                </div>
+              </div>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+              <div className="relative aspect-square">
+                <img 
+                  src="https://cdn.poehali.dev/files/4520e25d-e2c9-4d43-8c11-9d2aab7e0d35.jpg"
+                  alt="Организация для ванной"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-primary text-white px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-base font-semibold shadow-lg">
+                  Для ванной
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </section>
 
