@@ -10,6 +10,7 @@ const WardrobeBlackGraphite = () => {
 
   const images = [
     'https://cdn.poehali.dev/files/20bfb000-4d27-450c-bf3f-e3d77ae3d809.png',
+    'https://cdn.poehali.dev/files/5234f152-e646-416d-a2e2-ce3fc5aad57a.png',
   ];
 
   const nextImage = () => {
