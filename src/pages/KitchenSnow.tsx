@@ -64,7 +64,7 @@ const KitchenSnow = () => {
               <img 
                 src={images[selectedImage].url}
                 alt={images[selectedImage].alt}
-                className="w-full h-full object-cover"
+                className="w-full h-[400px] object-cover"
               />
             </div>
             
@@ -125,7 +125,6 @@ const KitchenSnow = () => {
               </div>
             </div>
           </div>
-        </div>
 
           <Card className="mb-8">
             <CardContent className="p-8">
