@@ -468,41 +468,100 @@ const Index = () => {
               <div className="absolute top-0 right-0 w-40 h-40 md:w-80 md:h-80 bg-white/10 rounded-full -translate-y-20 translate-x-20 md:-translate-y-40 md:translate-x-40"></div>
               <div className="absolute bottom-0 left-0 w-32 h-32 md:w-64 md:h-64 bg-white/10 rounded-full translate-y-16 -translate-x-16 md:translate-y-32 md:-translate-x-32"></div>
               <CardContent className="py-8 px-6 md:py-16 md:px-12 relative z-10">
-                <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12">
-                  <div className="flex-1 text-center md:text-left">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+                  <div className="text-center md:text-left">
                     <div className="inline-block bg-white/20 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full mb-3 md:mb-4">
                       <span className="text-white font-bold text-xs md:text-sm uppercase tracking-wide">🎁 Специальное предложение</span>
                     </div>
-                    <h2 className="text-2xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-tight">
-                      Закажи мебель —<br />получи порядок в подарок!
+                    <h2 className="text-2xl md:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+                      Закажи кухню —<br />получи порядок в подарок!
                     </h2>
-                    <p className="text-base md:text-xl text-white/95 mb-4 md:mb-6 leading-relaxed">
-                      При заказе любой корпусной мебели мы дарим специальные наборы для организации пространства на <span className="font-bold text-white">5 000 ₽!</span>
-                    </p>
-                    <ul className="text-white/90 text-sm md:text-base space-y-2 mb-4 md:mb-6 text-left md:text-left inline-block">
-                      <li className="flex items-center gap-2">
-                        <Icon name="Check" size={20} className="text-white flex-shrink-0" />
-                        <span>Разделители для полок и ящиков</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Icon name="Check" size={20} className="text-white flex-shrink-0" />
-                        <span>Корзины и контейнеры для хранения</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Icon name="Check" size={20} className="text-white flex-shrink-0" />
-                        <span>Вешалки и органайзеры премиум-класса</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="flex-shrink-0">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 mb-6">
+                      <div className="flex items-start gap-3 mb-4">
+                        <div className="bg-white/20 rounded-full p-2 flex-shrink-0">
+                          <Icon name="Gift" size={24} className="text-white" />
+                        </div>
+                        <div className="text-left">
+                          <h3 className="text-lg md:text-2xl font-bold text-white mb-2">Премиум набор органайзеров</h3>
+                          <p className="text-white/90 text-sm md:text-base">
+                            Баночки-органайзеры для специй и бакалеи — всё для идеального порядка на кухне!
+                          </p>
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2 gap-3 md:gap-4 text-white/90 text-xs md:text-sm">
+                        <div className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                          <span>Разделители для ящиков</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                          <span>Корзины для хранения</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                          <span>Контейнеры премиум</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-white flex-shrink-0" />
+                          <span>Органайзеры для специй</span>
+                        </div>
+                      </div>
+                    </div>
                     <Button 
                       size="lg" 
-                      className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-3xl transition-all px-6 md:px-10 py-4 md:py-7 text-base md:text-xl font-bold rounded-2xl hover:scale-105"
+                      className="bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-3xl transition-all px-6 md:px-10 py-4 md:py-6 text-base md:text-xl font-bold rounded-2xl hover:scale-105 w-full md:w-auto"
                       onClick={() => scrollToSection('калькулятор')}
                     >
                       <Icon name="Gift" size={24} className="mr-2" />
                       Получить подарок
                     </Button>
+                  </div>
+                  
+                  <div className="flex flex-col gap-4">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-6 border-2 border-white/20">
+                      <div className="flex items-center gap-4 mb-3">
+                        <div className="bg-white rounded-full p-3 flex-shrink-0">
+                          <Icon name="Ruler" size={28} className="text-primary" />
+                        </div>
+                        <div className="text-left">
+                          <h3 className="text-xl md:text-2xl font-bold text-white">Бесплатный замер</h3>
+                          <p className="text-white/90 text-sm md:text-base">Выезд дизайнера на объект</p>
+                        </div>
+                      </div>
+                      <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                        Наш специалист приедет, снимет точные замеры и предложит лучшие решения для вашего пространства
+                      </p>
+                    </div>
+
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-6 border-2 border-white/20">
+                      <div className="flex items-center gap-4 mb-3">
+                        <div className="bg-white rounded-full p-3 flex-shrink-0">
+                          <Icon name="Truck" size={28} className="text-primary" />
+                        </div>
+                        <div className="text-left">
+                          <h3 className="text-xl md:text-2xl font-bold text-white">Бесплатная доставка</h3>
+                          <p className="text-white/90 text-sm md:text-base">По Казани и пригороду</p>
+                        </div>
+                      </div>
+                      <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                        Доставим вашу мебель бережно и в срок — вам не придётся ни о чём беспокоиться
+                      </p>
+                    </div>
+
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 md:p-6 border-2 border-white/20">
+                      <div className="flex items-center gap-4 mb-3">
+                        <div className="bg-white rounded-full p-3 flex-shrink-0">
+                          <Icon name="Wrench" size={28} className="text-primary" />
+                        </div>
+                        <div className="text-left">
+                          <h3 className="text-xl md:text-2xl font-bold text-white">Профи сборка</h3>
+                          <p className="text-white/90 text-sm md:text-base">Качественный монтаж</p>
+                        </div>
+                      </div>
+                      <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                        Опытные мастера соберут мебель быстро и аккуратно — всё будет работать идеально
+                      </p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
