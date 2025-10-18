@@ -146,21 +146,12 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/1b37dd40-8570-4a17-88ab-904ebd68597f.png',
         description: 'Буфет до потолка с бронзовым стеклом в профиле Modus. Интегрированная подсветка, фурнитура Hettich push-to-open. Премиальная атмосфера!',
         link: '/wardrobe/kitchen-buffet'
-      },
-      { name: 'Шкаф-купе 3-дверный', price: '65 000 ₽', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=400&fit=crop' },
-      { name: 'Шкаф распашной', price: '48 000 ₽', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
-      { name: 'Угловой шкаф', price: '72 000 ₽', image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600&h=400&fit=crop' }
+      }
     ],
-    closet: [
-      { name: 'Гардеробная "Премиум"', price: '125 000 ₽', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop' },
-      { name: 'Гардеробная "Модерн"', price: '98 000 ₽', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=400&fit=crop' },
-      { name: 'Гардеробная угловая', price: '145 000 ₽', image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600&h=400&fit=crop' }
-    ],
-    kids: [
-      { name: 'Детская "Радуга"', price: '78 000 ₽', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop' },
-      { name: 'Детская "Космос"', price: '85 000 ₽', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop' },
-      { name: 'Детская "Принцесса"', price: '92 000 ₽', image: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&h=400&fit=crop' }
-    ],
+    closet: [],
+   
+    kids: [],
+   
     hallway: [
       { 
         name: 'Прихожая со встроенной системой хранения', 
@@ -168,16 +159,9 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/cb4b5212-aaaf-45ac-97e5-1574b9ca71a3.png',
         description: 'Лаконичная прихожая с зеркальными фасадами, встроенной банкеткой и продуманной системой хранения. Вертикальные фрезеровки и точечная подсветка создают премиальную атмосферу.',
         link: '/hallway/built-in-storage'
-      },
-      { name: 'Прихожая "Компакт"', price: '32 000 ₽', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=400&fit=crop' },
-      { name: 'Прихожая "Премиум"', price: '55 000 ₽', image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&h=400&fit=crop' },
-      { name: 'Прихожая угловая', price: '45 000 ₽', image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&h=400&fit=crop' }
+      }
     ],
-    bathroom: [
-      { name: 'Гарнитур "Аква"', price: '42 000 ₽', image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&h=400&fit=crop' },
-      { name: 'Гарнитур "Элит"', price: '68 000 ₽', image: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=600&h=400&fit=crop' },
-      { name: 'Тумба с зеркалом', price: '28 000 ₽', image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop' }
-    ]
+    bathroom: []
   };
 
   const workSteps = [
