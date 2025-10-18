@@ -51,10 +51,16 @@ const KitchenAlmond = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-12 mb-12">
-          <div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-4">
+      <div className="container mx-auto px-4 py-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 text-[#2C3E2C]">Нежный Миндаль</h1>
+            <p className="text-lg text-gray-600">Изысканная минималистичная кухня в миндальных тонах с мраморной столешницей и островом.</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            <div>
+              <div className="mb-4 rounded-lg overflow-hidden shadow-lg bg-white">
               <img 
                 src={images[selectedImage].url}
                 alt={images[selectedImage].alt}
@@ -84,69 +90,45 @@ const KitchenAlmond = () => {
           </div>
 
           <div>
-            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Премиум-серия
-            </div>
-            
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-[#474931]">
-              Нежный Миндаль
-            </h1>
-            
-            <p className="text-lg md:text-xl text-gray-700 mb-2 leading-relaxed">
-              Изысканная минималистичная кухня в миндальных тонах. Закругленные белые фасады без ручек, 
-              открытые деревянные ниши с полками, мраморная столешница и остров с деревянной отделкой 
-              создают атмосферу нежности и элегантности.
-            </p>
-            <p className="text-sm text-gray-600 mb-6 italic">
-              * Данный проект можно менять под ваши предпочтения
-            </p>
 
-            <div className="bg-gradient-to-br from-primary to-orange-600 text-white p-6 md:p-8 rounded-2xl mb-8 shadow-xl">
-              <div className="flex items-baseline gap-3 mb-3">
-                <span className="text-sm opacity-90">Цена от</span>
-                <span className="text-4xl md:text-5xl font-bold">175 000 ₽</span>
-              </div>
-              <p className="text-sm opacity-90 mb-6">
-                Итоговая стоимость зависит от размеров и комплектации
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button 
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90 flex-1"
-                  onClick={() => {
-                    navigate('/');
-                    setTimeout(() => {
-                      document.getElementById('калькулятор')?.scrollIntoView({ behavior: 'smooth' });
-                    }, 100);
-                  }}
-                >
-                  <Icon name="Calculator" size={20} className="mr-2" />
-                  Рассчитать стоимость
-                </Button>
-                <Button 
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90 flex-1"
-                >
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  Позвонить
-                </Button>
-              </div>
-            </div>
 
-            <div className="grid grid-cols-2 gap-4 mb-8">
-              {features.map((feature, idx) => (
-                <Card key={idx} className="border-none shadow-md">
-                  <CardContent className="p-4">
-                    <Icon name={feature.icon as any} size={24} className="text-primary mb-2" />
-                    <h4 className="font-bold text-sm mb-1">{feature.title}</h4>
-                    <p className="text-xs text-muted-foreground">{feature.text}</p>
-                  </CardContent>
-                </Card>
-              ))}
+              <Card className="mb-6">
+                <CardContent className="p-6">
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-4xl font-bold text-[#2C5F2D]">175 000 ₽</span>
+                    <span className="text-gray-500">от</span>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-6">Цена под ключ с установкой</p>
+                  <div className="space-y-3">
+                    <Button className="w-full bg-[#2C5F2D] hover:bg-[#234a24] text-white">
+                      Заказать расчёт
+                    </Button>
+                    <Button variant="outline" className="w-full">
+                      Задать вопрос
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <div className="grid grid-cols-2 gap-4">
+                {features.map((feature, idx) => (
+                  <Card key={idx}>
+                    <CardContent className="p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="bg-[#E8F5E9] p-2 rounded-lg">
+                          <Icon name={feature.icon as any} size={20} className="text-[#2C5F2D]" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-sm mb-1">{feature.title}</h3>
+                          <p className="text-xs text-gray-600">{feature.text}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
 
         <Card className="mb-12">
           <CardContent className="p-6 md:p-10">

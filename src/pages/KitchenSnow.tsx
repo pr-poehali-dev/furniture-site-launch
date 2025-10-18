@@ -51,10 +51,16 @@ const KitchenSnow = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-12 mb-12">
+      <div className="container mx-auto px-4 py-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 text-[#2C3E2C]">Воздушный зефир</h1>
+            <p className="text-lg text-gray-600">Идеальное воплощение минимализма. Белоснежные матовые фасады без ручек, светлая столешница из искусственного камня, встроенная техника премиум-класса и открытые полки для декора создают атмосферу чистоты и простора.</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
           <div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl mb-4">
+              <div className="mb-4 rounded-lg overflow-hidden shadow-lg bg-white">
               <img 
                 src={images[selectedImage].url}
                 alt={images[selectedImage].alt}
@@ -62,21 +68,19 @@ const KitchenSnow = () => {
               />
             </div>
             
-            <div className="grid grid-cols-4 gap-2 md:gap-3">
+              <div className="grid grid-cols-4 gap-2">
               {images.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setSelectedImage(idx)}
-                  className={`aspect-square rounded-lg overflow-hidden border-2 transition-all ${
-                    selectedImage === idx 
-                      ? 'border-primary shadow-lg' 
-                      : 'border-gray-200 hover:border-primary/50'
+                  className={`rounded-lg overflow-hidden border-2 transition-all ${
+                    selectedImage === idx ? 'border-[#2C5F2D] scale-95' : 'border-transparent hover:border-gray-300'
                   }`}
                 >
                   <img 
                     src={img.url}
                     alt={img.alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-20 object-cover"
                   />
                 </button>
               ))}
@@ -84,143 +88,94 @@ const KitchenSnow = () => {
           </div>
 
           <div>
-            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Оптимал-серия
-            </div>
-            
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-[#474931]">
-              Воздушный зефир
-            </h1>
-            
-            <p className="text-lg md:text-xl text-gray-700 mb-2 leading-relaxed">
-              Идеальное воплощение минимализма. Белоснежные матовые фасады без ручек, 
-              светлая столешница из искусственного камня, встроенная техника премиум-класса 
-              и открытые полки для декора создают атмосферу чистоты и простора.
-            </p>
-            <p className="text-sm text-gray-600 mb-6 italic">
-              * Данный проект можно менять под ваши предпочтения
-            </p>
+              <Card className="mb-6">
+                <CardContent className="p-6">
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-4xl font-bold text-[#2C5F2D]">135 000 ₽</span>
+                    <span className="text-gray-500">от</span>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-6">Цена под ключ с установкой</p>
+                  <div className="space-y-3">
+                    <Button className="w-full bg-[#2C5F2D] hover:bg-[#234a24] text-white">
+                      Заказать расчёт
+                    </Button>
+                    <Button variant="outline" className="w-full">
+                      Задать вопрос
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
 
-            <div className="bg-gradient-to-br from-primary to-orange-600 text-white p-6 md:p-8 rounded-2xl mb-8 shadow-xl">
-              <div className="flex items-baseline gap-3 mb-3">
-                <span className="text-sm opacity-90">Цена от</span>
-                <span className="text-4xl md:text-5xl font-bold">135 000 ₽</span>
+              <div className="grid grid-cols-2 gap-4">
+                {features.map((feature, idx) => (
+                  <Card key={idx}>
+                    <CardContent className="p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="bg-[#E8F5E9] p-2 rounded-lg">
+                          <Icon name={feature.icon as any} size={20} className="text-[#2C5F2D]" />
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-sm mb-1">{feature.title}</h3>
+                          <p className="text-xs text-gray-600">{feature.text}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
-              <p className="text-sm opacity-90 mb-6">
-                Итоговая стоимость зависит от размеров и комплектации
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button 
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90 flex-1"
-                  onClick={() => {
-                    navigate('/');
-                    setTimeout(() => {
-                      document.getElementById('калькулятор')?.scrollIntoView({ behavior: 'smooth' });
-                    }, 100);
-                  }}
-                >
-                  <Icon name="Calculator" size={20} className="mr-2" />
-                  Рассчитать стоимость
-                </Button>
-                <Button 
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90 flex-1"
-                >
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  Позвонить
-                </Button>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4 mb-8">
-              {features.map((feature, idx) => (
-                <Card key={idx} className="border-none shadow-md">
-                  <CardContent className="p-4">
-                    <Icon name={feature.icon as any} size={24} className="text-primary mb-2" />
-                    <h4 className="font-bold text-sm mb-1">{feature.title}</h4>
-                    <p className="text-xs text-muted-foreground">{feature.text}</p>
-                  </CardContent>
-                </Card>
-              ))}
             </div>
           </div>
         </div>
 
-        <Card className="mb-12">
-          <CardContent className="p-6 md:p-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#474931]">
-              Особенности кухни "Воздушный зефир"
-            </h2>
+          <Card className="mb-8">
+            <CardContent className="p-8">
+              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <Icon name="Sparkles" size={28} className="text-[#2C5F2D]" />
+                Особенности кухни
+              </h2>
             
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="font-bold text-lg mb-3 flex items-center gap-2">
-                  <Icon name="CheckCircle2" size={20} className="text-green-600" />
-                  Дизайн и материалы
-                </h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>• Матовые белые фасады из МДФ в эмали</li>
-                  <li>• Безручечная система push-to-open</li>
-                  <li>• Встроенные ручки-профили на островной части</li>
-                  <li>• Столешница из светлого искусственного камня</li>
-                  <li>• Элементы из натурального массива дуба</li>
-                </ul>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="font-semibold mb-2 flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-[#2C5F2D]" />
+                    Дизайн и материалы
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Матовые белые фасады из МДФ в эмали. Безручечная система push-to-open. Встроенные ручки-профили на островной части. Столешница из светлого искусственного камня. Элементы из натурального массива дуба.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2 flex items-center gap-2">
+                    <Icon name="Package" size={18} className="text-[#2C5F2D]" />
+                    Функциональность
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    Встроенная LED-подсветка рабочей зоны. Премиум-фурнитура Blum с доводчиками. Открытые полки с подсветкой для декора. Островная часть с барной стойкой. Организация для хранения в каждом шкафу.
+                  </p>
+                </div>
               </div>
-
-              <div>
-                <h3 className="font-bold text-lg mb-3 flex items-center gap-2">
-                  <Icon name="CheckCircle2" size={20} className="text-green-600" />
-                  Функциональность
-                </h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li>• Встроенная LED-подсветка рабочей зоны</li>
-                  <li>• Премиум-фурнитура Blum с доводчиками</li>
-                  <li>• Открытые полки с подсветкой для декора</li>
-                  <li>• Островная часть с барной стойкой</li>
-                  <li>• Организация для хранения в каждом шкафу</li>
-                </ul>
-              </div>
-            </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-primary/5 to-orange-50 border-primary/20">
-          <CardContent className="p-6 md:p-10">
-            <div className="flex flex-col md:flex-row gap-6 items-center">
-              <div className="flex-1">
-                <Icon name="Gift" size={48} className="mb-4 text-primary md:mx-0 mx-auto" />
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#474931] md:text-left text-center">
-                  Бонус при заказе!
-                </h3>
-                <p className="text-lg text-gray-700 mb-6 md:text-left text-center">
-                  При заказе кухни "Воздушный зефир" дарим премиум набор органайзеров<br />для специй и сыпучих продуктов
-                </p>
-                <Button 
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 w-full md:w-auto"
-                  onClick={() => {
-                    navigate('/');
-                    setTimeout(() => {
-                      document.getElementById('калькулятор')?.scrollIntoView({ behavior: 'smooth' });
-                    }, 100);
-                  }}
-                >
-                  <Icon name="Rocket" size={20} className="mr-2" />
-                  Заказать со скидкой
-                </Button>
+          <Card className="bg-gradient-to-br from-[#E8F5E9] to-white border-[#2C5F2D]/20">
+            <CardContent className="p-8">
+              <div className="flex items-start gap-4">
+                <div className="bg-[#2C5F2D] p-3 rounded-full">
+                  <Icon name="Gift" size={24} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Бонус при заказе в этом месяце!</h3>
+                  <p className="text-gray-700 mb-4">
+                    При заказе кухни "Воздушный зефир" дарим премиум набор органайзеров для специй и сыпучих продуктов. Всё для идеального порядка!
+                  </p>
+                  <Button className="bg-[#2C5F2D] hover:bg-[#234a24]">
+                    Узнать подробнее
+                  </Button>
+                </div>
               </div>
-              <div className="w-full md:w-80 flex-shrink-0">
-                <img 
-                  src="https://cdn.poehali.dev/files/b2bce252-7c0f-4c78-b272-d3e817aa6428.jpg"
-                  alt="Органайзеры для специй"
-                  className="w-full rounded-xl shadow-lg"
-                />
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </div>
   );
