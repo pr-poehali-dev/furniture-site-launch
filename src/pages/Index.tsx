@@ -511,7 +511,7 @@ const Index = () => {
             </Card>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6 mt-8 md:mt-12">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-6 mt-4 md:mt-6">
             <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
               <div className="relative aspect-square">
                 <img 
