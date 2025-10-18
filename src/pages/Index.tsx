@@ -146,6 +146,13 @@ const Index = () => {
         image: 'https://cdn.poehali.dev/files/1b37dd40-8570-4a17-88ab-904ebd68597f.png',
         description: 'Буфет до потолка с бронзовым стеклом в профиле Modus. Интегрированная подсветка, фурнитура Hettich push-to-open. Премиальная атмосфера!',
         link: '/wardrobe/kitchen-buffet'
+      },
+      { 
+        name: 'Чёрный Графит', 
+        price: 'от 165 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/20bfb000-4d27-450c-bf3f-e3d77ae3d809.png',
+        description: 'Фасады ЛДСП EGGER в цвете "Чёрный Графит". Минималистичные торцевые ручки, фурнитура с доводчиками. Внутри — ящики для мелочей, штанги и вместительные полки.',
+        link: '/wardrobe/black-graphite'
       }
     ],
     closet: [],
