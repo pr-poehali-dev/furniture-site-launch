@@ -398,106 +398,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="о-нас" className="py-12 md:py-20 px-4 bg-[#EEECE0]">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-[#474931]">О нас</h2>
-          
-          <div className="space-y-4 md:space-y-6">
-            <Card className="border-none shadow-[0_10px_40px_rgba(0,0,0,0.08)] rounded-3xl bg-white/80 backdrop-blur-sm">
-              <CardContent className="p-4 md:p-8">
-                <p className="text-base md:text-xl text-center leading-relaxed text-gray-900 mb-4 md:mb-6">
-                  Зачем нужна мебель? Чтобы спрятать вещи? Нет. Ее настоящая задача — освободить энергию пространства и направить ее на вдохновение своих хозяев.
-                </p>
-                
-                <div className="text-center mb-4 md:mb-6">
-                  <h3 className="text-xl md:text-3xl font-semibold text-primary mb-2 md:mb-3">
-                    «По Местам!» — это не просто название. Это наше обещание.
-                  </h3>
-                </div>
-
-                <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-                  <div className="text-center">
-                    <div className="bg-primary/10 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-3 md:mb-4">
-                      <Icon name="Ruler" size={28} className="text-primary md:hidden" />
-                      <Icon name="Ruler" size={32} className="text-primary hidden md:block" />
-                    </div>
-                    <h4 className="text-base md:text-lg font-bold mb-1 md:mb-2 text-gray-900">Четкость</h4>
-                    <p className="text-sm md:text-base text-gray-900 leading-relaxed">
-                      В линиях, конструкциях и организации процесса. От эскиза до сборки — все продумано до мелочей.
-                    </p>
-                  </div>
-
-                  <div className="text-center">
-                    <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                      <Icon name="Users" size={32} className="text-primary" />
-                    </div>
-                    <h4 className="text-lg font-bold mb-2 text-gray-900">Слаженность</h4>
-                    <p className="text-base text-gray-900 leading-relaxed">
-                      В работе нашей команды дизайнеров, инженеров и сборщиков. И, конечно, в том, как наши предметы взаимодействуют друг с другом в вашем интерьере.
-                    </p>
-                  </div>
-
-                  <div className="text-center">
-                    <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                      <Icon name="Zap" size={32} className="text-primary" />
-                    </div>
-                    <h4 className="text-lg font-bold mb-2 text-gray-900">Заряд</h4>
-                    <p className="text-base text-gray-900 leading-relaxed">
-                      Который получает ваше пространство. Мы создаем мебель, которая мотивирует, организует и дает мощный импульс для новых свершений.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="text-center max-w-3xl mx-auto">
-              <Card className="bg-gradient-to-br from-primary via-primary to-orange-600 text-white border-none shadow-[0_20px_60px_rgba(255,128,0,0.3)] rounded-2xl md:rounded-3xl overflow-hidden relative">
-                <div className="absolute top-0 right-0 w-32 h-32 md:w-64 md:h-64 bg-white/5 rounded-full -translate-y-16 translate-x-16 md:-translate-y-32 md:translate-x-32"></div>
-                <CardContent className="py-6 px-4 md:py-10 md:px-8 relative z-10">
-                  <h3 className="text-xl md:text-3xl font-light mb-2 md:mb-3">
-                    Пора навести порядок!
-                  </h3>
-                  <p className="text-base md:text-xl font-light mb-4 md:mb-6 opacity-95">
-                    Командуйте - По Местам!
-                  </p>
-                  <Button 
-                    size="lg" 
-                    className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all px-4 md:px-8 py-3 md:py-6 text-sm md:text-base font-semibold w-full md:w-auto"
-                    onClick={() => scrollToSection('калькулятор')}
-                  >
-                    <Icon name="Calculator" size={18} className="mr-1 md:mr-2 md:hidden" />
-                    <Icon name="Calculator" size={22} className="mr-2 hidden md:block" />
-                    Рассчитать стоимость
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 md:py-20 bg-[#F9F8F4]">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
-            {[
-              { icon: 'Award', title: 'Гарантия 2 года', desc: 'На всю продукцию' },
-              { icon: 'Users', title: 'Первоклассные специалисты', desc: 'Опытная команда' },
-              { icon: 'Truck', title: 'Бережная доставка', desc: 'По Казани и за город' },
-              { icon: 'Wrench', title: 'Профессиональная сборка', desc: 'Качественный монтаж' }
-            ].map((item, idx) => (
-              <Card key={idx} className="border-none shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 rounded-2xl bg-white">
-                <CardContent className="pt-4 pb-4 md:pt-8 md:pb-6">
-                  <Icon name={item.icon as any} size={40} className="mx-auto mb-3 text-[#C79747] md:hidden" />
-                  <Icon name={item.icon as any} size={56} className="mx-auto mb-6 text-[#C79747] hidden md:block" />
-                  <h3 className="font-bold mb-1 md:mb-3 text-black text-sm md:text-xl">{item.title}</h3>
-                  <p className="text-xs md:text-base text-black font-medium">{item.desc}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="каталог" className="py-12 md:py-24 px-4 bg-white">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-4 md:mb-6 text-[#474931]">Каталог мебели</h2>
@@ -627,6 +527,106 @@ const Index = () => {
               );
             })}
           </Tabs>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-20 bg-[#F9F8F4]">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
+            {[
+              { icon: 'Award', title: 'Гарантия 2 года', desc: 'На всю продукцию' },
+              { icon: 'Users', title: 'Первоклассные специалисты', desc: 'Опытная команда' },
+              { icon: 'Truck', title: 'Бережная доставка', desc: 'По Казани и за город' },
+              { icon: 'Wrench', title: 'Профессиональная сборка', desc: 'Качественный монтаж' }
+            ].map((item, idx) => (
+              <Card key={idx} className="border-none shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 rounded-2xl bg-white">
+                <CardContent className="pt-4 pb-4 md:pt-8 md:pb-6">
+                  <Icon name={item.icon as any} size={40} className="mx-auto mb-3 text-[#C79747] md:hidden" />
+                  <Icon name={item.icon as any} size={56} className="mx-auto mb-6 text-[#C79747] hidden md:block" />
+                  <h3 className="font-bold mb-1 md:mb-3 text-black text-sm md:text-xl">{item.title}</h3>
+                  <p className="text-xs md:text-base text-black font-medium">{item.desc}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="о-нас" className="py-12 md:py-20 px-4 bg-[#EEECE0]">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-[#474931]">О нас</h2>
+          
+          <div className="space-y-4 md:space-y-6">
+            <Card className="border-none shadow-[0_10px_40px_rgba(0,0,0,0.08)] rounded-3xl bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-4 md:p-8">
+                <p className="text-base md:text-xl text-center leading-relaxed text-gray-900 mb-4 md:mb-6">
+                  Зачем нужна мебель? Чтобы спрятать вещи? Нет. Ее настоящая задача — освободить энергию пространства и направить ее на вдохновение своих хозяев.
+                </p>
+                
+                <div className="text-center mb-4 md:mb-6">
+                  <h3 className="text-xl md:text-3xl font-semibold text-primary mb-2 md:mb-3">
+                    «По Местам!» — это не просто название. Это наше обещание.
+                  </h3>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto mb-3 md:mb-4">
+                      <Icon name="Ruler" size={28} className="text-primary md:hidden" />
+                      <Icon name="Ruler" size={32} className="text-primary hidden md:block" />
+                    </div>
+                    <h4 className="text-base md:text-lg font-bold mb-1 md:mb-2 text-gray-900">Четкость</h4>
+                    <p className="text-sm md:text-base text-gray-900 leading-relaxed">
+                      В линиях, конструкциях и организации процесса. От эскиза до сборки — все продумано до мелочей.
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Users" size={32} className="text-primary" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2 text-gray-900">Слаженность</h4>
+                    <p className="text-base text-gray-900 leading-relaxed">
+                      В работе нашей команды дизайнеров, инженеров и сборщиков. И, конечно, в том, как наши предметы взаимодействуют друг с другом в вашем интерьере.
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                      <Icon name="Zap" size={32} className="text-primary" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2 text-gray-900">Заряд</h4>
+                    <p className="text-base text-gray-900 leading-relaxed">
+                      Который получает ваше пространство. Мы создаем мебель, которая мотивирует, организует и дает мощный импульс для новых свершений.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="text-center max-w-3xl mx-auto">
+              <Card className="bg-gradient-to-br from-primary via-primary to-orange-600 text-white border-none shadow-[0_20px_60px_rgba(255,128,0,0.3)] rounded-2xl md:rounded-3xl overflow-hidden relative">
+                <div className="absolute top-0 right-0 w-32 h-32 md:w-64 md:h-64 bg-white/5 rounded-full -translate-y-16 translate-x-16 md:-translate-y-32 md:translate-x-32"></div>
+                <CardContent className="py-6 px-4 md:py-10 md:px-8 relative z-10">
+                  <h3 className="text-xl md:text-3xl font-light mb-2 md:mb-3">
+                    Пора навести порядок!
+                  </h3>
+                  <p className="text-base md:text-xl font-light mb-4 md:mb-6 opacity-95">
+                    Командуйте - По Местам!
+                  </p>
+                  <Button 
+                    size="lg" 
+                    className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all px-4 md:px-8 py-3 md:py-6 text-sm md:text-base font-semibold w-full md:w-auto"
+                    onClick={() => scrollToSection('калькулятор')}
+                  >
+                    <Icon name="Calculator" size={18} className="mr-1 md:mr-2 md:hidden" />
+                    <Icon name="Calculator" size={22} className="mr-2 hidden md:block" />
+                    Рассчитать стоимость
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
