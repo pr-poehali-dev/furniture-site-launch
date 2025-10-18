@@ -403,8 +403,7 @@ const Index = () => {
                           {(product as any).description && (
                             <p className="text-xs md:text-sm text-muted-foreground mb-3">{(product as any).description}</p>
                           )}
-                          <div className="flex items-center justify-between">
-                            <span className="text-lg md:text-xl font-bold text-primary">{product.price}</span>
+                          <div className="flex items-center justify-end">
                             <Button 
                               size="sm" 
                               className="bg-primary hover:bg-primary/90 text-xs md:text-sm"
