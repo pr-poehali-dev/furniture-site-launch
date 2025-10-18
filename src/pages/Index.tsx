@@ -121,21 +121,18 @@ const Index = () => {
         name: 'Графитовый Минимализм', 
         price: 'от 285 000 ₽', 
         image: 'https://cdn.poehali.dev/files/7d42ad80-ab7c-47f4-a6c5-7c03bc353e00.png',
-        description: 'Строгая угловая кухня со встроенным пеналом-витриной. Чёрный мрамор, световые линии, бетонные текстуры. Современная архитектура в интерьере!',
         link: '/kitchen/graphite-minimalism'
       },
       { 
         name: 'Воздушный зефир', 
         price: 'от 135 000 ₽', 
         image: 'https://cdn.poehali.dev/files/d65e0e32-8c5f-4bb3-8a64-c4c5800f99a8.png',
-        description: 'Идеальное воплощение минимализма. Белоснежные матовые фасады без ручек, светлая столешница из искусственного камня.',
         link: '/kitchen/snow'
       },
       { 
         name: 'Нежный Миндаль', 
         price: 'от 175 000 ₽', 
         image: 'https://cdn.poehali.dev/files/585c182c-5548-42a2-af38-a57163d02fe2.png',
-        description: 'Изысканная минималистичная кухня в миндальных тонах с мраморной столешницей и островом.',
         link: '/kitchen/almond'
       }
     ],
@@ -144,21 +141,18 @@ const Index = () => {
         name: 'Чёрный Графит', 
         price: 'от 165 000 ₽', 
         image: 'https://cdn.poehali.dev/files/20bfb000-4d27-450c-bf3f-e3d77ae3d809.png',
-        description: 'Фасады ЛДСП EGGER в цвете "Чёрный Графит". Минималистичные торцевые ручки, фурнитура с доводчиками. Внутри — ящики для мелочей, штанги и вместительные полки.',
         link: '/wardrobe/black-graphite'
       },
       { 
         name: 'Белый Минимализм', 
         price: 'от 155 000 ₽', 
         image: 'https://cdn.poehali.dev/files/c9289528-b1c7-48d9-b32a-900e2027f9df.jpg',
-        description: 'Встроенный шкаф до потолка в светлых тонах. Система хранения с выдвижными ящиками, штангами и открытыми полками. Скрытые ручки, доводчики Blum.',
         link: '/wardrobe/white-minimalism'
       },
       { 
         name: 'Буфет для кухни-гостиной', 
         price: 'от 185 000 ₽', 
         image: 'https://cdn.poehali.dev/files/1b37dd40-8570-4a17-88ab-904ebd68597f.png',
-        description: 'Буфет до потолка с бронзовым стеклом в профиле Modus. Интегрированная подсветка, фурнитура Hettich push-to-open. Премиальная атмосфера!',
         link: '/wardrobe/kitchen-buffet'
       }
     ],
@@ -171,7 +165,6 @@ const Index = () => {
         name: 'Прихожая со встроенной системой хранения', 
         price: 'от 95 000 ₽', 
         image: 'https://cdn.poehali.dev/files/cb4b5212-aaaf-45ac-97e5-1574b9ca71a3.png',
-        description: 'Лаконичная прихожая с зеркальными фасадами, встроенной банкеткой и продуманной системой хранения. Вертикальные фрезеровки и точечная подсветка создают премиальную атмосферу.',
         link: '/hallway/built-in-storage'
       }
     ],
@@ -180,7 +173,6 @@ const Index = () => {
         name: 'Черная мебель для ванной', 
         price: 'от 95 000 ₽', 
         image: 'https://cdn.poehali.dev/files/2fe96a1f-4d07-4310-8071-87acd99d68ee.jpg',
-        description: 'Фасады и перегородка для стиральной машины и сушилки из МДФ в пленке. Коммуникации скрыты за панелью из МДФ в цвет фасадов тумбы. Качественные доводчики: плавные и тихие.',
         link: '/bathroom/black-minimalism'
       }
     ]
