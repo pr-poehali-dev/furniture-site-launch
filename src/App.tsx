@@ -26,7 +26,9 @@ import ObsidianKitchen from "./pages/ObsidianKitchen";
 import KitchenGraphiteMinimalism from "./pages/KitchenGraphiteMinimalism";
 import WardrobeBlackGraphite from "./pages/WardrobeBlackGraphite";
 import WardrobeWhiteMinimalism from "./pages/WardrobeWhiteMinimalism";
+import WardrobeKitchenBuffet from "./pages/WardrobeKitchenBuffet";
 import BathroomBlackMinimalism from "./pages/BathroomBlackMinimalism";
+import HallwayBuiltInStorage from "./pages/HallwayBuiltInStorage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -60,7 +62,9 @@ const App = () => (
           <Route path="/kitchen/graphite-minimalism" element={<KitchenGraphiteMinimalism />} />
           <Route path="/wardrobe/black-graphite" element={<WardrobeBlackGraphite />} />
           <Route path="/wardrobe/white-minimalism" element={<WardrobeWhiteMinimalism />} />
+          <Route path="/wardrobe/kitchen-buffet" element={<WardrobeKitchenBuffet />} />
           <Route path="/bathroom/black-minimalism" element={<BathroomBlackMinimalism />} />
+          <Route path="/hallway/built-in-storage" element={<HallwayBuiltInStorage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
