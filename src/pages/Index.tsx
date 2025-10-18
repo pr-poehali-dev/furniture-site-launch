@@ -148,6 +148,13 @@ const Index = () => {
         link: '/wardrobe/black-graphite'
       },
       { 
+        name: 'Белый Минимализм', 
+        price: 'от 155 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/a461350a-36eb-4ec1-866d-e1c7d58d6299.jpg',
+        description: 'Встроенный шкаф до потолка в светлых тонах. Система хранения с выдвижными ящиками, штангами и открытыми полками. Скрытые ручки, доводчики Blum.',
+        link: '/wardrobe/white-minimalism'
+      },
+      { 
         name: 'Буфет для кухни-гостиной', 
         price: 'от 185 000 ₽', 
         image: 'https://cdn.poehali.dev/files/1b37dd40-8570-4a17-88ab-904ebd68597f.png',
