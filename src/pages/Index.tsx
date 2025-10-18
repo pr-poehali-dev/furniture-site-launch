@@ -520,7 +520,7 @@ const Index = () => {
                   
                   <div className="flex flex-col gap-3 md:gap-3">
                     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/20">
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-3 mb-2">
                         <div className="bg-white rounded-full p-2 flex-shrink-0">
                           <Icon name="Ruler" size={20} className="text-primary md:hidden" />
                           <Icon name="Ruler" size={24} className="text-primary hidden md:block" />
@@ -530,10 +530,13 @@ const Index = () => {
                           <p className="text-white/80 text-xs md:text-sm">Выезд дизайнера на объект</p>
                         </div>
                       </div>
+                      <p className="text-white/70 text-xs md:text-sm leading-relaxed">
+                        Наш специалист приедет, снимет точные замеры и предложит лучшие решения для вашего пространства
+                      </p>
                     </div>
 
                     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/20">
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-3 mb-2">
                         <div className="bg-white rounded-full p-2 flex-shrink-0">
                           <Icon name="Truck" size={20} className="text-primary md:hidden" />
                           <Icon name="Truck" size={24} className="text-primary hidden md:block" />
@@ -543,10 +546,13 @@ const Index = () => {
                           <p className="text-white/80 text-xs md:text-sm">По Казани и пригороду</p>
                         </div>
                       </div>
+                      <p className="text-white/70 text-xs md:text-sm leading-relaxed">
+                        Доставим вашу мебель бережно и в срок — вам не придётся ни о чём беспокоиться
+                      </p>
                     </div>
 
                     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/20">
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-3 mb-2">
                         <div className="bg-white rounded-full p-2 flex-shrink-0">
                           <Icon name="Wrench" size={20} className="text-primary md:hidden" />
                           <Icon name="Wrench" size={24} className="text-primary hidden md:block" />
@@ -556,6 +562,9 @@ const Index = () => {
                           <p className="text-white/80 text-xs md:text-sm">Качественный монтаж</p>
                         </div>
                       </div>
+                      <p className="text-white/70 text-xs md:text-sm leading-relaxed">
+                        Опытные мастера соберут мебель быстро и аккуратно — всё будет работать идеально
+                      </p>
                     </div>
                   </div>
                 </div>
