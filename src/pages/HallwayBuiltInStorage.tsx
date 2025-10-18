@@ -8,6 +8,7 @@ const HallwayBuiltInStorage = () => {
 
   const images = [
     'https://cdn.poehali.dev/files/cb4b5212-aaaf-45ac-97e5-1574b9ca71a3.png',
+    'https://cdn.poehali.dev/files/9f03210f-ba68-4fbb-8338-964bea386d5a.png',
   ];
 
   const nextImage = () => {
@@ -31,7 +32,7 @@ const HallwayBuiltInStorage = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+            <div className="relative aspect-[16/9] rounded-lg overflow-hidden bg-muted">
               <img
                 src={images[currentImageIndex]}
                 alt="Прихожая со встроенной системой хранения"
