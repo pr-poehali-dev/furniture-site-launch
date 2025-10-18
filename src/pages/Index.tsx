@@ -150,7 +150,7 @@ const Index = () => {
       { 
         name: 'Белый Минимализм', 
         price: 'от 155 000 ₽', 
-        image: 'https://cdn.poehali.dev/files/a461350a-36eb-4ec1-866d-e1c7d58d6299.jpg',
+        image: 'https://cdn.poehali.dev/files/c9289528-b1c7-48d9-b32a-900e2027f9df.jpg',
         description: 'Встроенный шкаф до потолка в светлых тонах. Система хранения с выдвижными ящиками, штангами и открытыми полками. Скрытые ручки, доводчики Blum.',
         link: '/wardrobe/white-minimalism'
       },
