@@ -141,6 +141,13 @@ const Index = () => {
       { name: 'Детская "Принцесса"', price: '92 000 ₽', image: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&h=400&fit=crop' }
     ],
     hallway: [
+      { 
+        name: 'Прихожая со встроенной системой хранения', 
+        price: 'от 95 000 ₽', 
+        image: 'https://cdn.poehali.dev/files/cb4b5212-aaaf-45ac-97e5-1574b9ca71a3.png',
+        description: 'Лаконичная прихожая с зеркальными фасадами, встроенной банкеткой и продуманной системой хранения. Вертикальные фрезеровки и точечная подсветка создают премиальную атмосферу.',
+        link: '/hallway/built-in-storage'
+      },
       { name: 'Прихожая "Компакт"', price: '32 000 ₽', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&h=400&fit=crop' },
       { name: 'Прихожая "Премиум"', price: '55 000 ₽', image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&h=400&fit=crop' },
       { name: 'Прихожая угловая', price: '45 000 ₽', image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&h=400&fit=crop' }
